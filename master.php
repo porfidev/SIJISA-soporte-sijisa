@@ -1,5 +1,8 @@
 <?php
+//iniciamos session
 session_start();
+
+//se incluyen datos de conexión
 include('conexion.php');
 
 //$id_usuario = $_SESSION['intIdUsuario'];
@@ -14,10 +17,10 @@ include('conexion.php');
 //	$empresa=$registro["empresa"];
 //}
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta charset="utf-8">
 <title>.:Akumen:. Tecnolog&iacute;a en Sistemas</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="js/jquery.js"></script>
@@ -38,13 +41,15 @@ include('conexion.php');
 	
 	
 	<div id="toprightPan">
-		<?php if($_SESSION['usuario']<>null) { ?>
+		<?php if($_SESSION['usuario'] != null) { ?>
 		<ul>
+			<li><a href="../index.php">Akumen</a></li>
 			<li><a href="inicio.php">Inicio</a></li>
-			<?php if($_SESSION['intIdTipoUsuario']<>1) { ?><li><a href="levantar_ticket.php">Tickets</a></li><?php } ?>
-			<li><a href="reportes_ticket.php">Reportes</a></li>
-			<?php if($_SESSION['intIdTipoUsuario']==1) { ?><li><a href="registrarse.php">Usuarios</a></li><?php } ?>
-			<li class="underlinenone"><a href="cerrar.php">Salir</a></li>
+			<?php if($_SESSION['intIdTipoUsuario'] == 1) { ?><li><a href="search.php">Buscar ticket</a></li><?php } ?>
+			<?php if($_SESSION['intIdTipoUsuario'] != 1) { ?><li><a href="levantar_ticket.php">Crear ticket</a></li><?php } ?>
+			<li><a href="reportes_ticket.php">Reporte</a></li>
+			<?php if($_SESSION['intIdTipoUsuario'] == 1) { ?><li><a href="registrarse.php">Crear usuario</a></li><?php } ?>
+			<li><a href="cerrar.php">Cerrar sesión</a></li>
 		</ul>
 		<?php } ?>
 	</div>
@@ -56,6 +61,7 @@ include('conexion.php');
 <div id="bodytopleftPan">
 
 <?php
+	// Dependiendo el tipo de página se cambia el titulo posible se descontinuará en futuras revisiones.
 	switch ($_SESSION['id_pagina']) {
     	case "0": //Login
         	echo "<h2>.:Akumen:. <span>Tecnolog&iacute;a en Sistemas</span></h2>";
@@ -90,16 +96,17 @@ include('conexion.php');
 </div>
 </div>
 <div id="footermainPan">
-
-	
   <div id="footerPan">
-	<?php if($_SESSION['usuario']<>null) { ?>
+	<?php if($_SESSION['usuario'] != null) { ?>
   	<ul>
+	<li><a href="../index.php">Akumen </a>| </li>
   	<li><a href="inicio.php">Inicio </a>| </li>
-	<?php if($_SESSION['intIdTipoUsuario']<>1) { ?><li><a href="levantar_ticket.php">Tickets</a> | </li><?php } ?>
+	<?php if($_SESSION['intIdTipoUsuario'] != 1) { ?><li><a href="levantar_ticket.php">Crear ticket</a> | </li><?php } ?>
+	<?php if($_SESSION['intIdTipoUsuario'] == 1) { ?>
+	<li><a href="search.php">Buscar ticket</a> | </li><?php } ?>
   	<li><a href="reportes_ticket.php">Reportes </a>| </li>
-  	<?php if($_SESSION['intIdTipoUsuario']==1) { ?><li><a href="registrarse.php">Usuarios</a> | </li><?php } ?>
-  	<li><a href="cerrar.php">Salir </a> </li>
+  	<?php if($_SESSION['intIdTipoUsuario'] == 1) { ?><li><a href="registrarse.php">Crear usuario</a> | </li><?php } ?>
+  	<li><a href="cerrar.php">Cerrar sesión </a> </li>
   	</ul>
 	<?php } ?>
   <p class="copyright">&copy;2013 Derechos Reservados</p>

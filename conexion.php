@@ -1,4 +1,6 @@
 <?php
+// Proxima a desecharse
+
 $db_host="localhost"; 
 $db_usuario="soporte_akumen"; 
 $db_password="soporte_akumen"; 

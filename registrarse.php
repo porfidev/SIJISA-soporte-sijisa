@@ -119,9 +119,8 @@ var tipo_usuario = $("#tipo_usuario").val();
 	      <td  align="left" class="fecha_articulointerior"><label for="tipo_usuario"></label>
 	        <select name="tipo_usuario" id="tipo_usuario">
 	          	<option value="1">Administrador</option>
-			<option value="2">Usuario</option>
+			<option value="2">Operador</option>
 		  	<option value="3">Cliente</option>
-			<option value="4">Operador</option>
             </select></td>
 	      <td class="texto_general">&nbsp;</td>
 	      </tr>

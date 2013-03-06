@@ -5,15 +5,14 @@ include('conexion.php');
 if ($_SESSION['usuario']==null){$_SESSION['URL']=$_SERVER['REQUEST_URI']; header('Location: index.php');exit;}
 if ($_GET['s']==null) {echo "No hay datos por mostrar";exit;}
 
-$mivar = "call reportebyempresa('".
-$_SESSION['idempresa'] . "',".
-$_GET['s'] . ");";
+$mivar = "call reportebyempresa('".$_SESSION['intIdEmpresa'] . "',".$_GET['s'] . ");";
 
-$datos = mysql_query($mivar) or die(mysql_error());
+$datos = mysql_query($mivar) or die("Actualmente esta función NO esta disponible <br> Próximamente <hr>".mysql_error());
 
 if (mysql_num_rows($datos)==0) { 
 
-echo "No hay información para mostrar."; } else { ?>
+var_dump($_SESSION['intIdEmpresa']);
+echo "Empresa:".$_SESSION['idempresa']."estado:".$_GET['s']." No hay información para mostrar."; } else { ?>
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script language="javascript">
@@ -27,7 +26,7 @@ $(document).ready(function() {
 
 
 <table id="content_table" align="center" style="margin:0 auto;text-align:left /* Chrome */;border:2px solid white;text-align:center;font-family:Trebuchet MS">
-<tr><td colspan="8" style="background:white;text-align:left"><h1>Reporte de Tiempos<h1></td></tr>
+<tr><td colspan="8" style="background:white;text-align:left"><h1>Reporte de Tiempos</h1></td></tr>
 <tr>
 <th style="background:#4F81BD;color:white;font-size:12px;padding:3px">Ticket</th>
 <th style="background:#4F81BD;color:white;font-size:12px;padding:3px">Fecha de Recepcion</th>
@@ -49,7 +48,7 @@ $promedio_atencion = $registro["promedio_atencion"];
 $promedio_respuesta = $registro["promedio_respuesta"];
  ?>
 <tr style="color:black;font-size:12px;padding:3px;text-align:center">
-<td style="background:#4F81BD;color:white;font-size:12px;padding:3px"><?php echo $registro["id_unico"]; ?></td>
+<td style="background:#4F81BD;color:white;font-size:12px;padding:3px"><?php echo $registro["intIdUnico"]; ?></td>
 <td style="background:<?php echo $color; ?>;"><?php echo $registro["fecha_recepcion"]; ?></td>
 <td style="background:<?php echo $color; ?>;"><?php echo $registro["fecha_asignacion"]; ?></td>
 <td style="background:<?php echo $color; ?>;"><?php echo $registro["fecha_trabajo"]; ?></td>
