@@ -115,6 +115,7 @@ include('conexion.php');
    <ul class="templateworld">
   	<li>Design By: </li>
 	<li> Akumen</li>
+	<li>Version 0.1 Rev 3</li>
   </ul>
   </div>
 </div>

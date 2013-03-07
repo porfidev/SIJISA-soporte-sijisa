@@ -11,30 +11,75 @@ include("class.smtp.php");
 
 $_SESSION['id_pagina'] = 2;
 
-if ($_SESSION['intIdTipoUsuario']<>1) {
-
-if ($_POST<>null){
-
-$archivo = date("Ymd") . "_" . $_FILES["userfile"]["name"];
-$ubicacion = $_FILES["userfile"]["tmp_name"];
-$uploads_dir = "./upload";
-
-
-if (move_uploaded_file($ubicacion, "$uploads_dir/$archivo")) 
-{}
-else { echo "<script>alert('Hubo un problema al subir el archivo, no se genero el ticket.')</script>"; header('Location: levantar_ticket.php'); exit;} 
-
+//Verifica que no sea un administrador
+if ($_SESSION['intIdTipoUsuario'] != 1) {
+	
+	//verifica si se enviaron variable mediante $_POST
+	if ($_POST != null){
+		
+		/*
+		$archivo = date("Ymd") . "_" . $_FILES["userfile"]["name"];
+		$ubicacion = $_FILES["userfile"]["tmp_name"];
+		*/
+		
+		//Se comprueba si se subieron archivos adjuntos
+		if (isset($_FILES["userfile1"]))
+		{
+			$archivo1 = date("Ymd") . "_" . $_FILES["userfile1"]["name"];
+			$ubicacion_archivo1 = $_FILES["userfile1"]["tmp_name"];
+			
+			if(!move_uploaded_file($ubicacion_archivo1, "$uploads_dir/$archivo1")){
+			echo "<script>alert('Hubo un problema al subir el archivo 1, no se genero el ticket.')</script>";
+			header('Location: levantar_ticket.php');
+			exit;
+		} 
+		}
+		
+		if (isset($_FILES["userfile2"]))
+		{
+			$archivo2 = date("Ymd") . "_" . $_FILES["userfile2"]["name"];
+			$ubicacion_archivo2 = $_FILES["userfile2"]["tmp_name"];
+			
+			if(!move_uploaded_file($ubicacion_archivo2, "$uploads_dir/$archivo2")){
+			echo "<script>alert('Hubo un problema al subir el archivo 2, no se genero el ticket.')</script>";
+			header('Location: levantar_ticket.php');
+			exit;
+		} 
+		}
+		
+		if (isset($_FILES["userfile3"]))
+		{
+			$archivo3 = date("Ymd") . "_" . $_FILES["userfile3"]["name"];
+			$ubicacion_archivo3 = $_FILES["userfile3"]["tmp_name"];
+			
+			if(!move_uploaded_file($ubicacion_archivo3, "$uploads_dir/$archivo3")){
+			echo "<script>alert('Hubo un problema al subir el archivo 3, no se genero el ticket.')</script>";
+			header('Location: levantar_ticket.php');
+			exit;
+		} 
+		}
+		
+		// Directorio al que se suben los archivos
+		$uploads_dir = "/upload";
+		
 $mivar = "call save_ticket('".
-$_POST['tipoticket'] . "','" .
-$_POST['fecha_alta'] . "','" .
-$_POST['fecha_problema'] . "','" .
-$_POST['procedencia'] . "','" .
-$_POST['prioridad'] . "','" .
-$_SESSION['intIdUsuario'] . "','" .
-$_POST['destinatario'] . "','" .
-$_POST['problema'] . "','" .
-$_POST['observaciones'] . "','" .
-$archivo . "',1);";
+		$_POST['tipoticket'] . "','" .
+		$_POST['fecha_alta'] . "','" .
+		$_POST['fecha_problema'] . "','" .
+		$_POST['procedencia'] . "','" .
+		$_POST['prioridad'] . "','" .
+		$_SESSION['intIdUsuario'] . "','" .
+		$_POST['destinatario'] . "','" .
+		$_POST['problema'] . "','" .
+		$_POST['observaciones'] . "','" .
+		$archivo1 . "','" .
+		$archivo2 . "','" .
+		$archivo3 . "',1);";
+		
+echo "mi var";
+
+if(mysql_query($mivar))
+	echo "alert(' si funciono '";
 
 $datos = mysql_query($mivar) or die(mysql_error());
 $fila = mysql_fetch_array($datos);
@@ -58,7 +103,7 @@ var_dump($mivar);
 		$mail->MsgHTML("$descripcion");
 		//$mail->AddAddress($_SESSION["email"]);
 		$mail->IsHTML(true);
-		$mail->Send();
+		//$mail->Send();
 
 		header('Location: gracias.php?t='.Base64_encode($fila[0]));
 		exit;
@@ -109,7 +154,7 @@ function requeridos(e, f) {
 
     if (faltantes == 1) {
         alert('Los campos marcados en rojo son obligatorios');
-        return false;
+        //return false;
     }
     else {
         return true;
@@ -119,7 +164,7 @@ function requeridos(e, f) {
 }
 </script>
 
-<form action="levantar_ticket.php" method="POST" enctype="multipart/form-data">
+<form action="registrar_ticket.php" method="POST" enctype="multipart/form-data">
 	<table width="90%" align="center" border="0" style="border-top:3px solid gray">
 		<tr>
 			<td> Tipo de Ticket: </td>
@@ -130,7 +175,7 @@ function requeridos(e, f) {
 		</tr>
 		<tr>
 			<td  align="left" valign="middle" class="fecha_articulointerior">Fecha de Alta</td>
-			<td class="texto_general"><input onkeydown="return false;" name="fecha_alta" type="text" class="campofecha" id="fecha_alta" value="<?php echo $dateTo = date("Y/m/d H:i:s", strtotime('now')); ?>" size="15" /></td>
+			<td class="texto_general"><input onkeydown="return false;" name="fecha_alta" type="text" class="campofecha" id="fecha_alta" value="<?php echo $dateTo = date("Y/m/d H:i:s", strtotime('now')); ?>" size="20" /></td>
 			<td  align="right" class="fecha_articulointerior">&nbsp;</td>
 			<td class="texto_general">&nbsp;</td>
 		</tr>
@@ -146,22 +191,35 @@ function requeridos(e, f) {
 				<?php
 		//-- Combo Empresas
 		$id_empresa = $_SESSION['intIdEmpresa'];
-		$consulta = "SELECT * FROM catEmpresas WHERE IntIdEmpresa = '$id_empresa'";
-		$datos = mysql_query($consulta) or die(mysql_error());		
+		/*$consulta = "SELECT * FROM catEmpresas WHERE IntIdEmpresa = '$id_empresa'";
+		$datos = mysql_query($consulta) or die(mysql_error());	*/	
 		
-		if (mysql_num_rows($datos)==0){
+	if (!mysql_num_rows($datos)==0){
 			echo "sin datos";
 			}
 		else {
 			//Tipo 2 = Operador
 			if ($_SESSION["intIdTipoUsuario"] != 2) {
-			echo "<select id='procedencia' name='procedencia' disabled>";
-			echo "<option value='".$_SESSION['intIdEmpresa']."'>".$_SESSION['empresa']."</option>";}
+				$consulta = "SELECT * FROM catEmpresas WHERE IntIdEmpresa = '$id_empresa'";
+				$datos = mysql_query($consulta) or die(mysql_error());
+				
+				if (mysql_num_rows($datos)==0)
+					echo "sin datos";
+				
+				echo "<select id='procedencia' name='procedencia'>";
+				echo "<option value='".$_SESSION['intIdEmpresa']."'>".$_SESSION['empresa']."</option>";}
 			else{
-			echo "<select id='procedencia' name='procedencia'>";
-			while($registro=mysql_fetch_array($datos)) 
-			{ echo "<option value='".$registro["intIdEmpresa"]."'>".$registro["Descripcion"]."</option>";}}
-		}
+				$consulta = "SELECT * FROM catempresas";
+				$datos = mysql_query($consulta) or die(mysql_error());	
+				
+				if (mysql_num_rows($datos)==0)
+					echo "sin datos";
+				
+				echo "<select id='procedencia' name='procedencia'>";
+				while($registro=mysql_fetch_array($datos)) 
+				{
+					echo "<option value='".$registro["intIdEmpresa"]."'>".$registro["Descripcion"]."</option>";}}
+				}
 		echo "</select>";
 		//-- Combo Empresas
 		?></td>
@@ -229,7 +287,10 @@ function requeridos(e, f) {
 		</tr>
 		<tr>
 			<td valign="middle" class="fecha_articulointerior"  align="center">&nbsp;</td>
-			<td class="texto_general"><input name="userfile" type="file" /></td>
+			<td class="texto_general">
+				<input name="userfile1" type="file" />
+				<input name="userfile2" type="file" />
+				<input name="userfile3" type="file" /></td>
 			<td  align="right" class="fecha_articulointerior">&nbsp;</td>
 			<td class="texto_general">&nbsp;</td>
 		</tr>

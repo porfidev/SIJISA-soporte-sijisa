@@ -79,7 +79,7 @@ $(this).closest('tr').addClass('active');
 
 
 
-<?php if ($_SESSION['intIdTipoUsuario']==1) { ?>
+<?php if ($_SESSION['intIdTipoUsuario']==2) { ?>
 $(this).closest('tr').after('<tr class="active" ><td colspan="6" style="text-align:left;padding:10px">Estatus: <select id="estatus"><option value="1">Asignado</option><option value="2">En curso</option><option value="3">Cancelado</option><option value="4">Pendiente</option><option value="5">Resuelto</option></select><br><br><textarea id="comments" cols="63" rows="3" value="Comentarios..."></textarea><br><br><input type="button" value="Cancelar" id="cancelar" /><input type="button" value="Guardar" id="guardar_" /></td></tr>');
 
 
@@ -88,7 +88,7 @@ $(this).closest('tr').after('<tr class="active" ><td colspan="6" style="text-ali
 
 
 
-$(this).closest('tr').after('<tr class="active" ><td colspan="6" style="text-align:left;padding:10px">Estatus: <select id="estatus"><option value="5">Resuelto</option></select><br><br><textarea id="comments" cols="63" rows="3" value="Comentarios..."></textarea><br><br><input type="button" value="Cancelar" id="cancelar" /><input type="button" value="Guardar" id="guardar_" /></td></tr>');
+$(this).closest('tr').after('<tr class="active" ><td colspan="6" style="text-align:left;padding:10px">Cambiar estado a: <select id="estatus"><option value="5">Resuelto</option></select><br><br><textarea id="comments" cols="63" rows="3" value="Comentarios..."></textarea><br><br><input type="button" value="Cancelar" id="cancelar" /><input type="button" value="Guardar" id="guardar_" /></td></tr>');
 
 
 <?php } ?>
@@ -206,11 +206,12 @@ window.open(url, 'popup', 'width='+ancho+', height='+alto+', resizable=no, menub
 
 $consulta = "SELECT t.*, u.username FROM tickets t inner join usuarios u on t.intIdUsuario = u.intIdUsuario ";
 
-if ($_SESSION['intIdTipoUsuario'] != 1){
+if ($_SESSION['intIdTipoUsuario'] ==3){
 	$consulta .= "where t.intIdusuario = '".$_SESSION['intIdUsuario']."' and t.intIdEstatus = '".$estatus."'";
 }
 else {
-	$consulta .= "where t.intIdEmpresa = '".$_SESSION['intIdEmpresa']."' and t.intIdEstatus = '".$estatus."'";
+	//$consulta .= "where t.intIdEmpresa = '".$_SESSION['intIdEmpresa']."' and t.intIdEstatus = '".$estatus."'";
+	$consulta .= "where t.intIdEstatus = '".$estatus."'";
 }
 
 $datos=mysql_query($consulta);
@@ -254,17 +255,33 @@ while($registro=mysql_fetch_array($datos))
 		<!-- Acciones -->
 		<td><?php if ($archivo1 != "" || $archivo1 != null) { ?>
 			<a href="<?php echo "upload/".$archivo1; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+			<?php }
+			
+			if ($archivo2 != "" || $archivo2 != null) { ?>
+			<a href="<?php echo "upload/".$archivo2; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+			<?php }
+			
+			if ($archivo3 != "" || $archivo3 != null) { ?>
+			<a href="<?php echo "upload/".$archivo3; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
 			<?php } 
+			
+			//var_dump($_SESSION['intIdTipoUsuario']);
+
 
 		if ($_SESSION['intIdTipoUsuario'] == 1){
 			if ( $admin == 1){
 				echo "<a><img src='images/consulta.gif' name='modificar_". $volante ."' alt='' width='16' height='16' /></a>";
-		}}
+			}
+		}
+		
+		if ($_SESSION['intIdTipoUsuario'] != 1){
+				echo "<a><img src='images/consulta.gif' name='modificar_". $volante ."' alt='' width='16' height='16' /></a>";
+		}
 
 		?></td>
 	</tr>
 	<?php $contador++;} 
-		if ($_SESSION['intIdTipoUsuario'] == 1)
+		if ($_SESSION['intIdTipoUsuario'] != 3)
 		{?>
 	<tr>
 	<!-- En revision posiblemente se descarte -->
