@@ -79,7 +79,7 @@ $(this).closest('tr').addClass('active');
 
 
 
-<?php if ($_SESSION['intIdTipoUsuario']==2) { ?>
+<?php if ($_SESSION['intIdTipoUsuario'] != 3) { ?>
 $(this).closest('tr').after('<tr class="active" ><td colspan="6" style="text-align:left;padding:10px">Estatus: <select id="estatus"><option value="1">Asignado</option><option value="2">En curso</option><option value="3">Cancelado</option><option value="4">Pendiente</option><option value="5">Resuelto</option></select><br><br><textarea id="comments" cols="63" rows="3" value="Comentarios..."></textarea><br><br><input type="button" value="Cancelar" id="cancelar" /><input type="button" value="Guardar" id="guardar_" /></td></tr>');
 
 
@@ -220,7 +220,7 @@ if (mysql_num_rows($datos)==0){
 	echo "No hay tickets en el estatus actual.";
 }
 else{ ?>
-<table width="545px" id="<?php echo $idtabla; ?>">
+<table width="545px" id="<?php //Variables sin definir echo $idtabla; ?>">
 	<tr>
 		<th>ID_Ticket</th>
 		<th>Usuario creador</th>

@@ -110,7 +110,7 @@ var tipo_usuario = $("#tipo_usuario").val();
 	      <td  align="center" valign="middle" class="fecha_articulointerior">&nbsp;</td>
 	      <td class="texto_general">Empresa</td>
 	      <td  align="left" class="fecha_articulointerior"><label for="empresa"></label>
-	        <input onkeydown="return false;" type="text" name="empresa" id="empresa" value="<?php echo $_SESSION['empresa']; ?>" /></td>
+	        <input type="text" name="empresa" id="empresa" value="<?php echo $_SESSION['empresa']; ?>" /></td>
 	      <td class="texto_general">&nbsp;</td>
         </tr>
 	    <tr>

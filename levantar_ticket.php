@@ -11,11 +11,25 @@ include("class.smtp.php");
 
 $_SESSION['id_pagina'] = 2;
 
+
+function convertir_especiales_html($str){
+   if (!isset($GLOBALS["carateres_latinos"])){
+      $todas = get_html_translation_table(HTML_ENTITIES, ENT_NOQUOTES);
+      $etiquetas = get_html_translation_table(HTML_SPECIALCHARS, ENT_NOQUOTES);
+      $GLOBALS["carateres_latinos"] = array_diff($todas, $etiquetas);
+   }
+   $str = strtr($str, $GLOBALS["carateres_latinos"]);
+   return $str;
+} 
+
 //Verifica que no sea un administrador
 if ($_SESSION['intIdTipoUsuario'] != 1) {
 	
 	//verifica si se enviaron variable mediante $_POST
 	if ($_POST != null){
+		
+		$problema = convertir_especiales_html($_POST['problema']);
+		$observaciones = convertir_especiales_html($_POST['observaciones']);
 		
 		/*
 		$archivo = date("Ymd") . "_" . $_FILES["userfile"]["name"];
@@ -61,7 +75,8 @@ if ($_SESSION['intIdTipoUsuario'] != 1) {
 		
 		// Directorio al que se suben los archivos
 		$uploads_dir = "/upload";
-		
+
+
 $mivar = "call save_ticket('".
 		$_POST['tipoticket'] . "','" .
 		$_POST['fecha_alta'] . "','" .
@@ -70,8 +85,8 @@ $mivar = "call save_ticket('".
 		$_POST['prioridad'] . "','" .
 		$_SESSION['intIdUsuario'] . "','" .
 		$_POST['destinatario'] . "','" .
-		$_POST['problema'] . "','" .
-		$_POST['observaciones'] . "','" .
+		$problema . "','" .
+		$observaciones . "','" .
 		$archivo1 . "','" .
 		$archivo2 . "','" .
 		$archivo3 . "',1);";
@@ -154,7 +169,7 @@ function requeridos(e, f) {
 
     if (faltantes == 1) {
         alert('Los campos marcados en rojo son obligatorios');
-        //return false;
+        return false;
     }
     else {
         return true;

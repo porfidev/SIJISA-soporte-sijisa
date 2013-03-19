@@ -1,6 +1,6 @@
 <?php
 //iniciamos session
-session_start();
+//NO NECESARIA se define en cada página session_start();
 
 //se incluyen datos de conexión
 include('conexion.php');
@@ -48,7 +48,9 @@ include('conexion.php');
 			<?php if($_SESSION['intIdTipoUsuario'] == 1) { ?><li><a href="search.php">Buscar ticket</a></li><?php } ?>
 			<?php if($_SESSION['intIdTipoUsuario'] != 1) { ?><li><a href="levantar_ticket.php">Crear ticket</a></li><?php } ?>
 			<li><a href="reportes_ticket.php">Reporte</a></li>
-			<?php if($_SESSION['intIdTipoUsuario'] == 1) { ?><li><a href="registrarse.php">Crear usuario</a></li><?php } ?>
+			<li><a href="lista_ticket.php">Lista de tickets</a></li>
+			<?php if($_SESSION['intIdTipoUsuario'] == 1) { ?><li><a href="crear_usuario.php">Crear usuario</a></li><?php } ?>
+			<?php if($_SESSION['intIdTipoUsuario'] == 1) { ?><li><a href="crear_empresa.php">Crear empresa</a></li><?php } ?>
 			<li><a href="cerrar.php">Cerrar sesión</a></li>
 		</ul>
 		<?php } ?>
@@ -83,7 +85,8 @@ include('conexion.php');
 	}
 ?>
 
-	<h3><?php echo $_SESSION['nombre']; ?><br />
+	<h3><?php if(isset($_SESSION))
+				echo $_SESSION['nombre']; ?><br />
 	  <span><?php echo $_SESSION['empresa']; ?></span></h3>
 </div>
 </div>
@@ -115,7 +118,7 @@ include('conexion.php');
    <ul class="templateworld">
   	<li>Design By: </li>
 	<li> Akumen</li>
-	<li>Version 0.1 Rev 3</li>
+	<li>Version 0.2</li>
   </ul>
   </div>
 </div>
