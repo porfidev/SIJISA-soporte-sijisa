@@ -206,7 +206,7 @@ function requeridos(e, f) {
 				<?php
 		//-- Combo Empresas
 		$id_empresa = $_SESSION['intIdEmpresa'];
-		/*$consulta = "SELECT * FROM catEmpresas WHERE IntIdEmpresa = '$id_empresa'";
+		/*$consulta = "SELECT * FROM catempresas WHERE IntIdEmpresa = '$id_empresa'";
 		$datos = mysql_query($consulta) or die(mysql_error());	*/	
 		
 	if (!mysql_num_rows($datos)==0){
@@ -215,7 +215,7 @@ function requeridos(e, f) {
 		else {
 			//Tipo 2 = Operador
 			if ($_SESSION["intIdTipoUsuario"] != 2) {
-				$consulta = "SELECT * FROM catEmpresas WHERE IntIdEmpresa = '$id_empresa'";
+				$consulta = "SELECT * FROM catempresas WHERE IntIdEmpresa = '$id_empresa'";
 				$datos = mysql_query($consulta) or die(mysql_error());
 				
 				if (mysql_num_rows($datos)==0)

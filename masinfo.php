@@ -37,7 +37,7 @@ while($registro=mysql_fetch_array($datos))
 
 	echo "<hr>";
 
-$consulta="select t.*, u.username, e.Descripcion from transiciones t inner join usuarios u on t.intIdusuario = u.intIdUsuario inner join catEstatus e on t.intIdEstatus = e.intIdEstatus where t.intIdTicket = '". $volante ."'";
+$consulta="select t.*, u.username, e.Descripcion from transiciones t inner join usuarios u on t.intIdusuario = u.intIdUsuario inner join catestatus e on t.intIdEstatus = e.intIdEstatus where t.intIdTicket = '". $volante ."'";
 $datos=mysql_query($consulta);
 
 if (mysql_num_rows($datos)==0) { 

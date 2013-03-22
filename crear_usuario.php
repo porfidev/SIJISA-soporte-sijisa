@@ -6,7 +6,7 @@ session_start();
 include('conexion.php');
 
 //Consulta para obtener los nombres de las empresas
-$consulta = "SELECT * FROM catEmpresas";
+$consulta = "SELECT * FROM catempresas";
 $resultado = mysql_query($consulta);
 ?>
 <!doctype html>

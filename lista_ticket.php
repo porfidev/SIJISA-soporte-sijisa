@@ -1,34 +1,21 @@
 <?php
-//iniciamos session
+/*
+Modificado por Porfirio Chávez
+Desarrollado por Akumen.com.mx
+*/
+
+//Iniciamos trabajo con sesiones
 session_start();
 
-if ($_SESSION['usuario']==null){
-	$_SESSION['URL']=$_SERVER['REQUEST_URI'];
-	header('Location: index.php');
-	exit;
-}
+//Incluimos las clases
+require_once("clases/maestra.php");
 
-//datos de conexion a MySQL
-include('conexion.php');
-//echo $_SERVER['REQUEST_URI'];
-
-//QUERY para consultar los Tiickets
-$consulta = "SELECT t.*, u.username, s.descripcion
-			FROM tickets t 
-			INNER JOIN usuarios u on t.intIdUsuario = u.intIdUsuario
-			INNER JOIN catestatus s ON t.intIdEstatus = s.intIdEstatus ";
-
-if ($_SESSION['intIdTipoUsuario'] == 3){
-	$consulta .= "where t.intIdEmpresa = ".$_SESSION['intIdEmpresa']." ";
-	//$consulta .= "where t.intIdusuario = '".$_SESSION['intIdUsuario']."'";
-}
-
-$consulta.= "ORDER BY s.intIdEstatus, t.fecha_alta ";
-
-$datos = mysql_query($consulta);
-
-//echo $consulta;
-
+//redirección si desean ingresar sin haberse logueado
+if ($_SESSION['usuario'] == null){
+		$_SESSION['URL'] = $_SERVER['REQUEST_URI'];
+		header('Location: index.php');
+		exit;
+	}
 ?>
 <!doctype html>
 <html>
@@ -39,7 +26,7 @@ $datos = mysql_query($consulta);
 <script src="js/jquery.validate.min.js"></script>
 <script>
 function actualizar(boton,id){
-//alert("ya estas en la funcion actualizar");
+//alert("ya estas en la funcio actualizar");
 var estatus = 6;
 var identificacion = id;
 var comments = "Cerrado por usuario";
@@ -61,51 +48,75 @@ $.ajax({
 				}
         });
 }
+
+$(document).ready(function(){
+	$('#tabla_tickets tr:even').next().addClass('par');
+});
 </script>
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
+<!-- HEADER AREA proximo encapsulamiento -->
+<div id="menu">
+<ul>
+	<li><a href="../">Akumen</a></li>
+	<li><a href="inicio.php">Inicio</a></li>
+	<li><a href="lista_ticket.php">Tickets</a></li>
+	<?php if($_SESSION["intIdTipoUsuario"] != 3){?>
+	<li><a href="crear_usuario.php">Usuario</a></li>
+	<li><a href="crear_empresa.php">Empresa</a></li>
+	<?php } ?>
+	<li><a href="cerrar.php">Cerrar sesión</a></li>
+</ul>
+</div>
+<!-- FIN DE HEADER -->
+<div class="divisor"></div>
+<div id="contenido">
+<div id="inicio">
 <?php
-if (mysql_num_rows($datos)==0){ 
+
+//nueva instancia de la clase para tickets
+$datos = new consultarTickets;
+$mytickets = $datos->getTicketsDescripcion($_SESSION["intIdEmpresa"], $_SESSION["intIdTipoUsuario"]);
+
+if (sizeof($mytickets) == 0){ 
 	echo "No hay tickets";
 }
-else{ ?>
-<table width="100%" id="<?php //Variables sin definir echo $idtabla; ?>">
-	<tr>
-		<th>ID_Ticket</th>
-		<th>Usuario creador</th>
-		<th>Asignado a</th>
-		<th>Estado</th>
-		<th></th>
-		<th>Fecha de alta</th>
-		<th>Archivos Adjuntos</th>
-	</tr>
-	<?php
-
-$contador = 1;
-
-while($registro=mysql_fetch_array($datos)) 
-{
-	$id_unico = $registro["intIdUnico"];
-	$volante = $registro["intIdTicket"];
-	$fecha_alta = $registro["fecha_alta"];
-	$fecha_problema = $registro["fecha_problema"];
-	$remitente = $registro["username"];
-	$destinatario = $registro["destinatario"];
-	$problema = $registro["problema"];
-	$observaciones = $registro["observaciones"];
-	$archivo1 = $registro["archivo1"];
-	$archivo2 = $registro["archivo2"];
-	$archivo3 = $registro["archivo3"];
-	$estado = $registro["descripcion"];
-	$idstatus = $registro["intIdEstatus"];
-	?>
-	<tr style="text-align:center">
+else{ //INICIA ELSE PRINCIPAL
+?>
+<div class="info">Haga clic en <em><strong>"ID Ticket"</strong></em> para ver el seguimiento en detalle</div>
+<div><select disabled><option> - filtrar por tipo - </option></select><input type="button" value="crear reporte" disabled><input type="text" value="buscar" style="float: right" disabled></div>
+<div class="divisor"></div>
+	<table width="100%" id="tabla_tickets">
+		<tr>
+			<th width="150px">ID Ticket</th>
+			<th>Creado por</th>
+			<th>Asignado a</th>
+			<th>Estado</th>
+			<!--<th></th>-->
+			<th>Fecha de alta</th>
+			<th>Archivos Adjuntos</th>
+		</tr>
+		<?php
+		foreach($mytickets as $indice => $contenido){
+			$id_unico = $contenido["intIdUnico"];
+			$volante = $contenido["intIdTicket"];
+			$fecha_alta = $contenido["fecha_alta"];
+			$fecha_problema = $contenido["fecha_problema"];
+			$remitente = $contenido["nombre"];
+			$destinatario = $contenido["destinatario"];
+			$problema = $contenido["problema"];
+			$observaciones = $contenido["observaciones"];
+			$archivo1 = $contenido["archivo1"];
+			$archivo2 = $contenido["archivo2"];
+			$archivo3 = $contenido["archivo3"];
+			$estado = $contenido["Descripcion"];
+			$idstatus = $contenido["intIdEstatus"];
+		?>
+		<tr style="text-align:center">
 		<!-- ticket -->
-		<!-- Quitar Pop Up para trabajar con sistemas portatiles -->
-		<td><a href="masinfo.php?t=<?php echo $id_unico; ?>"><?php echo $id_unico; ?></a>
+		<td><a href="seguimiento_ticket.php?t=<?php echo $id_unico ?>"><?php echo $id_unico; ?></a>
 		<input type="hidden" id="idTicket" value="<?php echo $volante; ?>">
 		</td>
 		<!-- asignado -->
@@ -114,7 +125,7 @@ while($registro=mysql_fetch_array($datos))
 		<td><?php echo $destinatario; ?></td>
 		<!-- estado -->
 		<td><?php echo $estado;?></td>
-		<!-- seguimiento -->
+		<!-- seguimiento
 		<td><?php echo "<a href=\"seguimiento_ticket.php?t=$id_unico\">Seguimiento</a>";
 			/*if($idstatus == 4 and $_SESSION['intIdTipoUsuario'] != 3){
 				echo "<br><input type=\"button\" value=\"Cerrar\" id=\"cerrar_ticket\" onclick=\"actualizar($(this),$volante)\">";
@@ -127,7 +138,7 @@ while($registro=mysql_fetch_array($datos))
 			}*/ ?>
 		</td>
 		<!-- Fecha de Alta -->
-		<td><?php echo $fecha_alta; ?></td>
+		<td><?php echo substr($fecha_alta, 0, -9); //Devuelve fecha sin hora ?></td>
 		<!-- Acciones -->
 		<td><?php if ($archivo1 != "" || $archivo1 != null) { ?>
 			<a href="<?php echo "upload/".$archivo1; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
@@ -139,26 +150,22 @@ while($registro=mysql_fetch_array($datos))
 			
 			if ($archivo3 != "" || $archivo3 != null) { ?>
 			<a href="<?php echo "upload/".$archivo3; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
-			<?php } 
-			
-			//var_dump($_SESSION['intIdTipoUsuario']);
-
-
-		
-
-		?></td>
-	</tr>
-	<?php $contador++;} 
-		if ($_SESSION['intIdTipoUsuario'] != 3)
-		{?>
-	<?php } ?>
+			<?php } ?>
+		</td>
+		</tr>
+		<?php	
+		} //FIN DEL FOREACH
+		?> 
 </table>
 <?php 
-
-} echo "<br>"; 
+} //FIN ELSE PRINCIAP
+echo "<br>"; 
 
 
 ?>
 <div><a href="inicio.php">Regresar a las opciones iniciales.</a></div>
+</div>
+</div>
+
 </body>
 </html>

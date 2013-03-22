@@ -88,7 +88,7 @@ IN `estatus` int(11))
 BEGIN
 
 set @tipo = LEFT(tipoticket, 1);
-set @nom = UCASE(LEFT((Select Descripcion from catEmpresas where intIdEmpresa = empresa),3));
+set @nom = UCASE(LEFT((Select Descripcion from catempresas where intIdEmpresa = empresa),3));
 set @folio = LPAD((select count(*)+1 from tickets where intIdEmpresa = CONVERT(empresa using utf8) collate utf8_spanish_ci), 8, '0');
 
 select @id_unico:= CONCAT( @tipo, '-', @nom, '-', @folio);

@@ -6,7 +6,7 @@ session_start();
 include('conexion.php');
 
 //Consulta para obtener los nombres de las empresas
-$consulta = "SELECT * FROM catEmpresas";
+$consulta = "SELECT * FROM catempresas";
 
 if(isset($_POST["actualizar"]) and $_POST["actualizar"] == "Actualizar datos"){
 	$actualizar = $consulta." WHERE intIdEmpresa = '".$_POST["empresa"]."'";
@@ -33,7 +33,7 @@ $(function(){
 
 //METODO PARA USAR SOLO CARACTERES ALFANUMERICOS
 $.validator.addMethod("alfanumerico", function(value, element) {
-   return this.optional(element) || /^[a-zA-Z0-9áéíóú ]+$/.test(value);
+   return this.optional(element) || /^[a-zA-Z0-9áéíóú. ]+$/.test(value);
 }, "Requiere caracteres alfanumericos");
 
 //METODO PARA NO DEJAR ESPACIOS EN EL USUARIO
@@ -52,7 +52,7 @@ function validar(){
 		},
 		// Mensajes de error
 		messages: {
-			nombre: "Se requiere un nombre.",
+			nombre: "Se requiere un nombre alfanumerico.",
 			siglas: "solo 3 caracteres",
 			email : "Se requiere un email valido.",
 		},
