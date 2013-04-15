@@ -1,0 +1,81 @@
+/* //// FORMULARIOS //// */
+/* @elporfirio.com */
+
+#login, #crear_requerimiento {
+	/* POSICION */
+	margin:0 auto;
+	width:400px;
+	padding:14px;
+}
+
+.formulario h1 {
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:8px;
+}
+
+.formulario p{
+	font-size:11px;
+	color:#666666;
+	margin-bottom:20px;
+	border-bottom:solid 1px #b7ddf2;
+	padding-bottom:10px;
+}
+
+.formulario label{
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	width:120px;
+	float:left;
+}
+
+.formulario .small{
+	color:#666666;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	text-align:right;
+	width:120px;
+}
+
+.formulario input, .formulario select{
+	float: left;
+	font-size: 12px;
+	padding: 4px 4px;
+	border: solid 1px #aacfe4;
+	width: 200px;
+	margin: 2px 0 20px 10px;
+}
+
+.formulario .boton{
+	clear:both;
+	margin-left: 150px;
+	width:125px;
+	height:31px;
+	background:#666666;
+	text-align:center;
+	line-height:31px;
+	color:#FFFFFF;
+	font-size:11px;
+	font-weight:bold;
+    
+   	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+}
+
+#contador_problema, #contador_observaciones{
+	float: right;
+	font-size: 11px;
+}
+
+#cierre_ticket, #cambio_estado{
+	width: 600px;
+	margin: auto;
+}
+#cierre_ticket textarea, #cambio_estado textarea{
+
+width: 590px;
+height: 150px;
+}

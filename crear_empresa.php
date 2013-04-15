@@ -10,7 +10,7 @@ $consulta = "SELECT * FROM catempresas";
 
 if(isset($_POST["actualizar"]) and $_POST["actualizar"] == "Actualizar datos"){
 	$actualizar = $consulta." WHERE intIdEmpresa = '".$_POST["empresa"]."'";
-	echo $actualizar;
+	//echo $actualizar;
 }
 $resultado = mysql_query($consulta);
 
@@ -95,10 +95,14 @@ function registrarEmpresa(){
 
 </script>
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
+<link href="css/forms.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div id="crear_usuario">
+<?php include("header.php")?>
+<!-- FIN DE HEADER -->
+<div id="contenido">
+<div id="crear_empresa" class="formulario">
 	<h1>Crear empresa</h1>
 	<p>Elija una empresa de lista para editar</p>
 	<form id="seleccionaEmpresa" name="seleccionaEmpresa" method="post" action="">
@@ -111,9 +115,9 @@ function registrarEmpresa(){
 				}
 				?>
 		</select>
-		<div class="clear"></div>
+		<div class="clr"></div>
 		<input type="submit" name="actualizar" id="actualizar" value="Actualizar datos" class="boton">
-		<div class="clear"></div>
+		<div class="clr"></div>
 	</form>
 	<br>
 	<p>o bien, ingrese los datos para registrar una nueva</p>
@@ -140,13 +144,15 @@ function registrarEmpresa(){
 		<input type="text" name="email" id="email" value="<?php if(isset($email))
 		echo $email ?>">
 		<?php if(isset($id)) { echo "<input type=\"hidden\" name=\"idempresa\" id=\"idempresa\" value=\"$id\">"; }?>
-		<div class="clear"></div>
+		<div class="clr"></div>
 		<div id="advertencias"></div>
 		<input type="submit" name="guardar" id="guardar" value="Guardar" class="boton" onClick="validar();">
-		<div class="clear"></div>
+		<div class="clr"></div>
 
 	</form>
-	<div><a href="inicio.php">Regresar a las opciones iniciales.</a></div>
+	</div>
 </div>
+<!-- FOOTER -->
+<?php include("footer.php");?>
 </body>
 </html>

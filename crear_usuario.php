@@ -138,10 +138,14 @@ function registrarUsuario(){
 }
 </script>
 <link href="css/estilos.css" rel="stylesheet" type="text/css">
+<link href="css/forms.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<div id="crear_usuario">
+<?php include("header.php")?>
+<!-- FIN DE HEADER -->
+<div id="contenido">
+	<div id="crear_usuario" class="formulario">
 	<h1>Crear usuario</h1>
 	<p>Ingrese los datos para el nuevo usuario</p>
 	<form id="nuevousuario" name="nuevousuario" method="post" action="registrar_usuario.php">
@@ -177,12 +181,15 @@ function registrarUsuario(){
 			<option value="2">Operador</option>
 			<option value="1">Administrador</option>
 		</select>
-		<div class="clear"></div>
+		<div class="clr"></div>
 		<div id="advertencias"></div>
 		<input type="submit" name="crear" id="crear" value="Crear usuario" class="boton" onClick="validar();">
-		<div class="clear"></div>
+		<div class="clr"></div>
 	</form>
 	<div><a href="inicio.php">Regresar a las opciones iniciales.</a></div>
+	</div>
 </div>
+<!-- FOOTER -->
+<?php include("footer.php");?>
 </body>
 </html>

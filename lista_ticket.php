@@ -8,7 +8,7 @@ Desarrollado por Akumen.com.mx
 session_start();
 
 //Incluimos las clases
-require_once("clases/maestra.php");
+require_once("class/maestra.php");
 
 //redirección si desean ingresar sin haberse logueado
 if ($_SESSION['usuario'] == null){
@@ -57,28 +57,16 @@ $(document).ready(function(){
 </head>
 
 <body>
-<!-- HEADER AREA proximo encapsulamiento -->
-<div id="menu">
-<ul>
-	<li><a href="../">Akumen</a></li>
-	<li><a href="inicio.php">Inicio</a></li>
-	<li><a href="lista_ticket.php">Tickets</a></li>
-	<?php if($_SESSION["intIdTipoUsuario"] != 3){?>
-	<li><a href="crear_usuario.php">Usuario</a></li>
-	<li><a href="crear_empresa.php">Empresa</a></li>
-	<?php } ?>
-	<li><a href="cerrar.php">Cerrar sesión</a></li>
-</ul>
-</div>
+<?php include("header.php")?>
 <!-- FIN DE HEADER -->
-<div class="divisor"></div>
+
 <div id="contenido">
-<div id="inicio">
+	<div id="lista_tickets">
 <?php
 
 //nueva instancia de la clase para tickets
 $datos = new consultarTickets;
-$mytickets = $datos->getTicketsDescripcion($_SESSION["intIdEmpresa"], $_SESSION["intIdTipoUsuario"]);
+$mytickets = $datos->getTicketsDescripcion($_SESSION["intIdEmpresa"], $_SESSION["intIdTipoUsuario"],null);
 
 if (sizeof($mytickets) == 0){ 
 	echo "No hay tickets";
@@ -87,14 +75,14 @@ else{ //INICIA ELSE PRINCIPAL
 ?>
 <div class="info">Haga clic en <em><strong>"ID Ticket"</strong></em> para ver el seguimiento en detalle</div>
 <div><select disabled><option> - filtrar por tipo - </option></select><input type="button" value="crear reporte" disabled><input type="text" value="buscar" style="float: right" disabled></div>
-<div class="divisor"></div>
+<div class="clr"></div>
 	<table width="100%" id="tabla_tickets">
 		<tr>
 			<th width="150px">ID Ticket</th>
 			<th>Creado por</th>
-			<th>Asignado a</th>
+			<!--<th>Asignado a</th>-->
 			<th>Estado</th>
-			<!--<th></th>-->
+			<th>Prioridad</th>
 			<th>Fecha de alta</th>
 			<th>Archivos Adjuntos</th>
 		</tr>
@@ -104,6 +92,7 @@ else{ //INICIA ELSE PRINCIPAL
 			$volante = $contenido["intIdTicket"];
 			$fecha_alta = $contenido["fecha_alta"];
 			$fecha_problema = $contenido["fecha_problema"];
+			$prioridad = $contenido["prioridad"];
 			$remitente = $contenido["nombre"];
 			$destinatario = $contenido["destinatario"];
 			$problema = $contenido["problema"];
@@ -116,17 +105,18 @@ else{ //INICIA ELSE PRINCIPAL
 		?>
 		<tr style="text-align:center">
 		<!-- ticket -->
-		<td><a href="seguimiento_ticket.php?t=<?php echo $id_unico ?>"><?php echo $id_unico; ?></a>
-		<input type="hidden" id="idTicket" value="<?php echo $volante; ?>">
-		</td>
+		<td><a href="seguimiento_ticket.php?t=<?php echo base64_encode(base64_encode($id_unico)) ?>"><?php echo $id_unico; ?></a>
+		<input type="hidden" id="idTicket" value="<?php echo $volante; ?>"></td>
 		<!-- asignado -->
 		<td><?php echo $remitente; ?></td>
 		<!-- creador -->
-		<td><?php echo $destinatario; ?></td>
+		<!--<td><?php //echo $destinatario; ?></td> -->
 		<!-- estado -->
 		<td><?php echo $estado;?></td>
-		<!-- seguimiento
-		<td><?php echo "<a href=\"seguimiento_ticket.php?t=$id_unico\">Seguimiento</a>";
+		<!-- prioridad -->
+		<td><?php echo $prioridad;?></td>
+		<!-- seguimiento -->
+		<td><?php //echo "<a href=\"seguimiento_ticket.php?t=$id_unico\">Seguimiento</a>";
 			/*if($idstatus == 4 and $_SESSION['intIdTipoUsuario'] != 3){
 				echo "<br><input type=\"button\" value=\"Cerrar\" id=\"cerrar_ticket\" onclick=\"actualizar($(this),$volante)\">";
 			} 
@@ -138,18 +128,18 @@ else{ //INICIA ELSE PRINCIPAL
 			}*/ ?>
 		</td>
 		<!-- Fecha de Alta -->
-		<td><?php echo substr($fecha_alta, 0, -9); //Devuelve fecha sin hora ?></td>
+		<td><?php echo substr($fecha_alta, 0, -3); //Devuelve fecha sin hora ?></td>
 		<!-- Acciones -->
 		<td><?php if ($archivo1 != "" || $archivo1 != null) { ?>
-			<a href="<?php echo "upload/".$archivo1; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+			<a href="<?php echo "upload/".$archivo1; ?>" target="new"> <img src="img/descarga_11.png" alt="" width="16" height="16" /></a>
 			<?php }
 			
 			if ($archivo2 != "" || $archivo2 != null) { ?>
-			<a href="<?php echo "upload/".$archivo2; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+			<a href="<?php echo "upload/".$archivo2; ?>" target="new"> <img src="img/descarga_11.png" alt="" width="16" height="16" /></a>
 			<?php }
 			
 			if ($archivo3 != "" || $archivo3 != null) { ?>
-			<a href="<?php echo "upload/".$archivo3; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+			<a href="<?php echo "upload/".$archivo3; ?>" target="new"> <img src="img/descarga_11.png" alt="" width="16" height="16" /></a>
 			<?php } ?>
 		</td>
 		</tr>

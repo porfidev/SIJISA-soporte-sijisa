@@ -154,7 +154,7 @@ while($registro=mysql_fetch_array($datos))
 	      <td><?php echo $destinatario ?></td>
 	      <td>
 		<?php if ($archivo1<>"") { ?>
-	        <a href="<?php echo $archivo1; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+	        <a href="<?php echo $archivo1; ?>" target="new"> <img src="img/descarga_11.png" alt="" width="16" height="16" /></a>
 	        <?php } 
 
 		if ($_SESSION['intIdTipoUsuario']==1) { if ($admin==1) {

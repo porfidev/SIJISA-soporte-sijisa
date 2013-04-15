@@ -73,7 +73,7 @@ $promedio_respuesta = $registro["promedio_respuesta"];
 
 <table align="center"><tr><td>
 <form action="export.php" method="post" id="FormularioExportacion" align="center">
-<p>Exportar a Excel  <img src="images/excel.gif" class="botonExcel" /></p>
+<p>Exportar a Excel  <img src="img/excel.gif" class="botonExcel" /></p>
 <input type="hidden" id="content" name="content" />
 </form>
 </td></tr></table>

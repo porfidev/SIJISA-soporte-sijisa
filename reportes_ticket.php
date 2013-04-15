@@ -254,15 +254,15 @@ while($registro=mysql_fetch_array($datos))
 		<td><?php echo $destinatario; ?></td>
 		<!-- Acciones -->
 		<td><?php if ($archivo1 != "" || $archivo1 != null) { ?>
-			<a href="<?php echo "upload/".$archivo1; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+			<a href="<?php echo "upload/".$archivo1; ?>" target="new"> <img src="img/descarga_11.png" alt="" width="16" height="16" /></a>
 			<?php }
 			
 			if ($archivo2 != "" || $archivo2 != null) { ?>
-			<a href="<?php echo "upload/".$archivo2; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+			<a href="<?php echo "upload/".$archivo2; ?>" target="new"> <img src="img/descarga_11.png" alt="" width="16" height="16" /></a>
 			<?php }
 			
 			if ($archivo3 != "" || $archivo3 != null) { ?>
-			<a href="<?php echo "upload/".$archivo3; ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+			<a href="<?php echo "upload/".$archivo3; ?>" target="new"> <img src="img/descarga_11.png" alt="" width="16" height="16" /></a>
 			<?php } 
 			
 			//var_dump($_SESSION['intIdTipoUsuario']);

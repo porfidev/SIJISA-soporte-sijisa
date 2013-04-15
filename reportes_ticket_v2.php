@@ -179,7 +179,7 @@ while($registro=mysql_fetch_array($datos))
 
 	      	<td width="65px">
 		<?php if ($archivo1<>"") { ?>
-	        <a href="<?php echo $archivo1 ?>" target="new"> <img src="images/descarga_11.png" alt="" width="16" height="16" /></a>
+	        <a href="<?php echo $archivo1 ?>" target="new"> <img src="img/descarga_11.png" alt="" width="16" height="16" /></a>
 	        <?php } 
 
 		if ($_SESSION['tipo_usuario']=="admin") { if ($admin==1) {

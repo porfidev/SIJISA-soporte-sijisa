@@ -8,7 +8,7 @@ Desarrollado por Akumen.com.mx
 session_start();
 
 //Incluimos las clases
-require_once("clases/maestra.php");
+require_once("class/maestra.php");
 
 //redirección si desean ingresar sin haberse logueado
 if ($_SESSION['usuario'] == null){
@@ -28,21 +28,8 @@ if ($_SESSION['usuario'] == null){
 </head>
 
 <body>
-<!-- HEADER AREA proximo encapsulamiento -->
-<div id="menu">
-<ul>
-	<li><a href="../">Akumen</a></li>
-	<li><a href="inicio.php">Inicio</a></li>
-	<li><a href="lista_ticket.php">Tickets</a></li>
-	<?php if($_SESSION["intIdTipoUsuario"] != 3){?>
-	<li><a href="crear_usuario.php">Usuario</a></li>
-	<li><a href="crear_empresa.php">Empresa</a></li>
-	<?php } ?>
-	<li><a href="cerrar.php">Cerrar sesión</a></li>
-</ul>
-</div>
+<?php include("header.php")?>
 <!-- FIN DE HEADER -->
-<div class="divisor"></div>
 <?php
 $datos = new consultarTickets;
 $my_ticketsasignados = $datos->getTicketsCount($_SESSION["intIdEmpresa"], 1, $_SESSION["intIdTipoUsuario"]);
@@ -63,16 +50,15 @@ $my_ticketsabiertos = sizeof($my_ticketsasignados) + sizeof($my_ticketsencurso) 
 	<div id="inicio">
 		<h1>Bienvenido <?php echo $_SESSION["usuario"] ?>.</h1>
 		<h4><?php echo "- ".$_SESSION["empresa"]." -";?></h4>
+		<div class="clr"></div>
 		<br>
 		<p>Este sistema fue construido con el proposito de atender las solicitudes de nuestros clientes.</p><br>
 		<h2>- Tickets -</h2>
-		<?php if($_SESSION["intIdTipoUsuario"] == 3){?>
 		<div id="crear_ticket" class="ticket_boton crear">nuevo&nbsp;&nbsp;&nbsp;<span class="numero"> <+> </span></div>
-		<?php } ?>
 		<div id="abierto_ticket" class="ticket_boton abiertos">abiertos:&nbsp;&nbsp;&nbsp;&nbsp;<span class="numero"><?php echo $my_ticketsabiertos ?></span></div>
 		<div id="resuelto_ticket" class="ticket_boton resueltos">resueltos:&nbsp;&nbsp;<span class="numero"><?php echo sizeof($my_ticketsresueltos) ?></span></div>
 		<div id="cancelado_ticket" class="ticket_boton cancelados">cancelados:<span class="numero"><?php echo sizeof($my_ticketscancelados) ?></span></div>
-		<div class="divisor"></div>
+		<div class="clr"></div>
 		<br><p style="padding-left: 2em;">Haga clic para ver todos sus tickets</p>
 	</div>
 </div>
@@ -82,11 +68,14 @@ $my_ticketsabiertos = sizeof($my_ticketsasignados) + sizeof($my_ticketsencurso) 
 <script>
 $("div .ticket_boton").click(function () {
 	if($(this).attr("id") == "crear_ticket")
-		location.href="levantar_ticket.php";
+		location.href="crear_ticket.php";
 	else
 		location.href="lista_ticket.php";
 });
 <!-- //////////////////// -->
 </script>
+
+<!-- FOOTER -->
+<?php include("footer.php");?>
 </body>
 </html>

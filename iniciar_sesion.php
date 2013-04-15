@@ -8,7 +8,7 @@ Desarrollado por Akumen.com.mx
 session_start();
 
 //Incluimos las clases
-require_once("clases/maestra.php");
+require_once("class/maestra.php");
 
 // IF PRINCIPAL: Deben enviar datos vía POST
 if ($_POST != null){
@@ -29,7 +29,7 @@ if ($_POST != null){
 			$datos = new consultarUsuarios;
 			
 			//Se envian parametros
-			$myusuario = $datos->getUsuarios($usuario,$password); //Se obtienen datos al esetilo $myusuarip[$i]["nombreCampo"];
+			$myusuario = $datos->getUsuarios($usuario,$password); //Se obtienen datos al estilo $myusuario[$i]["nombreCampo"];
 			
 			//Si el arreglo regresa vacio
 			if(sizeof($myusuario) == 0){

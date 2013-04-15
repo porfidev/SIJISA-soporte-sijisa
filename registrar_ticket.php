@@ -1,10 +1,24 @@
 <?php
+/*
+Modificado por Porfirio Chávez
+Desarrollado por Akumen.com.mx
+*/
+
+//Iniciamos trabajo con sesiones
 session_start();
 
-//if ($_SESSION['usuario']==null){$_SESSION['URL']=$_SERVER['REQUEST_URI']; header('Location: index.php');exit;}
+//Incluimos las clases
+require_once("class/maestra.php");
 
-ob_start();
-include('conexion.php');
+//redirección si desean ingresar sin haberse logueado
+if ($_SESSION['usuario'] == null){
+		$_SESSION['URL'] = $_SERVER['REQUEST_URI'];
+		header('Location: index.php');
+		exit;
+	}
+?>
+
+<?php
 include("class.phpmailer.php");
 include("class.smtp.php");
 ?>
@@ -12,123 +26,39 @@ include("class.smtp.php");
 <html>
 <head>
 <meta charset="utf-8">
-<title>Documento sin título</title>
+<title>Crear ticket :: Soporte Akumen</title>
+<link href="css/estilos.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
-<?php
-//print_r($_POST);
-//print_r($_FILES);
-//verifica si se enviaron variable mediante $_POST
-	if ($_POST != null){
+<?php include("header.php")?>
+<!-- FIN DE HEADER -->
+<div id="contenido">
+	<div id="ticket_registrado">
+		<?php
 		
-		/*
-		$archivo = date("Ymd") . "_" . $_FILES["userfile"]["name"];
-		$ubicacion = $_FILES["userfile"]["tmp_name"];
-		*/
+		//verifica si se enviaron variable mediante $_POST
+		if ($_POST != null){
+		$datos = new consultarTickets;
+		$my_ticket = $datos->setNewTicket($_POST, $_FILES);
 		
-		// Directorio al que se suben los archivos
-		$uploads_dir = "upload";
-		
-		//Se comprueba si se subieron archivos adjuntos
-		if (isset($_FILES["userfile1"]) && $_FILES["userfile1"]["error"] == 0 )
-		{
-			$archivo1 = date("Ymd") . "_" . date("is"). "_".$_FILES["userfile1"]["name"];
-			$ubicacion_archivo1 = $_FILES["userfile1"]["tmp_name"];
-			
-			echo "<br>";
-			
-			var_dump($archivo1);
-			var_dump($ubicacion_archivo1);
-			
-			echo "$uploads_dir/$archivo1";
-			
-			move_uploaded_file($ubicacion_archivo1, "$uploads_dir/$archivo1");
-			/*echo "<script>alert('Hubo un problema al subir el archivo 1, no se genero el ticket.')</script>"; */
-			//header('Location: levantar_ticket.php');
-			//exit;
+		if(sizeof($my_ticket) > 0){
+				while($registros = mysql_fetch_array($my_ticket)){
+					echo "<h1>Ticket registrado</h1>
+							<div class=\"info\">
+							codigo: <strong>
+							<a href=\"seguimiento_ticket.php?t=".$registros[1]."\">"
+							.$registros[1].
+							"</a></strong>
+							<br><br><p>Haga clic para ver detalles</p>
+							</div>"; //Valor de ticket UNICO el $registros[0] lo tiene un select que comprueba las siglas
+				}
+			}
 		}
-		if (isset($_FILES["userfile2"]) && $_FILES["userfile2"]["error"] == 0 )
-		{
-			$archivo2 = date("Ymd") . "_" . date("is"). "_".$_FILES["userfile2"]["name"];
-			$ubicacion_archivo2 = $_FILES["userfile2"]["tmp_name"];
-			
-			echo "<br>";
-			
-			var_dump($archivo2);
-			var_dump($ubicacion_archivo2);
-			
-			echo "$uploads_dir/$archivo2";
-			
-			move_uploaded_file($ubicacion_archivo2, "$uploads_dir/$archivo2");
-			/*echo "<script>alert('Hubo un problema al subir el archivo 1, no se genero el ticket.')</script>"; */
-			//header('Location: levantar_ticket.php');
-			//exit;
-		}
-		if (isset($_FILES["userfile3"]) && $_FILES["userfile3"]["error"] == 0 )
-		{
-			$archivo3 = date("Ymd") . "_" . date("is"). "_".$_FILES["userfile3"]["name"];
-			$ubicacion_archivo3 = $_FILES["userfile3"]["tmp_name"];
-			
-			echo "<br>";
-			
-			var_dump($archivo3);
-			var_dump($ubicacion_archivo3);
-			
-			echo "$uploads_dir/$archivo3";
-			
-			move_uploaded_file($ubicacion_archivo3, "$uploads_dir/$archivo3");
-			/*echo "<script>alert('Hubo un problema al subir el archivo 1, no se genero el ticket.')</script>"; */
-			//header('Location: levantar_ticket.php');
-			//exit;
-		}
-		
-		
-
-$mivar = "call save_ticket('".
-		$_POST['tipoticket'] . "','" .
-		$_POST['fecha_alta'] . "','" .
-		$_POST['fecha_problema'] . "','" .
-		$_POST['procedencia'] . "','" .
-		$_POST['prioridad'] . "','" .
-		$_SESSION['intIdUsuario'] . "','" .
-		$_POST['destinatario'] . "','" .
-		$_POST['problema'] . "','" .
-		$_POST['observaciones'] . "','" .
-		$archivo1 . "','" .
-		$archivo2 . "','" .
-		$archivo3 . "',1);";
-		
-$datos = mysql_query($mivar) or die(mysql_error());
-
-var_dump($mivar);
-var_dump($datos);
-print_r($datos);
-
-$fila = mysql_fetch_array($datos);
-
-var_dump($fila);
-$mail = new PHPMailer();
-		$descripcion="<br> <br> Se ha dado de alta  para el día ".$_POST['fecha_alta']." el siguiente usuario: <br> <br>".
-		"<strong> Nombre: </strong>".$_SESSION['nombre']." <br>".
-		"<strong> Empresa: </strong>".$_SESSION['empresa']." <br>".
-		"<strong> Prioridad: </strong>".$_POST['prioridad']." <br> ".
-		"<strong> Problema: </strong>".$_POST['problema']."  <br> ".
-		"<strong> Observaciones: </strong>".$_POST['observaciones']."<br>".
-		"<strong> Enviado a : </strong>".$_POST['destinatario'];
-		$mail->IsSMTP();
-		$mail->FromName = "Alta de Requerimiento";
-		$mail->Subject =  "Soporte";
-		$mail->AltBody ="$descripcion";
-		$mail->MsgHTML("$descripcion");
-		$mail->AddAddress($_SESSION["email"]);
-		$mail->IsHTML(true);
-		//$mail->Send();
-		header('Location: gracias.php?t='.Base64_encode($fila[0]));
-		//exit;
-
-	}
-?>
+		?>
+	</div>
+</div>
+<!-- FOOTER -->
+<?php include("footer.php");?>
 </body>
 </html>
