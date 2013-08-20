@@ -116,7 +116,7 @@ else{ //INICIA ELSE PRINCIPAL
 		<!-- prioridad -->
 		<td><?php echo $prioridad;?></td>
 		<!-- seguimiento -->
-		<td><?php //echo "<a href=\"seguimiento_ticket.php?t=$id_unico\">Seguimiento</a>";
+		<!--<td><?php //echo "<a href=\"seguimiento_ticket.php?t=$id_unico\">Seguimiento</a>";
 			/*if($idstatus == 4 and $_SESSION['intIdTipoUsuario'] != 3){
 				echo "<br><input type=\"button\" value=\"Cerrar\" id=\"cerrar_ticket\" onclick=\"actualizar($(this),$volante)\">";
 			} 
@@ -126,7 +126,7 @@ else{ //INICIA ELSE PRINCIPAL
 			else{
 				echo "<br><a href=\"seguimiento_ticket.php?t=$id_unico\">Seguimiento</a>";
 			}*/ ?>
-		</td>
+		</td>-->
 		<!-- Fecha de Alta -->
 		<td><?php echo substr($fecha_alta, 0, -3); //Devuelve fecha sin hora ?></td>
 		<!-- Acciones -->

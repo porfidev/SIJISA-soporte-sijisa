@@ -26,17 +26,20 @@ if(sizeof($mytickets) > 0){
 		<tr>
 			<td>".$contenido["intIdUnico"]."</td>
 			<td>".$contenido["procedencia"]."</td>
+			<td>".$contenido["prioridad"]."</td>
+			<td>".$contenido["problema"]."</td>
 			<td>".$contenido["fecha_recepcion"]."</td>
 			<td>".$contenido["fecha_asignacion"]."</td>
 			<td>".$contenido["fecha_termino"]."</td>
 			<td>".$contenido["tiempo_atencion"]."</td>
 			<td>".$contenido["tiempo_respuesta"]."</td>
-			<td>".$contenido["prioridad"]."</td>
-			<td>".$contenido["problema"]."</td>
 		</tr>";
 		}
 }
-print_r($contenido["tiempo_atencion"]);
+else {
+	echo "No hay tickets registrados";
+	}
+//print_r($contenido["tiempo_atencion"]);
 unset($mytickets);
 unset($datos);
 

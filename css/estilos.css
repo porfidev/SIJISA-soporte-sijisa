@@ -17,7 +17,7 @@ html, body, p, h1, h4, form, button{
 /* ///////////////// HEADER //////////////// */
 
 #header{
-	text-align: center;
+	/*text-align: center;*/
 	width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -26,7 +26,7 @@ html, body, p, h1, h4, form, button{
 
 
 #logo{
-	background-image: url(../img/logo_akumen.png);
+	/*background-image: url(../img/logo_akumen.png)*/;
 	background-position: left;
 	background-repeat: no-repeat;
 	width: 600px;
@@ -256,7 +256,7 @@ html, body, p, h1, h4, form, button{
 
 
 /* //////// INFO BOX /////////////*/
-
+/*
 .info, .success, .warning, .error, .validation {
     border: 1px solid;
     margin: 10px 0px;
@@ -291,7 +291,7 @@ html, body, p, h1, h4, form, button{
     background-color: #FFBABA;
     background-image: url('error.png');
 }
-
+*/
 /* ///////////////////////////// */
 
 .par{

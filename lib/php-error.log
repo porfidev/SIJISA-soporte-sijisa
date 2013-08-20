@@ -1,0 +1,247 @@
+[15-Jul-2013 15:58:30 UTC] PHP Fatal error:  Class 'consultarUsuarios' not found in C:\wamp\www\soporte_akumen\lib\buscarClientes.php on line 16
+[15-Jul-2013 15:58:30 UTC] PHP Stack trace:
+[15-Jul-2013 15:58:30 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarClientes.php:0
+[15-Jul-2013 21:35:55 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 196
+[15-Jul-2013 21:35:55 UTC] PHP Stack trace:
+[15-Jul-2013 21:35:55 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:0
+[15-Jul-2013 21:35:55 UTC] PHP   2. Ticket->registrarTicket() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:25
+[15-Jul-2013 21:37:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 239
+[15-Jul-2013 21:37:13 UTC] PHP Stack trace:
+[15-Jul-2013 21:37:13 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:0
+[15-Jul-2013 21:37:13 UTC] PHP   2. Ticket->registrarTicket() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:25
+[15-Jul-2013 21:37:13 UTC] PHP   3. Ticket->moverArchivos() C:\wamp\www\soporte_akumen\class\class.consultas.php:195
+[15-Jul-2013 21:37:19 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 239
+[15-Jul-2013 21:37:19 UTC] PHP Stack trace:
+[15-Jul-2013 21:37:19 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:0
+[15-Jul-2013 21:37:19 UTC] PHP   2. Ticket->registrarTicket() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:25
+[15-Jul-2013 21:37:19 UTC] PHP   3. Ticket->moverArchivos() C:\wamp\www\soporte_akumen\class\class.consultas.php:195
+[15-Jul-2013 21:38:08 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 239
+[15-Jul-2013 21:38:08 UTC] PHP Stack trace:
+[15-Jul-2013 21:38:08 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:0
+[15-Jul-2013 21:38:08 UTC] PHP   2. Ticket->registrarTicket() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:25
+[15-Jul-2013 21:38:08 UTC] PHP   3. Ticket->moverArchivos() C:\wamp\www\soporte_akumen\class\class.consultas.php:195
+[15-Jul-2013 21:43:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 239
+[15-Jul-2013 21:43:16 UTC] PHP Stack trace:
+[15-Jul-2013 21:43:16 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:0
+[15-Jul-2013 21:43:16 UTC] PHP   2. Ticket->moverArchivos() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:28
+[15-Jul-2013 22:03:02 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 253
+[15-Jul-2013 22:03:02 UTC] PHP Stack trace:
+[15-Jul-2013 22:03:02 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:0
+[15-Jul-2013 22:03:02 UTC] PHP   2. Ticket->registrarTicket() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:30
+[15-Jul-2013 22:03:02 UTC] PHP   3. Ticket->moverArchivos() C:\wamp\www\soporte_akumen\class\class.consultas.php:194
+[15-Jul-2013 22:03:02 UTC] PHP   4. trim() C:\wamp\www\soporte_akumen\class\class.consultas.php:253
+[15-Jul-2013 22:03:02 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 253
+[15-Jul-2013 22:03:02 UTC] PHP Stack trace:
+[15-Jul-2013 22:03:02 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:0
+[15-Jul-2013 22:03:02 UTC] PHP   2. Ticket->registrarTicket() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:30
+[15-Jul-2013 22:03:02 UTC] PHP   3. Ticket->moverArchivos() C:\wamp\www\soporte_akumen\class\class.consultas.php:194
+[15-Jul-2013 22:03:02 UTC] PHP   4. trim() C:\wamp\www\soporte_akumen\class\class.consultas.php:253
+[15-Jul-2013 22:13:14 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 253
+[15-Jul-2013 22:13:14 UTC] PHP Stack trace:
+[15-Jul-2013 22:13:14 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:0
+[15-Jul-2013 22:13:14 UTC] PHP   2. Ticket->registrarTicket() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:30
+[15-Jul-2013 22:13:14 UTC] PHP   3. Ticket->moverArchivos() C:\wamp\www\soporte_akumen\class\class.consultas.php:194
+[15-Jul-2013 22:13:14 UTC] PHP   4. trim() C:\wamp\www\soporte_akumen\class\class.consultas.php:253
+[15-Jul-2013 22:13:14 UTC] PHP Warning:  trim() expects parameter 1 to be string, array given in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 253
+[15-Jul-2013 22:13:14 UTC] PHP Stack trace:
+[15-Jul-2013 22:13:14 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:0
+[15-Jul-2013 22:13:14 UTC] PHP   2. Ticket->registrarTicket() C:\wamp\www\soporte_akumen\lib\registrarTicket.php:30
+[15-Jul-2013 22:13:14 UTC] PHP   3. Ticket->moverArchivos() C:\wamp\www\soporte_akumen\class\class.consultas.php:194
+[15-Jul-2013 22:13:14 UTC] PHP   4. trim() C:\wamp\www\soporte_akumen\class\class.consultas.php:253
+[16-Jul-2013 20:54:06 UTC] PHP Warning:  Missing argument 1 for Ticket::obtenerTickets(), called in C:\wamp\www\soporte_akumen\lib\buscarTickets.php on line 16 and defined in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 234
+[16-Jul-2013 20:54:06 UTC] PHP Stack trace:
+[16-Jul-2013 20:54:06 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:0
+[16-Jul-2013 20:54:06 UTC] PHP   2. Ticket->obtenerTickets() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:16
+[16-Jul-2013 20:55:12 UTC] PHP Warning:  Missing argument 1 for Ticket::obtenerTickets(), called in C:\wamp\www\soporte_akumen\lib\buscarTickets.php on line 16 and defined in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 234
+[16-Jul-2013 20:55:12 UTC] PHP Stack trace:
+[16-Jul-2013 20:55:12 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:0
+[16-Jul-2013 20:55:12 UTC] PHP   2. Ticket->obtenerTickets() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:16
+[16-Jul-2013 20:56:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\soporte_akumen\lib\buscarTickets.php on line 19
+[16-Jul-2013 20:56:30 UTC] PHP Stack trace:
+[16-Jul-2013 20:56:30 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:0
+[16-Jul-2013 20:57:34 UTC] PHP Warning:  Missing argument 1 for Ticket::obtenerTickets(), called in C:\wamp\www\soporte_akumen\lib\buscarTickets.php on line 16 and defined in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 234
+[16-Jul-2013 20:57:34 UTC] PHP Stack trace:
+[16-Jul-2013 20:57:34 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:0
+[16-Jul-2013 20:57:34 UTC] PHP   2. Ticket->obtenerTickets() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:16
+[16-Jul-2013 20:58:31 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\wamp\www\soporte_akumen\lib\buscarTickets.php on line 19
+[16-Jul-2013 20:58:31 UTC] PHP Stack trace:
+[16-Jul-2013 20:58:31 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:0
+[24-Jul-2013 20:59:10 UTC] PHP Strict standards:  Only variables should be passed by reference in C:\wamp\www\soporte_akumen\lib\detallesTicket.php on line 27
+[24-Jul-2013 20:59:10 UTC] PHP Stack trace:
+[24-Jul-2013 20:59:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\detallesTicket.php:0
+[24-Jul-2013 20:59:58 UTC] PHP Strict standards:  Only variables should be passed by reference in C:\wamp\www\soporte_akumen\lib\detallesTicket.php on line 27
+[24-Jul-2013 20:59:58 UTC] PHP Stack trace:
+[24-Jul-2013 20:59:58 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\detallesTicket.php:0
+[24-Jul-2013 21:00:03 UTC] PHP Strict standards:  Only variables should be passed by reference in C:\wamp\www\soporte_akumen\lib\detallesTicket.php on line 27
+[24-Jul-2013 21:00:03 UTC] PHP Stack trace:
+[24-Jul-2013 21:00:03 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\detallesTicket.php:0
+[19-Aug-2013 18:00:19 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 22
+[19-Aug-2013 18:00:19 UTC] PHP Stack trace:
+[19-Aug-2013 18:00:19 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:00:22 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 22
+[19-Aug-2013 18:00:22 UTC] PHP Stack trace:
+[19-Aug-2013 18:00:22 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:22:47 UTC] PHP Warning:  Illegal string offset 'intIdUnico' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 31
+[19-Aug-2013 18:22:47 UTC] PHP Stack trace:
+[19-Aug-2013 18:22:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:22:47 UTC] PHP Warning:  Illegal string offset 'procedencia' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 18:22:47 UTC] PHP Stack trace:
+[19-Aug-2013 18:22:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:22:47 UTC] PHP Warning:  Illegal string offset 'prioridad' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 33
+[19-Aug-2013 18:22:47 UTC] PHP Stack trace:
+[19-Aug-2013 18:22:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:22:47 UTC] PHP Warning:  Illegal string offset 'problema' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 34
+[19-Aug-2013 18:22:47 UTC] PHP Stack trace:
+[19-Aug-2013 18:22:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:22:47 UTC] PHP Warning:  Illegal string offset 'fecha_recepcion' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 35
+[19-Aug-2013 18:22:47 UTC] PHP Stack trace:
+[19-Aug-2013 18:22:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:22:47 UTC] PHP Warning:  Illegal string offset 'fecha_asignacion' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 36
+[19-Aug-2013 18:22:47 UTC] PHP Stack trace:
+[19-Aug-2013 18:22:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:22:47 UTC] PHP Warning:  Illegal string offset 'fecha_termino' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 37
+[19-Aug-2013 18:22:47 UTC] PHP Stack trace:
+[19-Aug-2013 18:22:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:22:47 UTC] PHP Warning:  Illegal string offset 'tiempo_atencion' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 38
+[19-Aug-2013 18:22:47 UTC] PHP Stack trace:
+[19-Aug-2013 18:22:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:22:47 UTC] PHP Warning:  Illegal string offset 'tiempo_respuesta' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 39
+[19-Aug-2013 18:22:47 UTC] PHP Stack trace:
+[19-Aug-2013 18:22:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:24:11 UTC] PHP Warning:  Illegal string offset 'intIdUnico' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 31
+[19-Aug-2013 18:24:11 UTC] PHP Stack trace:
+[19-Aug-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:24:11 UTC] PHP Warning:  Illegal string offset 'procedencia' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 18:24:11 UTC] PHP Stack trace:
+[19-Aug-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:24:11 UTC] PHP Warning:  Illegal string offset 'prioridad' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 33
+[19-Aug-2013 18:24:11 UTC] PHP Stack trace:
+[19-Aug-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:24:11 UTC] PHP Warning:  Illegal string offset 'problema' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 34
+[19-Aug-2013 18:24:11 UTC] PHP Stack trace:
+[19-Aug-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:24:11 UTC] PHP Warning:  Illegal string offset 'fecha_recepcion' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 35
+[19-Aug-2013 18:24:11 UTC] PHP Stack trace:
+[19-Aug-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:24:11 UTC] PHP Warning:  Illegal string offset 'fecha_asignacion' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 36
+[19-Aug-2013 18:24:11 UTC] PHP Stack trace:
+[19-Aug-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:24:11 UTC] PHP Warning:  Illegal string offset 'fecha_termino' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 37
+[19-Aug-2013 18:24:11 UTC] PHP Stack trace:
+[19-Aug-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:24:11 UTC] PHP Warning:  Illegal string offset 'tiempo_atencion' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 38
+[19-Aug-2013 18:24:11 UTC] PHP Stack trace:
+[19-Aug-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 18:24:11 UTC] PHP Warning:  Illegal string offset 'tiempo_respuesta' in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 39
+[19-Aug-2013 18:24:11 UTC] PHP Stack trace:
+[19-Aug-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:15 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:15 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:15 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:15 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:38 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:38 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:38 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:38 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:39 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:39 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:39 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:39 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:39 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:39 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:39 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:39 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:40 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:40 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:40 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:40 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:41 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:41 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:41 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:41 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:42 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:42 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:42 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:42 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:42 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:42 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:42 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:42 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:42 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:42 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:42 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:42 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:42 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:42 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:42 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:42 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:42 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:42 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:42 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:42 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:43 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:43 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:43 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:43 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:43 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:43 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:43 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:43 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:43 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:43 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:43 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:43 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:25:43 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 29
+[19-Aug-2013 22:25:43 UTC] PHP Stack trace:
+[19-Aug-2013 22:25:43 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:25:43 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:38
+[19-Aug-2013 22:28:43 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:43 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:43 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:43 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:43 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:43 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:43 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:43 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:44 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:44 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:44 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:44 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:44 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:44 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:44 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:44 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:44 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:44 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:44 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:44 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:44 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:44 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:44 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:44 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:44 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:44 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:44 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:44 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:45 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:45 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:45 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:45 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:45 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:45 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:45 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:45 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:45 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:28:45 UTC] PHP Fatal error:  Call to a member function format() on a non-object in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 32
+[19-Aug-2013 22:28:45 UTC] PHP Stack trace:
+[19-Aug-2013 22:28:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[19-Aug-2013 22:28:45 UTC] PHP   2. dateDiff() C:\wamp\www\soporte_akumen\lib\generarReporte.php:41
+[19-Aug-2013 22:29:59 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'DateTime::__construct(): Failed to parse time string ($start) at position 0 ($): Unexpected character' in C:\wamp\www\soporte_akumen\lib\generarReporte.php:24
+Stack trace:
+#0 C:\wamp\www\soporte_akumen\lib\generarReporte.php(24): DateTime->__construct('$start')
+#1 C:\wamp\www\soporte_akumen\lib\generarReporte.php(38): dateDiff(NULL, '2013-05-14 12:5...')
+#2 {main}
+  thrown in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 24

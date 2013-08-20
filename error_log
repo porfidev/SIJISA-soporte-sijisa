@@ -1,0 +1,680 @@
+[16-Jul-2013 15:46:03] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:46:03] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:46:04] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:46:04] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:46:15] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:46:15] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:46:17] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:46:17] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:46:32] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/crearTicket.php on line 9
+[16-Jul-2013 15:46:32] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/crearTicket.php on line 9
+[16-Jul-2013 15:46:38] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/crearTicket.php on line 9
+[16-Jul-2013 15:46:38] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/crearTicket.php on line 9
+[16-Jul-2013 15:46:57] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home4/akumenco/public_html/soporte_prueba/masinfo.php:3) in /home4/akumenco/public_html/soporte_prueba/masinfo.php on line 6
+[16-Jul-2013 15:46:57] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home4/akumenco/public_html/soporte_prueba/masinfo.php:3) in /home4/akumenco/public_html/soporte_prueba/masinfo.php on line 6
+[16-Jul-2013 15:46:57] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/conexion.php on line 8
+[16-Jul-2013 15:46:58] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cookie - headers already sent by (output started at /home4/akumenco/public_html/soporte_prueba/masinfo.php:3) in /home4/akumenco/public_html/soporte_prueba/masinfo.php on line 6
+[16-Jul-2013 15:46:58] PHP Warning:  session_start() [<a href='function.session-start'>function.session-start</a>]: Cannot send session cache limiter - headers already sent (output started at /home4/akumenco/public_html/soporte_prueba/masinfo.php:3) in /home4/akumenco/public_html/soporte_prueba/masinfo.php on line 6
+[16-Jul-2013 15:46:58] PHP Warning:  mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/conexion.php on line 8
+[16-Jul-2013 15:47:22] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/cfg/config.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/class/class.consultas.php on line 12
+[16-Jul-2013 15:47:34] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/cfg/config.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/class/class.consultas.php on line 12
+[16-Jul-2013 15:47:51] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:47:51] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:47:57] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:47:57] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:48:20] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:48:20] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:48:44] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:48:44] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:08] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:08] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:12] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:12] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:33] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:33] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:34] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:34] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:45] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:45] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:55] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:49:55] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:50:32] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:50:32] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:50:33] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:50:33] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:52:15] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:52:15] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:52:59] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:52:59] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:53:00] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:53:00] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:53:19] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:53:19] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:54:03] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[16-Jul-2013 15:54:03] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[17-Jul-2013 08:14:01] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[17-Jul-2013 08:14:01] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[17-Jul-2013 08:25:25] PHP Warning:  require_once(__DIR__/class/class.consultas.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[17-Jul-2013 08:25:25] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '__DIR__/class/class.consultas.php' (include_path='.:/usr/lib64/php:/usr/lib/php:/usr/share/pear') in /home4/akumenco/public_html/soporte_prueba/index.php on line 14
+[17-Jul-2013 10:49:16 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 10:49:16 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 10:49:16 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 10:49:38 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 10:49:38 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 10:49:38 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 11:43:42 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 11:43:42 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 11:43:42 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 11:43:50 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 11:43:50 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 11:43:50 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[17-Jul-2013 11:43:50 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[17-Jul-2013 11:43:50 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[17-Jul-2013 11:44:43 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 11:44:43 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 11:44:43 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 11:44:45 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 11:44:45 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 11:44:45 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 11:44:48 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 11:44:48 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 11:44:48 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 11:44:48 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 11:44:51 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 11:44:51 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 11:44:51 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 11:51:13 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 11:51:13 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 11:51:13 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 41
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 41
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 43
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 43
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 45
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 45
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 47
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 47
+[17-Jul-2013 11:51:23 America/Denver] PHP Notice:  Undefined index: empresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 56
+[17-Jul-2013 11:51:31 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 11:51:31 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 11:51:31 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/lista_ticket.php on line 69
+[17-Jul-2013 11:51:31 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/lista_ticket.php on line 69
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 41
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 41
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 43
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 43
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 45
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 45
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 47
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 47
+[17-Jul-2013 11:51:54 America/Denver] PHP Notice:  Undefined index: empresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 56
+[17-Jul-2013 11:51:58 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 11:51:58 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 11:51:58 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/lista_ticket.php on line 69
+[17-Jul-2013 11:51:58 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/lista_ticket.php on line 69
+[17-Jul-2013 12:01:19 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 12:01:19 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 12:01:19 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 12:01:19 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 12:01:20 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 12:01:20 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 12:01:20 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[17-Jul-2013 12:01:20 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[17-Jul-2013 12:01:21 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 41
+[17-Jul-2013 12:01:21 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 41
+[17-Jul-2013 12:01:21 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 43
+[17-Jul-2013 12:01:21 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 43
+[17-Jul-2013 12:01:21 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 45
+[17-Jul-2013 12:01:21 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 45
+[17-Jul-2013 12:01:21 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 47
+[17-Jul-2013 12:01:21 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 47
+[17-Jul-2013 12:01:21 America/Denver] PHP Notice:  Undefined index: empresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 56
+[17-Jul-2013 12:01:55 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 12:01:55 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 12:01:55 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[17-Jul-2013 12:01:55 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 12:02:35 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 12:02:35 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 12:02:35 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[17-Jul-2013 12:36:14 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[17-Jul-2013 12:36:14 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[17-Jul-2013 12:36:14 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:04:41 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:04:41 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:04:41 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:04:42 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:06:25 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:06:25 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:06:25 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:06:25 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:06:25 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[06-Aug-2013 16:06:31 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:06:31 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:06:31 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 17:06:31 America/Mexico_City] PHP Notice:  Undefined index: tipo_usuario in /home4/akumenco/public_html/soporte_prueba/crearTicket.php on line 140
+[06-Aug-2013 17:06:31 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home4/akumenco/public_html/soporte_prueba/class/class.consultas.php on line 26
+[06-Aug-2013 16:06:33 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:06:33 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:06:35 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:06:35 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:06:35 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 17:06:35 America/Mexico_City] PHP Notice:  Undefined index: tipo_usuario in /home4/akumenco/public_html/soporte_prueba/crearTicket.php on line 140
+[06-Aug-2013 17:06:35 America/Mexico_City] PHP Fatal error:  Call to a member function prepare() on a non-object in /home4/akumenco/public_html/soporte_prueba/class/class.consultas.php on line 26
+[06-Aug-2013 16:06:36 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:06:36 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[06-Aug-2013 16:06:40 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:06:40 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[06-Aug-2013 16:06:43 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:06:43 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:06:43 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:07:44 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:07:44 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:07:44 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:11:50 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:11:50 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:11:50 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:11:50 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:11:50 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[06-Aug-2013 16:11:53 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:11:53 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:11:53 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:11:53 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:12:00 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:12:00 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:12:05 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:12:05 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:12:05 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:12:05 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:13:03 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:13:03 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:13:03 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:13:03 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:15:19 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:15:19 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:15:19 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:15:19 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:26:15 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:26:15 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:26:15 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:26:15 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:26:24 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:26:24 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:26:24 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:26:24 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:26:24 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[06-Aug-2013 16:26:34 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:26:34 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:26:34 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:26:40 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:26:40 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:26:40 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:26:40 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:26:40 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[06-Aug-2013 16:26:47 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:26:47 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:26:47 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:26:47 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:27:23 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:27:23 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:27:23 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:27:23 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:32:41 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:32:41 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:32:41 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:40:58 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:40:58 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:40:58 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:40:58 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:40:58 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[06-Aug-2013 16:41:03 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:41:03 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:41:03 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:41:03 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:41:20 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:41:20 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:41:20 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:41:20 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:41:21 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:41:21 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:41:21 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:41:21 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[06-Aug-2013 16:41:21 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[06-Aug-2013 16:41:26 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:41:26 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:41:26 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 16:46:21 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 16:46:21 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 16:46:21 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[06-Aug-2013 16:46:21 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[06-Aug-2013 17:56:31 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[06-Aug-2013 17:56:31 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[06-Aug-2013 17:56:31 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[12-Aug-2013 13:05:52 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[12-Aug-2013 13:05:52 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[12-Aug-2013 13:05:52 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[12-Aug-2013 13:05:52 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[12-Aug-2013 13:05:52 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[12-Aug-2013 13:05:56 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[12-Aug-2013 13:05:56 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[12-Aug-2013 13:08:13 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[12-Aug-2013 13:08:13 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[12-Aug-2013 13:08:13 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[12-Aug-2013 13:08:19 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[12-Aug-2013 13:08:19 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[12-Aug-2013 13:08:19 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[12-Aug-2013 13:08:19 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[12-Aug-2013 13:08:19 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[12-Aug-2013 13:08:23 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[12-Aug-2013 13:08:23 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[12-Aug-2013 13:08:23 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[12-Aug-2013 13:08:53 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[12-Aug-2013 13:08:53 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[12-Aug-2013 13:08:53 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[12-Aug-2013 13:08:53 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[13-Aug-2013 09:50:32 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[13-Aug-2013 09:50:32 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[13-Aug-2013 09:50:32 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[13-Aug-2013 09:50:41 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[13-Aug-2013 09:50:41 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[13-Aug-2013 09:50:41 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[13-Aug-2013 09:50:41 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[13-Aug-2013 09:50:41 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[13-Aug-2013 09:50:47 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[13-Aug-2013 09:50:47 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[13-Aug-2013 09:50:47 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[13-Aug-2013 09:50:49 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[13-Aug-2013 09:50:49 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[13-Aug-2013 09:50:49 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[13-Aug-2013 09:50:53 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[13-Aug-2013 09:50:53 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[13-Aug-2013 09:50:53 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[13-Aug-2013 09:50:53 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[13-Aug-2013 09:56:26 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[13-Aug-2013 09:56:26 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[13-Aug-2013 09:56:26 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[13-Aug-2013 15:48:43 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[13-Aug-2013 15:48:43 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[13-Aug-2013 15:48:43 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[13-Aug-2013 15:48:43 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[13-Aug-2013 15:48:43 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 09:18:43 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:18:43 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:18:43 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:23:13 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:23:13 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:23:13 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:23:21 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:23:21 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:23:21 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:23:21 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:23:21 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 09:23:36 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:23:36 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:23:36 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:23:36 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:23:36 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 09:23:50 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:23:50 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:23:50 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:23:50 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:23:50 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 09:23:55 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:23:55 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 09:24:00 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:24:00 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:24:00 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:24:00 America/Mexico_City] PHP Notice:  Undefined index: tipo_usuario in /home4/akumenco/public_html/soporte_prueba/crearTicket.php on line 140
+[15-Aug-2013 09:24:05 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:24:05 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:24:05 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:24:05 America/Mexico_City] PHP Notice:  Undefined index: tipo_usuario in /home4/akumenco/public_html/soporte_prueba/crearTicket.php on line 140
+[15-Aug-2013 09:24:16 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:24:16 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:24:16 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:24:16 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:24:29 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:24:29 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:24:29 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:24:35 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:24:35 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:24:35 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:24:35 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:24:35 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 09:24:38 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:24:38 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:24:38 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:24:38 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:47:59 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:47:59 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:47:59 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:48:04 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:48:04 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:48:04 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:48:04 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:48:04 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 09:48:08 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:48:08 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:48:08 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:52:49 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:52:49 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:52:49 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:55:39 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:55:39 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:55:39 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:55:39 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:55:39 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:55:39 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:55:39 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:55:39 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:55:39 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 09:55:45 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:55:45 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:55:45 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:55:51 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 09:55:51 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 09:55:51 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:55:51 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 09:55:51 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 09:55:58 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 09:55:58 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 09:55:58 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:06:24 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:06:24 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:06:24 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:06:40 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:06:40 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:06:40 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 10:06:40 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 10:06:40 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 10:06:49 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:06:49 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:06:49 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:08:34 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:08:34 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:08:34 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:08:43 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:08:43 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:08:43 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 10:08:43 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 10:08:43 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 10:08:50 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:08:50 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:08:50 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:09:57 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:09:57 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:09:57 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:16:56 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:16:56 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:16:56 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:16:56 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:16:57 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:16:57 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:16:57 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 10:16:57 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 10:16:57 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 10:17:01 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:17:01 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:17:01 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:17:01 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:34:34 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:34:35 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:34:35 America/Denver] PHP Notice:  Undefined index: intIdEmpresa in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 10:34:35 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 39
+[15-Aug-2013 10:34:35 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 10:35:21 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:35:21 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:35:26 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:35:26 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:35:26 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:35:32 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:35:32 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:35:42 America/Denver] PHP Notice:  Undefined index: usuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 14
+[15-Aug-2013 10:35:42 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:35:42 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:35:42 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 10:35:42 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 13
+[15-Aug-2013 10:35:46 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 10:35:46 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 10:35:46 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 4
+[15-Aug-2013 11:49:28 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:49:28 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:49:28 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:49:28 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:49:28 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:49:28 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:49:33 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:49:33 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:49:33 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:49:37 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:49:37 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:49:37 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:49:47 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:49:47 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:49:50 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:49:50 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:49:50 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:49:53 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:49:53 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:49:53 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:49:57 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:49:57 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:49:57 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:49:57 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:50:02 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:50:02 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:50:02 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:50:02 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:50:05 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:50:05 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:50:05 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:50:05 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:50:06 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:50:06 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:50:06 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:50:06 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:50:08 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 11:50:11 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 11:50:15 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:50:15 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:50:15 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:50:20 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:50:20 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:50:26 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:50:26 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:50:26 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:50:26 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 11:50:45 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 11:50:45 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 11:50:45 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 11:50:45 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:05:45 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:05:45 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:05:45 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:05:45 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:05:48 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:05:48 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:05:48 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:05:48 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:05:54 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:05:54 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:05:54 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:05:54 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:07:16 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:07:16 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:07:16 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:07:16 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:09:11 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:09:11 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:09:11 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:09:11 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:09:18 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:09:18 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:09:18 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:09:18 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:09:19 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:09:19 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:09:19 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:09:19 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:14:57 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:14:57 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:14:57 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:14:57 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:15:05 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:15:05 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:15:05 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:15:15 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:15:15 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:15:18 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:15:18 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:15:18 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:15:18 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:15:41 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:15:41 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:15:41 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:16:24 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:16:24 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:16:24 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:16:24 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:22:28 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:22:28 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:22:28 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:22:28 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:22:30 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:22:30 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:22:30 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:22:30 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:23:22 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:23:22 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:23:22 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:23:22 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:28:42 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:28:42 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:28:42 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:28:42 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:30:45 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:30:45 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:30:45 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:30:52 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:30:52 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:30:54 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:30:54 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:30:54 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:30:54 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:31:56 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:31:56 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:31:59 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:31:59 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:31:59 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:31:59 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:38:45 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:38:45 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:38:45 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:38:45 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:42:36 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:42:36 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:42:36 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:42:36 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:44:54 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:44:54 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:44:54 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:44:54 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:45:28 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:45:28 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:45:28 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:45:28 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:46:34 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:46:34 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:46:34 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:46:34 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:46:50 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:46:50 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:46:50 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:46:50 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:48:11 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:48:11 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:48:11 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:48:11 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 12:48:33 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 12:48:33 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 12:48:33 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 12:48:33 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 13:11:40 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 13:11:40 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 13:11:40 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 13:11:40 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 13:11:56 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 13:11:56 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 13:11:56 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 13:12:31 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 13:12:31 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 13:12:31 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 13:12:31 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 13:15:25 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 13:15:25 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 13:15:25 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 13:15:25 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 13:17:38 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 13:17:38 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 13:17:38 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 13:17:38 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 13:17:44 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 15:34:35 America/Denver] PHP Notice:  Undefined index: usuario in /home4/akumenco/public_html/soporte_prueba/inicio.php on line 11
+[15-Aug-2013 15:34:38 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 15:34:38 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 15:34:38 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 15:34:44 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 15:34:44 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 15:34:50 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 15:34:50 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 15:34:50 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 15:34:50 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 15:36:42 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 15:36:42 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 15:36:58 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 15:36:58 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 15:36:58 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 15:36:58 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 15:37:12 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 15:37:20 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 15:37:25 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 15:37:27 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 15:37:30 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 15:37:34 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 15:37:34 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 15:37:34 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 15:37:34 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 15:37:39 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 15:37:39 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 15:37:39 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 15:37:39 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[15-Aug-2013 15:37:46 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[15-Aug-2013 16:55:44 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[15-Aug-2013 16:55:44 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[15-Aug-2013 16:55:44 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[15-Aug-2013 16:55:44 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[19-Aug-2013 08:56:28 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[19-Aug-2013 08:56:28 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[19-Aug-2013 08:56:28 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[19-Aug-2013 08:56:36 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[19-Aug-2013 08:56:36 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[19-Aug-2013 08:56:42 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[19-Aug-2013 08:56:42 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[19-Aug-2013 08:56:42 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[19-Aug-2013 08:56:42 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[19-Aug-2013 08:56:55 America/Denver] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in /home4/akumenco/public_html/soporte_prueba/class/maestra.php on line 11
+[19-Aug-2013 08:57:06 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte_prueba/folder.php on line 2
+[19-Aug-2013 08:57:06 America/Denver] PHP Notice:  Constant DIR_BASE already defined in /home4/akumenco/public_html/soporte_prueba/folder.php on line 3
+[19-Aug-2013 08:57:06 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[19-Aug-2013 08:57:13 America/Denver] PHP Notice:  A session had already been started - ignoring session_start() in /home4/akumenco/public_html/soporte_prueba/header.php on line 3
+[19-Aug-2013 08:57:13 America/Denver] PHP Notice:  Undefined index: intIdTipoUsuario in /home4/akumenco/public_html/soporte_prueba/header.php on line 12
+[19-Aug-2013 13:54:40 America/Denver] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in /home4/akumenco/public_html/soporte/folder.php on line 2
+[19-Aug-2013 13:54:40 America/Denver] PHP Warning:  require_once(/home4/akumenco/public_html/soporte/class/class.consultas.php): failed to open stream: No such file or directory in /home4/akumenco/public_html/soporte/index.php on line 14
+[19-Aug-2013 13:54:40 America/Denver] PHP Fatal error:  require_once(): Failed opening required '/home4/akumenco/public_html/soporte/class/class.consultas.php' (include_path='.:/usr/php/53/usr/lib64:/usr/php/53/usr/share/pear') in /home4/akumenco/public_html/soporte/index.php on line 14

@@ -1,14 +1,18 @@
 <?php
-/*
-Modificado por Porfirio Chávez
-Desarrollado por Akumen.com.mx
-*/
+/**
+ * @author elporfirio.com
+ * @copyright 2013 Akumen.com.mx
+ * ///////////////////////////////
+ * Página principal y de inicio de sesión
+ *
+ */
+
+//DEFINIMOS LOS DIRECTORIOS
+include("folder.php");
+require_once(DIR_BASE."/class/class.consultas.php");
 
 //Iniciamos trabajo con sesiones
 session_start();
-
-//Incluimos clases
-require_once("class/maestra.php");
 
 //Usuario inicializado iniciar_sesion.php redirecciona automaticamente
 if(isset($_SESSION['usuario']) and $_SESSION['usuario'] != null){
@@ -19,46 +23,37 @@ if(isset($_SESSION['usuario']) and $_SESSION['usuario'] != null){
 <html>
 <head>
 <meta charset="utf-8">
-<title>Soporte Akumen</title>
+<title>Soporte | Akumen Tecnología en Sistemas S.A. de C.V.</title>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="js/funciones.js"></script>
-<?php
-// Aún desconosco la funcion de este script
-if (isset($_SESSION['URL']) and $_SESSION['URL'] != null){ 
-	echo "Tu sesión ha caducado, vuelve a ingresar. <input name='exp' id='exp' type='hidden' value='". $_GET['exp'] ."'/>"; 
+<script src="js/bootstrap.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<style>
+.form-signin {
+	background-color: #FFFFFF;
+	border: 1px solid #E5E5E5;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	margin: 0 auto 20px;
+	max-width: 300px;
+	padding: 19px 29px 29px;
 }
-else {
-	echo "<input name='exp' id='exp' type='hidden' value=''/>"; 
-}
-?>
-<link href="css/estilos.css" rel="stylesheet" type="text/css" />
-<link href="css/forms.css" rel="stylesheet" type="text/css" />
+</style>
 </head>
 
 <body>
 <!-- HEADER -->
 <?php include("header.php");?>
 <!-- CONTENIDO -->
-<div id="contenido">
-    <div id="login" class="formulario">
-    	<h1>Iniciar sesión</h1>
-    	<p>Introduzca sus datos para entrar al sistema</p>
-    	<form name="login_form" method="post" action="">
-    			<label for="usuario">login ID
-    			<span class="small">Introduzca su usuario</span>
-    			</label>
-    			
-    			<input type="text" name="usuario" id="usuario">
-    			<label for="password">secret Key
-    			<span class="small">Introduzca su contraseña</span>
-    			</label>
-    			
-    			<input type="password" name="password" id="password">
-    			<input type="submit" name="ingresar" value="Ingresar" class="boton" onClick="return login();">
-    			<div class="clr"></div>
-    	</form>
-    <div><a href="#" onClick="alert('proximamente');">¿Olvido su contraseña?</a></div>
-    </div>
+<div class="container">
+	<form name="login_form" class="form-signin" method="post" action="" onsubmit="return login()">
+		<legend>iniciar sesión</legend>
+		<input type="text" name="usuario" id="usuario" placeholder="usuario" class="span4" required>
+		<input type="password" name="password" id="password" placeholder="contraseña" class="span4" required>
+		<input type="submit" name="ingresar" value="Ingresar" class="btn btn-primary btn-block btn-large">
+		<br>
+		<div id="respuesta" class="alert-error"></div>
+	</form>
 </div>
 <!-- FOOTER -->
 <?php include("footer.php");?>
