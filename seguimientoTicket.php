@@ -95,7 +95,7 @@ if(isset($_SESSION['id_usuario'])){
 				<label class="control-label">Prioridad</label>
 				<div class="controls">
 					<select id="inPrioridadTicket" required>
-						<option value="">- Elija una opción </option>
+						<option value="" selected>- Elija una opción </option>
 						<option value="Baja">Baja</option>
 						<option value="Media">Media</option>
 						<option value="Alta">Alta</option>
@@ -106,12 +106,22 @@ if(isset($_SESSION['id_usuario'])){
 				<label class="control-label">Estado</label>
 				<div class="controls">
 					<select id="inEstadoTicket" required>
-						<option value="">- Elija una opción </option>
+						<option value="" selected>- Elija una opción - </option>
 						<option value="2">En Curso</option>
 						<option value="3">Pendiente</option>
 						<option value="4">Resuelto</option>
 						<option value="5">Cancelado</option>
 						<option value="6">Cerrado</option>
+					</select>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">Tipo de Atención</label>
+				<div class="controls">
+					<select id="inTipoAtencion" required>
+						<option value="" selected>- Elija una opción - </option>
+						<option value="1">Remota</option>
+						<option value="2">En sitio</option>
 					</select>
 				</div>
 			</div>

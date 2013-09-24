@@ -9,7 +9,7 @@
 
 //Incluimos clases
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+//require_once(DIR_BASE."/class/class.consultas.php");
 
 //Iniciamos trabajo con sesiones
 session_start();

@@ -12,7 +12,7 @@ require_once(DIR_BASE."/class/class.consultas.php");
 session_start();
 
 //redirección si desean ingresar sin haberse logueado
-if ($_SESSION['usuario'] == null or !isset($_SESSION["usuario"])){
+if ($_SESSION['tipo_usuario'] == null or !isset($_SESSION["tipo_usuario"])){
 		header('Location: index.php');
 		exit;
 	}

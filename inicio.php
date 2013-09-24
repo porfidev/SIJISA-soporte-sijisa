@@ -11,7 +11,7 @@
 session_start();
 
 //redirección si desean ingresar sin haberse logueado
-if ($_SESSION['usuario'] == null){
+if ($_SESSION['nombre'] == null){
 		header('Location: index.php');
 		exit;
 	}
@@ -31,7 +31,8 @@ if ($_SESSION['usuario'] == null){
 	<?php include("header.php")?>
 	<!-- FIN DE HEADER -->
 	<div id="inicio">
-		<h3>Bienvenido <?php echo $_SESSION["usuario"] ?>.</h3>
+		<?php var_dump($_SESSION); ?>
+		<h3>Bienvenido <?php echo $_SESSION["nombre"] ?>.</h3>
 	</div>
 </div>
 <!-- FOOTER -->

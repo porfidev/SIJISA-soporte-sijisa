@@ -18,7 +18,7 @@ function login(){
 	$.ajax({
 		dataType: "json",
 		data:  {"usuario": usuario, "password": password},
-		url: 'lib/iniciar_sesion.php',
+		url: 'lib/iniciarSesion.php',
 		type:  'post',
         success: function(respuesta){
 			if(!respuesta.login){
@@ -39,6 +39,7 @@ function login(){
 
 ///////////////////////////////////////////////////////////////
 // METODO AJAX PARA REGISTRAR EL USUARIO
+/* ####### se llama desde: CrearUsuario.php */
 function registrarUsuario(){
 	var nombre = $("#nombre").val();
 	var usuario = $("#usuario").val();
@@ -63,7 +64,7 @@ function registrarUsuario(){
 				"crear": crear,
 				"n_empresa": n_empresa
 				},
-		url:   'lib/registrar_usuario.php',
+		url:   'lib/registrarUsuario.php',
         type:  'post',
 		beforeSend: function(){
 			$("#formNuevoUsuario :input").attr("disabled", true);
@@ -72,22 +73,22 @@ function registrarUsuario(){
 			if(respuesta.usuario){
 				$("#campo_usuario").addClass("info");
 				$("#campo_usuario .help-inline").show();
+				$("#formNuevoUsuario :input").attr("disabled", false);
 			}
 			if(respuesta.email){
 				$("#campo_email").addClass("info");
 				$("#campo_email .help-inline").show();
+				$("#formNuevoUsuario :input").attr("disabled", false);
 			}
 			if(respuesta.empresa){
 				$("#empresa_nueva").addClass("info");
 				$("#empresa_nueva .help-inline").show();
+				$("#formNuevoUsuario :input").attr("disabled", false);
 			}
 			if(respuesta.registro){
 				$("#crear").removeClass("btn-primary").addClass("btn-success").attr("value","Usuario creado");
 				$("#crear").attr("type","button");
 				$("#reset").attr("disabled",false);
-			}
-			else{
-				alert(respuesta.mensaje);
 			}
 		},
 		error: function(xhr,err){
@@ -104,7 +105,7 @@ function reiniciarBoton(){
 	$("#crear").addClass("btn-primary");
 	$("#crear").attr("type","submit");
 	$("#formNuevoUsuario :input").attr("disabled", false);
-	$("#formNuevoUsuario").each (function(){
+	$("#formNuevoUsuario").each(function(){
   		this.reset();
 	});
 	return false;
@@ -113,6 +114,7 @@ function reiniciarBoton(){
 
 
 // METODO AJAX PARA REGISTRAR LA EMPRESA
+/* ####### se llama desde: crearEmpresa.php */
 function registrarEmpresa(){
 	var nombre = $("#nombre").val();
 	var siglas = $("#siglas").val();
@@ -126,7 +128,7 @@ function registrarEmpresa(){
 				"email": email,
 				"guardar": guardar,
 				},
-		url:   'lib/registrar_empresa.php',
+		url:   'lib/registrarEmpresa.php',
         type:  'post',
 		beforeSend: function(){
 			$("#formRegistrarEmpresa :input").attr("disabled", true);

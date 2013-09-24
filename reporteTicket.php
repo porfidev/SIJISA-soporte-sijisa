@@ -125,8 +125,9 @@ function solicitarReporte(){
 				<tr>
 					<th>ID Ticket</th>
 					<th>Problema</th>
-					<th>Fecha Recepción</th>
+					<th>Estatus Actual</th>
 					<th>Fecha Asignación</th>
+					<th>Fecha Recepción</th>
 					<th>Fecha Inicio Atención</th>
 					<th>Fercha Término</th>
 					<th>Tiempo de Atención</th>
@@ -136,7 +137,7 @@ function solicitarReporte(){
 			</thead>
 			<tbody>
 				<tr>
-					<td colspan="9"><div class="alert-info">Elija una empresa para mostrar los datos</div></td>
+					<td colspan="10"><div class="alert-info">Elija una empresa para mostrar los datos</div></td>
 				</tr>
 			</tbody>
 		</table>

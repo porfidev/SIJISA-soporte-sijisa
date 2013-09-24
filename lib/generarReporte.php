@@ -35,13 +35,14 @@ $mytickets = $oDatosTickets->generarReporte($_POST["fecha_inicio"], $_POST["fech
 if(sizeof($mytickets) > 0){
 	foreach($mytickets as $indice => $contenido){
 		
-		$tiempo_atencion = dateDiff($contenido["fecha_alta"],$contenido["fecha_problema"]);
+		$tiempo_atencion = dateDiff($contenido["fecha_problema"],$contenido["fecha_alta"]);
 		$tiempo_respuesta = dateDiff($contenido["fecha_alta"],$contenido["fecha_asignacion"]);
 		$tiempo_total = dateDiff($contenido["fecha_alta"],$contenido["fecha_termino"]);
 		echo "
 		<tr>
 			<td>".$contenido["intIdUnico"]."</td>
 			<td>".$contenido["problema"]."</td>
+			<td>".$contenido["estado_actual"]."</td>
 			<td>".$contenido["fecha_alta"]."</td>
 			<td>".$contenido["fecha_problema"]."</td>
 			<td>".$contenido["fecha_asignacion"]."</td>

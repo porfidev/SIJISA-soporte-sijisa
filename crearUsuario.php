@@ -10,6 +10,8 @@
 //DEFINIMOS LOS DIRECTORIOS
 include("folder.php");
 require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.usuario.php");
+require_once(DIR_BASE."/class/class.empresa.php");
 
 session_start();
 
@@ -19,9 +21,12 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 	die;
 }
 
+$oEmpresa = new empresaBeta;
+$empresas_registradas = $oEmpresa->consultaEmpresa();
+/*
 $oDatosEmpresa = new Empresa;
 $empresas_registradas = $oDatosEmpresa->obtenerEmpresa();
-
+*/
 ?>
 <!doctype html>
 <html>
@@ -57,6 +62,7 @@ $(function(){
 <body>
 <div class="container">
 <?php include("header.php")?>
+<?php var_dump($empresas_registradas); ?>
 <!-- FIN DE HEADER -->
 <form id="formNuevoUsuario" name="nuevousuario" method="post" action="" class="form-horizontal" onSubmit="return registrarUsuario();">
 	<fieldset>
@@ -123,7 +129,7 @@ $(function(){
 	<div class="control-group">
 		<div class="controls">
 			<input type="submit" name="crear" id="crear" value="Crear usuario" class="btn btn-primary btn-large">
-			<input type="reset" name="reset" id="reset" value="Reiniciar" class="btn btn-large" onClick="reiniciarBoton();">
+			<input type="reset" name="resetear" id="resetear" value="Reiniciar" class="btn btn-large" onClick="reiniciarBoton();">
 		</div>
 	</div>
 	<div class="clr"></div>

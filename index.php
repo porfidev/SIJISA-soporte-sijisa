@@ -9,13 +9,13 @@
 
 //DEFINIMOS LOS DIRECTORIOS
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+//require_once(DIR_BASE."/class/class.consultas.php");
 
 //Iniciamos trabajo con sesiones
 session_start();
 
 //Usuario inicializado iniciar_sesion.php redirecciona automaticamente
-if(isset($_SESSION['usuario']) and $_SESSION['usuario'] != null){
+if(isset($_SESSION['tipo_usuario']) and $_SESSION['tipo_usuario'] != null){
 	header('Location: inicio.php');
 }
 ?>
