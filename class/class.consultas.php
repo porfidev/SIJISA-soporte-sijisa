@@ -73,7 +73,7 @@ class conectorDB extends configuracion //clase principal de conexion y consultas
 * @package soporteAkumen
 * @author Porfirio Chávez <elporfirio@gmail.com>
 */
-class Usuario{
+class UsuarioDEPRECATED{
 	/**
 	* @var int valor del ID de la empresa
 	* @access public
@@ -205,7 +205,7 @@ class Usuario{
 }/// Termina calse Usuario
 
 
-class Empresa{
+class EmpresaDEPRECATED{
 	
 	private $empresas;
 	
@@ -259,7 +259,7 @@ class Empresa{
 	}
 }
 
-class Ticket{
+class TicketDEPRECATED{
 	
 	public $fechaInicio = '';
 	public $fechaFin = '';

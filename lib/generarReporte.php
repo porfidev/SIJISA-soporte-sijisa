@@ -7,15 +7,20 @@
  *
  */
  
+if(!$_POST){
+	die("No deberia ingresar a este archivo directamente");
+}
+ 
 //Incluimos clases
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.tickets.php");
 
 session_start();
+session_write_close();
 
 //redirección si desean ingresar sin haberse logueado
-if ($_SESSION['usuario'] == null or !isset($_SESSION['usuario'])){
-		header('Location: index.php');
+if ($_SESSION['tipo_usuario'] == null or !isset($_SESSION['tipo_usuario'])){
+		header('Location: ../index.php');
 		exit;
 	}
 
@@ -26,11 +31,19 @@ if ($_SESSION['usuario'] == null or !isset($_SESSION['usuario'])){
 		$interval = $datetime1->diff($datetime2);
 		//return $interval->format('%R%a days');
 
-		return $interval->format("%R%a dia(s) %H:%I:%S");
+		return $interval->format("%R%a dia(s) con %H:%I:%S (hrs)");
 	}
-$oDatosTickets = new Ticket;
+	
+	$oTicket = new Ticket;
+	$oTicket->isReport();
+	$oTicket->setValores(array("empresa"=>$_POST["empresa"],
+								"fechainicio"=>$_POST["fecha_inicio"],
+								"fechafin"=>$_POST["fecha_fin"]));
+	$mytickets = $oTicket->consultaTicket();
+	/*
+	$oDatosTickets = new Ticket;
 $mytickets = $oDatosTickets->generarReporte($_POST["fecha_inicio"], $_POST["fecha_fin"], $_POST["empresa"]);
-
+*/
 
 if(sizeof($mytickets) > 0){
 	foreach($mytickets as $indice => $contenido){
@@ -54,8 +67,11 @@ if(sizeof($mytickets) > 0){
 		}
 }
 else {
-print_r($mytickets);
-	//echo "No hay tickets registrados";
+	echo "<tr>
+			<td colspan='10'>
+			No hay tickets registrados
+			</td>
+		</tr>";
 	}
 
 ?>

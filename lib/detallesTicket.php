@@ -1,13 +1,21 @@
 <?php
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.tickets.php");
+require_once(DIR_BASE."/class/class.archivo.php");
 
 if(isset($_POST)){
+	$oTicket = new Ticket;
+	$oTicket->isQuery("ticket");
+	$oTicket->setValores(array("id_ticket"=>$_POST['ticket']));
+	$tickets = $oTicket->consultaTicket();
+	
+	/*
 	$oDatosTicket = new Ticket;
 	$tickets = $oDatosTicket->obtenerTickets(array("id_ticket"=>$_POST['ticket']));
-	
+	*/
 if(!empty($tickets)){
-	$ruta = explode("/",$oDatosTicket->getUploadDir()); //parche para la ruta
+	$oArchivo = new Archivo;
+	$ruta = explode("/",$oArchivo->getUploadDir()); //parche para la ruta
 	$rutafinal = end($ruta);
 	
 

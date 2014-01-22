@@ -1,5 +1,4 @@
 <?php
-
 /**
 * clase Empresa
 * Esta clase controla todo lo referente a las Empresas
@@ -8,15 +7,15 @@
 * @author Porfirio Chávez <elporfirio@gmail.com>
 */
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.conexion.php");
 
-class empresaBeta
+class Empresa
 {
 	/**
 	* @var array Devuelve los datos obtenidos de las empresas
 	* @access protected
 	*/
-	protected $empresas = array();
+	private $empresas = array();
 	
 	private $consulta = '';
 	private $valores = array();
@@ -32,10 +31,22 @@ class empresaBeta
 	* @return void
 	*/
 	public function isQuery($buscar = false){
+		
 		$this->consulta = "SELECT * FROM catempresas";
 		
-		if($buscar){
-			$this->consulta .= " WHERE intIdEmpresa = :id_empresa";
+		switch($buscar){
+			case false:
+				// Nada que hacer, comentario de control.
+				break;
+			case "id":
+				$this->consulta .= " WHERE intIdEmpresa = :id_empresa";
+				break;
+			case "nombre":
+				$this->consulta .=" WHERE Descripcion = :nom_empresa";
+				break;
+			default:
+				throw new Exception("No se ha ingresado un parametro correcto para establecer la busqueda");
+				break;
 		}
 	}
 	

@@ -9,10 +9,12 @@
  
 //DEFINIMOS LOS DIRECTORIOS
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
 require_once(DIR_BASE."/class/class.usuario.php");
+require_once(DIR_BASE."/class/class.empresa.php");
+
 
 session_start();
+session_write_close();
 
 //Iniciamos trabajo con sesiones
 if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
@@ -44,7 +46,7 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 				<option value="">- Seleccione una empresa -</option>
 				<?php
 		$oDatosEmpresa = new Empresa;
-		$empresas = $oDatosEmpresa->obtenerEmpresa();
+		$empresas = $oDatosEmpresa->consultaEmpresa();
 		foreach($empresas as $indice){
 			echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
 		}
@@ -168,6 +170,7 @@ function guardarUsuario(){
 	//console.log($datos);
 	var valido = true;
 	
+	var $nivel = $(this).closest("tr").find("select :selected").val();
 	
 	var $envio = {};
 	$datos.each(function(index, element) {
@@ -180,7 +183,7 @@ function guardarUsuario(){
 		$valor = $(this).val();
 		$envio[$nombre] = $valor;
 	});
-	
+	$envio["tipo_usuario"] = $nivel;
 	$envio["actualizar"] = true;
 	
 	if(valido){

@@ -9,11 +9,10 @@
  
 //DEFINIMOS LOS DIRECTORIOS
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
-require_once(DIR_BASE."/class/class.usuario.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 
 session_start();
+session_write_close();
 
 //Iniciamos trabajo con sesiones
 if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
@@ -21,12 +20,8 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 	die;
 }
 
-$oEmpresa = new empresaBeta;
-$empresas_registradas = $oEmpresa->consultaEmpresa();
-/*
-$oDatosEmpresa = new Empresa;
-$empresas_registradas = $oDatosEmpresa->obtenerEmpresa();
-*/
+$oEmpresa = new Empresa;
+$empresas = $oEmpresa->consultaEmpresa();
 ?>
 <!doctype html>
 <html>
@@ -40,17 +35,17 @@ $empresas_registradas = $oDatosEmpresa->obtenerEmpresa();
 <script>
 //FUNCION PARA MOSTRAR CAMPO PARA LA NUEVA EMPRESA
 $(function(){
-		$("#empresa").change(function(){
+		$("#inEmpresa").change(function(){
 			//alert($("#empresa").val());
 			
-			if($("#empresa").val() == "nueva"){
-				$("#n_empresa").show();
-				$("#n_empresa").attr("disabled",false);
+			if($("#inEmpresa").val() == "nueva"){
+				$("#inNEmpresa").show();
+				$("#inNEmpresa").attr("disabled",false);
 				$("#empresa_nueva").show();
 			}
 			else{
-				$("#n_empresa").hide();
-				$("#n_empresa").attr("disabled","disabled");
+				$("#inNEmpresa").hide();
+				$("#inNEmpresa").attr("disabled","disabled");
 				$("#empresa_nueva").hide();
 			}
 		});
@@ -62,7 +57,7 @@ $(function(){
 <body>
 <div class="container">
 <?php include("header.php")?>
-<?php var_dump($empresas_registradas); ?>
+<?php //var_dump($empresas); ?>
 <!-- FIN DE HEADER -->
 <form id="formNuevoUsuario" name="nuevousuario" method="post" action="" class="form-horizontal" onSubmit="return registrarUsuario();">
 	<fieldset>
@@ -76,7 +71,7 @@ $(function(){
 	<div class="control-group" id="campo_usuario">
 		<label class="control-label">Login ID</label>
 		<div class="controls">
-			<input type="text" name="usuario" id="usuario" placeholder="ej: jperez" required>
+			<input type="text" name="inUsuario" id="inUsuario" placeholder="ej: jperez" required>
 			<span class="help-inline" style="display: none">Ya existe el usuario, ingrese un usuario diferente</span> </div>
 	</div>
 	<div class="control-group">
@@ -88,17 +83,17 @@ $(function(){
 	<div class="control-group" id="campo_email">
 		<label class="control-label"  for="email">e-mail</label>
 		<div class="controls">
-			<input type="email" name="email" id="email" placeholder="ej: jperez@akumen.com" required>
+			<input type="email" name="inMail" id="inMail" placeholder="ej: jperez@akumen.com" required>
 			<span class="help-inline" style="display: none">Ya existe el email, ingrese un email diferente</span> </div>
 	</div>
 	<div class="control-group">
 		<label class="control-label">Empresa</label>
 		<div class="controls">
-			<select name="empresa" required id="empresa">
+			<select name="inEmpresa" required id="inEmpresa">
 				<option value="">- Elija una opción -</option>
 				<?php
-				if (!empty($empresas_registradas)){
-					foreach($empresas_registradas as $indice => $empresa){
+				if (!empty($empresas)){
+					foreach($empresas as $indice => $empresa){
 						printf("<option value='%s'>%s</option>", $empresa["intIdEmpresa"], $empresa["Descripcion"]);
 					}
 				}
@@ -110,7 +105,7 @@ $(function(){
 	<div id="empresa_nueva" class="control-group" style="display: none">
 		<label class="control-label">Nueva empresa</label>
 		<div class="controls">
-			<input type="text" name="n_empresa" id="n_empresa" disabled="disabled" required>
+			<input type="text" name="inNEmpresa" id="inNEmpresa" disabled="disabled" required>
 			<span class="help-inline" style="display: none">Ya existe la empresa, ingrese una nueva o elija la correcta</span> </div>
 	</div>
 	<div class="control-group">
@@ -129,7 +124,7 @@ $(function(){
 	<div class="control-group">
 		<div class="controls">
 			<input type="submit" name="crear" id="crear" value="Crear usuario" class="btn btn-primary btn-large">
-			<input type="reset" name="resetear" id="resetear" value="Reiniciar" class="btn btn-large" onClick="reiniciarBoton();">
+			<input type="reset" name="resetearUserForm" id="resetearUserForm" value="Reiniciar" class="btn btn-large" onClick="reiniciarBoton();">
 		</div>
 	</div>
 	<div class="clr"></div>

@@ -1,11 +1,18 @@
 <?php
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.tickets.php");
+require_once(DIR_BASE."/class/class.archivo.php");
 
 if(isset($_POST)){
+	$oTicket = new Ticket;
+	$oTicket->isFollow();
+	$oTicket->setValores(array("id_ticket"=>$_POST['ticket']));
+	$tickets = $oTicket->consultaTicket();
+	
+	/*
 	$oDatosTicket = new Ticket;
 	$tickets = $oDatosTicket->obtenerSeguimientoTicket(array("id_ticket"=>$_POST['ticket']));
-	
+	*/
 if(!empty($tickets)){
 	$i = 0;
 	foreach($tickets as $indice => $campo){
@@ -44,7 +51,9 @@ if(!empty($tickets)){
 							<div class=\"accordion-inner\"><p><h4>Observaciones</h4>".$campo['comments']."</p>";
 		
 		if($campo['archivos'] != null or $campo['archivos'] != ''){
-			$ruta = explode("/",$oDatosTicket->getUploadDir()); //parche para la ruta
+			
+			$oArchivo = new Archivo;
+			$ruta = explode("/",$oArchivo->getUploadDir()); //parche para la ruta
 			$rutafinal = end($ruta);
 			
 			$archivos = explode("&>",$campo['archivos']);

@@ -6,9 +6,12 @@ Desarrollado por Akumen.com.mx
 
 //DEFINIMOS LOS DIRECTORIOS
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.tickets.php");
+require_once(DIR_BASE."/class/class.empresa.php");
 
 session_start();
+session_write_close();
+
 if(isset($_SESSION['id_usuario'])){
 ?>
 <!doctype html>
@@ -34,7 +37,7 @@ if(isset($_SESSION['id_usuario'])){
 				<option value="">- Seleccione una empresa -</option>
 				<?php
 		$oDatosEmpresa = new Empresa;
-		$empresas = $oDatosEmpresa->obtenerEmpresa();
+		$empresas = $oDatosEmpresa->consultaEmpresa();
 		foreach($empresas as $indice){
 			echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
 		}
@@ -269,6 +272,8 @@ function registrarSeguimientoTicket(){
 	ajaxData.append("prioridad", $("#inPrioridadTicket").val());
 	ajaxData.append("estado", $("#inEstadoTicket").val());
 	ajaxData.append("id_ticket", $("#ticketID").val());
+	
+	ajaxData.append("atencion", $("#inTipoAtencion").val());
 	
 	$.each($("input[type=file]"), function(i, obj) {
         $.each(obj.files,function(j,file){

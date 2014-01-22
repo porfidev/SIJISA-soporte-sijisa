@@ -6,9 +6,11 @@ Desarrollado por Akumen.com.mx
 
 //DEFINIMOS LOS DIRECTORIOS
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.empresa.php");
+require_once(DIR_BASE."/class/class.tickets.php");
 
 session_start();
+session_write_close();
 if(isset($_SESSION['id_usuario'])){
 ?>
 <!doctype html>
@@ -59,13 +61,16 @@ $(function(){
 	});
 	
 	$("#buscarticket").on("click", solicitarReporte);
+$("#exportarExcel").on("click", solicitarReporteExcel);
+
+
 });
+
 function solicitarReporte(){
 	var empresa = $("#empresa").val();
 	var fecha_inicio = $("#fechaInicio").val();
 	var fecha_fin = $("#fechaFin").val();
 	
-	// Envio de datos para login -->
 	$.ajax({
 		data:  {"empresa": empresa, "fecha_inicio": fecha_inicio, "fecha_fin": fecha_fin},
 		url: 'lib/generarReporte.php',
@@ -79,6 +84,41 @@ function solicitarReporte(){
 			alert("responseText: "+xhr.responseText);
 		}
         });
+}
+
+function solicitarReporteExcel(){
+	var empresa = $("#empresa").val();
+	var fecha_inicio = $("#fechaInicio").val();
+	var fecha_fin = $("#fechaFin").val();
+	var $url = 'pruebaexcel.php';
+	document.location = "pruebaexcel.php?empresa="+empresa+"&fecha_inicio="+fecha_inicio+"&fecha_fin="+fecha_fin;
+	/*
+	var empresa = $("#empresa").val();
+	var fecha_inicio = $("#fechaInicio").val();
+	var fecha_fin = $("#fechaFin").val();
+	var $url = 'pruebaexcel.php';
+	
+	$.ajax({
+		data:  {"empresa": empresa, "fecha_inicio": fecha_inicio, "fecha_fin": fecha_fin},
+		url: $url,
+		type:  'post',
+        success: function(response, status, request) {
+			var disp = request.getResponseHeader('Content-Disposition');
+			if (disp && disp.search('attachment') != -1) {
+				var form = $('<form method="POST" action="' + url + '">');
+				$.each(params, function(k, v) {
+					form.append($('<input type="hidden" name="' + k + '" value="' + v +'">'));
+				});
+				$('body').append(form);
+				form.submit();
+			}
+		},
+		error: function(xhr,err){
+			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+			alert("responseText: "+xhr.responseText);
+		}
+        });
+		*/
 }
 </script>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -104,12 +144,13 @@ function solicitarReporte(){
 			<select name="empresa" autofocus required id="empresa" class="span4">
 				<option value="">- Seleccione una empresa -</option>
 				<?php
-		$oDatosEmpresa = new Empresa;
-		$empresas = $oDatosEmpresa->obtenerEmpresa();
-		foreach($empresas as $indice){
-			echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
-		}
-		?>
+				$oEmpresa = new Empresa;
+				$empresas = $oEmpresa->consultaEmpresa();
+						
+				foreach($empresas as $indice){
+					echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
+				}
+				?>
 				<option value="0">- Mostrar todos -</option>
 			</select>
 		</div>
@@ -143,64 +184,6 @@ function solicitarReporte(){
 		</table>
 	</div>
 </div>
-<script>
-$(document).on("click", ".detalleTicket", function () {
-     var ticketID = $(this).data('id');
-     $(".modal-body #ticketID").val(ticketID);
-	 generarDetallesTicket($(".modal-body #ticketID").val());
-});
-
-function generarDetallesTicket(myticket){
-		$.ajax({
-		url: "lib/detallesTicket.php",
-		type: "POST",
-		dataType:"json",
-		data: {
-			"ticket": myticket,
-		},
-		beforeSend: function(){
-			//detalles
-			$("#problema").html("");
-		},
-		success: function(respuesta){
-			//detalles
-			if(respuesta.tickets){
-				$("#problema").html(respuesta.datos);
-				generarHistoricoTicket(myticket);
-			}
-		},
-		error: function(xhr, err){
-			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-			alert("responseText: "+xhr.responseText);
-		}
-	});
-}
-
-function generarHistoricoTicket(myticket){
-	$.ajax({
-		url: "lib/historicoTicket.php",
-		type: "POST",
-		dataType:"json",
-		data: {
-			"ticket": myticket,
-		},
-		beforeSend: function(){
-			//detalles
-			$("#detallesTicket").html("");
-		},
-		success: function(respuesta){
-			//detalles
-			if(respuesta.tickets){
-				$("#detallesTicket").html(respuesta.datos);
-			}
-		},
-		error: function(xhr, err){
-			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-			alert("responseText: "+xhr.responseText);
-		}
-	});
-}
-</script>
 <?php } else { die("debe iniciar sesi&oacute;n"); } ?>
 </body>
 </html>

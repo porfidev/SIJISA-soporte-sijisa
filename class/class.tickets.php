@@ -8,9 +8,9 @@
 * @author Porfirio Chávez <elporfirio@gmail.com>
 */
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.conexion.php");
 
-class ticketBeta
+class Ticket
 {
 	/**
 	* @var array Devuelve los datos obtenidos de las empresas
@@ -30,8 +30,32 @@ class ticketBeta
 	*
 	* @return void
 	*/
-	public function isQuery(){
+	public function isQuery($buscar = false){
 		$this->consulta = "SELECT * FROM tickets";
+		
+		switch($buscar){
+			case false:
+				// Nada que hacer, comentario de control.
+				break;
+			case "id":
+				$this->consulta .= " WHERE intIdEmpresa = :id_empresa";
+				break;
+			case "ticket":
+				$this->consulta .= " WHERE intIdticket = :id_ticket";
+				break;
+			default:
+				throw new Exception("No se ha ingresado un parametro correcto para establecer la busqueda");
+				break;
+		}
+	}
+	
+	
+	public function isFollow(){
+		$this->consulta = "SELECT transiciones.*, catusuarios.nombre
+							FROM transiciones
+							JOIN catusuarios ON transiciones.intIdUsuario = catusuarios.id_usuario
+							WHERE intIdTicket = :id_ticket
+							ORDER BY fecha DESC";
 	}
 	
 	/**
@@ -78,13 +102,16 @@ class ticketBeta
 									:usuario,
 									:observaciones,
 									:fecha,
-									:archivo);";
+									:archivo,
+									:tipo_atencion);";
 									
 		$this->consulta .= "UPDATE tickets
 							SET prioridad = :prioridad,
 								intIdEstatus = :estatus
 							WHERE intIdTicket = :idticket;";
 		
+		
+		settype($estatus, "integer");
 		
 		switch($estatus){
 			case 6: //Estado Cerrado
@@ -104,9 +131,26 @@ class ticketBeta
 									WHERE intIdTicket = :idticket
 									AND fecha_termino IS NULL;";
 				break;
+			default:
+				//nada por hacer
+				break;
 		}
 	}
 	
+	public function isReport($inicio = null, $fin = null, $empresa = null){
+		$this->consulta = "SELECT intIdUnico,
+							intIdEmpresa,
+							problema,
+							fecha_alta,
+							fecha_problema,
+							fecha_asignacion,
+							fecha_termino,
+							catestatus.Descripcion AS estado_actual
+							FROM tickets
+							JOIN catestatus ON catestatus.intIdEstatus = tickets.intIdEstatus
+							WHERE intIdEmpresa = :empresa
+							AND fecha_alta BETWEEN :fechainicio AND :fechafin";
+	}
 	
 	public function timeZone(){
 		date_default_timezone_set("America/Mexico_City"); 

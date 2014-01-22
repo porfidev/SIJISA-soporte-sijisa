@@ -10,14 +10,29 @@
 //Incluimos clases
 include("folder.php");
 //require_once(DIR_BASE."/class/class.consultas.php");
-require_once("../class/class.consultas.php");
+require_once("../class/class.tickets.php");
+require_once("../class/class.empresa.php");
 
-$oDatosTickets = new Ticket;
-$tickets = $_POST['empresa'] == "0" ? $oDatosTickets->obtenerTickets() : $oDatosTickets->obtenerTickets(array("empresa"=>$_POST['empresa']));
 
+$oTicket = new Ticket;
+$oEmpresa = new Empresa;
+if($_POST['empresa'] == "0") {
+	$tickets = $oTicket->consultaTicket();
+	$empresas = $oEmpresa->consultaEmpresa();
+}
+else {
+	$oTicket->isQuery("id");
+	$oTicket->setValores(array("id_empresa"=>$_POST['empresa']));
+	$tickets = $oTicket->consultaTicket();
+	
+	$oEmpresa->isQuery("id");
+	$oEmpresa->setValores(array("id_empresa"=>$_POST['empresa']));
+	$empresas = $oEmpresa->consultaEmpresa();
+}
+/*
 $oDatosEmpresa = new Empresa;
-$empresas = $_POST['empresa'] == "0" ? $oDatosEmpresa->obtenerEmpresa() : $oDatosEmpresa->obtenerEmpresa(array("empresa"=>$_POST['empresa']));
-
+$empresas = $_POST['empresa'] == "0" ? $oDatosEmpresa->consultaEmpresa() : $oDatosEmpresa->consultaEmpresa(array("empresa"=>$_POST['empresa']));
+*/
 $valores = array();
 $i = 0;
 

@@ -8,9 +8,9 @@
 * @author Porfirio Chávez <elporfirio@gmail.com>
 */
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.conexion.php");
 
-class UsuarioBeta{
+class Usuario{
 	/**
 	* @var int valor del ID de la empresa
 	* @access public
@@ -26,7 +26,6 @@ class UsuarioBeta{
 	
 	private $consulta = '';
 	private $valores = array();
-	private $tipo = '';
 	
 	private $error = 0;
 	private $errormsg = '';
@@ -41,16 +40,44 @@ class UsuarioBeta{
 	* de lo contrario arrojara a todos los usuarios.
 	* @return void
 	*/
-	public function isQuery(){
-		$this->consulta = "SELECT * FROM usuarios";
+	public function isQuery($buscar = false){
 		
-		if($this->empresa != ''){
-			$this->consulta.= " WHERE intIdEmpresa = :ID_empresa";
-			$this->valores = array("ID_empresa"=>$this->empresa);
-		}
-		else {
-			$this->valores = null;
-		}
+       if($buscar != false and $buscar != ""){
+           switch($buscar){
+               case "email":
+                    $this->consulta = "SELECT email
+                                       FROM usuarios
+                                       WHERE intIdTipoUsuario != 99
+                                       AND email = :email
+                                       LIMIT 1";
+                    break;
+               case "idxemail":
+                    $this->consulta = "SELECT intIdUsuario, nombre
+                                       FROM usuarios
+                                       WHERE email = :email
+                                       LIMIT 1";
+                                       
+                    break;
+               default:
+                    throw new Exception("No se ha definido un modo de búsqueda válido");
+                    break;
+           }
+       
+       }
+       else {
+           $this->consulta = "SELECT * FROM usuarios";
+		
+           if($this->empresa != ''){
+               $this->consulta.= " WHERE intIdEmpresa = :ID_empresa";
+               $this->valores = array("ID_empresa"=>$this->empresa);
+            }
+            else {
+                $this->valores = null;
+            }
+       }
+        
+        
+        
 	}
 	
 	/**
@@ -59,10 +86,21 @@ class UsuarioBeta{
 	*
 	* @return void
 	*/
-	public function isUpdate(){
+	public function isUpdate($campo = ""){
+        if($campo != ""){
+            switch($campo){
+                case "contrasena":
+                        $this->consulta = "UPDATE usuarios
+                                           SET password = :contrasena
+                                           WHERE intIdUsuario = :id_usuario";
+                     break;
+            }
+        }
+        else {
 		$this->consulta = "UPDATE usuarios
-							SET  nombre = :nombre, username = :usuario, email = :mail
+							SET  nombre = :nombre, username = :usuario, email = :mail, intIdTipoUsuario = :tipo_usuario
 							WHERE intIdUsuario = :id_usuario";
+        }
 	}
 	
 	/**
@@ -110,9 +148,8 @@ class UsuarioBeta{
 	public function isLogin(){
 		$this->consulta = "SELECT intIdUsuario,nombre,email,intIdEmpresa,intIdTipoUsuario
 							FROM usuarios
-							WHERE username = :usuario AND password = :contrasena";
-		
-		$this->tipo = "login";
+							WHERE username = :usuario
+							AND password = :contrasena";
 	}
 	
 	public function isRegister(){
@@ -129,6 +166,9 @@ class UsuarioBeta{
 		if(!empty($valores)){
 			$this->valores = $valores;
 		}
+		else {
+			throw new Exception("No se han ingresado valores para asignar");
+		}
 	}
 	
 	/**
@@ -137,7 +177,7 @@ class UsuarioBeta{
 	*
 	* @return array
 	*/
-	public function getUsuario(){
+	public function consultaUsuario(){
 		try{
 			$this->usuarios = $this->consultar();
 			return $this->usuarios;
@@ -146,40 +186,6 @@ class UsuarioBeta{
 			echo "Ocurrio un error: ".$error->getMessage();
 		}
 	}
-	
-	/**
-	* Obtiene todos los usuarios
-	* @param string $usuario
-	* @param string $contrasena
-	* @return bool
-	*/
-	public function obtenerUsuario($parametros = array()){
-		$valores = null;
-		$consulta = "SELECT * FROM usuarios";
-		
-		if(isset($parametros['empresa'])){
-			$consulta .= " WHERE IntIdEmpresa = :empresa";
-			$valores = array("empresa"=>$parametros['empresa']);
-		}
-		
-		$oConexion = new conectorDB;
-		$this->usuarios = $oConexion->consultarBD($consulta, $valores);
-		
-		return $this->usuarios;
-	}  // termina funcion obtenerUsuario
-	
-	public function registrarUsuario($parametros = array()){
-		$valores = null;
-		$consulta = "INSERT INTO usuarios
-					VALUES (null, :nombre, :usuario, :contrasena, :email, :empresa, null, :tipousuario)";
-		
-		$valores = array("nombre"=>$parametros['nombre'], "usuario"=>$parametros['usuario'], "contrasena"=>$parametros['contrasena'], "email"=>$parametros['email'], "empresa"=>$parametros['empresa'], "tipousuario"=>$parametros['tipousuario']);
-		
-		$oConexion = new conectorDB;
-		$resultado = $oConexion->consultarBD($consulta, $valores);
-		
-		return $resultado;
-	} // termina funcion registrarUsuario
-}/// Termina calse Usuario
+}/// Termina clase Usuario
 
 ?>

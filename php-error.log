@@ -1,746 +1,562 @@
-[12-Jul-2013 16:38:07 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in C:\wamp\www\soporte_akumen\crearEmpresa.php on line 58
-[12-Jul-2013 16:38:07 UTC] PHP Stack trace:
-[12-Jul-2013 16:38:07 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearEmpresa.php:0
-[12-Jul-2013 16:38:07 UTC] PHP   2. mysql_fetch_array() C:\wamp\www\soporte_akumen\crearEmpresa.php:58
-[12-Jul-2013 16:39:01 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in C:\wamp\www\soporte_akumen\crearEmpresa.php on line 59
-[12-Jul-2013 16:39:01 UTC] PHP Stack trace:
-[12-Jul-2013 16:39:01 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearEmpresa.php:0
-[12-Jul-2013 16:39:01 UTC] PHP   2. mysql_fetch_array() C:\wamp\www\soporte_akumen\crearEmpresa.php:59
-[12-Jul-2013 16:39:03 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in C:\wamp\www\soporte_akumen\crearEmpresa.php on line 59
-[12-Jul-2013 16:39:03 UTC] PHP Stack trace:
-[12-Jul-2013 16:39:03 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearEmpresa.php:0
-[12-Jul-2013 16:39:03 UTC] PHP   2. mysql_fetch_array() C:\wamp\www\soporte_akumen\crearEmpresa.php:59
-[12-Jul-2013 16:39:34 UTC] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, null given in C:\wamp\www\soporte_akumen\crearEmpresa.php on line 59
-[12-Jul-2013 16:39:34 UTC] PHP Stack trace:
-[12-Jul-2013 16:39:34 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearEmpresa.php:0
-[12-Jul-2013 16:39:34 UTC] PHP   2. mysql_fetch_array() C:\wamp\www\soporte_akumen\crearEmpresa.php:59
-[15-Jul-2013 14:19:18 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 148
-[15-Jul-2013 14:19:18 UTC] PHP Stack trace:
-[15-Jul-2013 14:19:18 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:19:35 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 148
-[15-Jul-2013 14:19:35 UTC] PHP Stack trace:
-[15-Jul-2013 14:19:35 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:19:36 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 148
-[15-Jul-2013 14:19:36 UTC] PHP Stack trace:
-[15-Jul-2013 14:19:36 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:19:37 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 148
-[15-Jul-2013 14:19:37 UTC] PHP Stack trace:
-[15-Jul-2013 14:19:37 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:19:54 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 148
-[15-Jul-2013 14:19:54 UTC] PHP Stack trace:
-[15-Jul-2013 14:19:54 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:22:03 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 147
-[15-Jul-2013 14:22:03 UTC] PHP Stack trace:
-[15-Jul-2013 14:22:03 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:23:59 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 160
-[15-Jul-2013 14:23:59 UTC] PHP Stack trace:
-[15-Jul-2013 14:23:59 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:26:48 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 152
-[15-Jul-2013 14:26:48 UTC] PHP Stack trace:
-[15-Jul-2013 14:26:48 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:29:01 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 157
-[15-Jul-2013 14:29:01 UTC] PHP Stack trace:
-[15-Jul-2013 14:29:01 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:30:26 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 161
-[15-Jul-2013 14:30:26 UTC] PHP Stack trace:
-[15-Jul-2013 14:30:26 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:32:21 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 162
-[15-Jul-2013 14:32:21 UTC] PHP Stack trace:
-[15-Jul-2013 14:32:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:32:41 UTC] PHP Fatal error:  Class 'consultarEmpresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 163
-[15-Jul-2013 14:32:41 UTC] PHP Stack trace:
-[15-Jul-2013 14:32:41 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:45:59 UTC] PHP Fatal error:  Class 'consultarUsuarios' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 209
-[15-Jul-2013 14:45:59 UTC] PHP Stack trace:
-[15-Jul-2013 14:45:59 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:47:23 UTC] PHP Fatal error:  Class 'consultarUsuarios' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 203
-[15-Jul-2013 14:47:23 UTC] PHP Stack trace:
-[15-Jul-2013 14:47:23 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:56:59 UTC] PHP Fatal error:  Class 'consultarUsuarios' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 197
-[15-Jul-2013 14:56:59 UTC] PHP Stack trace:
-[15-Jul-2013 14:56:59 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 14:59:33 UTC] PHP Fatal error:  Class 'consultarUsuarios' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 202
-[15-Jul-2013 14:59:33 UTC] PHP Stack trace:
-[15-Jul-2013 14:59:33 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 15:04:11 UTC] PHP Fatal error:  Class 'consultarUsuarios' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 204
-[15-Jul-2013 15:04:11 UTC] PHP Stack trace:
-[15-Jul-2013 15:04:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 15:09:44 UTC] PHP Fatal error:  Class 'consultarUsuarios' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 211
-[15-Jul-2013 15:09:44 UTC] PHP Stack trace:
-[15-Jul-2013 15:09:44 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 17:45:19 UTC] PHP Fatal error:  Cannot use string offset as an array in C:\wamp\www\soporte_akumen\prueba.php on line 4
-[15-Jul-2013 17:45:19 UTC] PHP Stack trace:
-[15-Jul-2013 17:45:19 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\prueba.php:0
-[15-Jul-2013 17:45:31 UTC] PHP Fatal error:  Cannot use string offset as an array in C:\wamp\www\soporte_akumen\prueba.php on line 4
-[15-Jul-2013 17:45:31 UTC] PHP Stack trace:
-[15-Jul-2013 17:45:31 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\prueba.php:0
-[15-Jul-2013 17:47:30 UTC] PHP Fatal error:  Cannot use string offset as an array in C:\wamp\www\soporte_akumen\prueba.php on line 4
-[15-Jul-2013 17:47:30 UTC] PHP Stack trace:
-[15-Jul-2013 17:47:30 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\prueba.php:0
-[15-Jul-2013 18:42:26 UTC] PHP Fatal error:  Call to undefined function print_f() in C:\wamp\www\soporte_akumen\prueba.php on line 2
-[15-Jul-2013 18:42:26 UTC] PHP Stack trace:
-[15-Jul-2013 18:42:26 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\prueba.php:0
-[15-Jul-2013 18:42:42 UTC] PHP Fatal error:  Call to undefined function print_f() in C:\wamp\www\soporte_akumen\prueba.php on line 2
-[15-Jul-2013 18:42:42 UTC] PHP Stack trace:
-[15-Jul-2013 18:42:42 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\prueba.php:0
-[15-Jul-2013 20:29:22 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 170
-[15-Jul-2013 20:29:22 UTC] PHP Stack trace:
-[15-Jul-2013 20:29:22 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 20:29:24 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 170
-[15-Jul-2013 20:29:24 UTC] PHP Stack trace:
-[15-Jul-2013 20:29:24 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 20:30:27 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 170
-[15-Jul-2013 20:30:27 UTC] PHP Stack trace:
-[15-Jul-2013 20:30:27 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[15-Jul-2013 20:30:47 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ')' in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 170
-[15-Jul-2013 20:30:47 UTC] PHP Stack trace:
-[15-Jul-2013 20:30:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\index.php:0
-[16-Jul-2013 14:37:20 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:37:20 UTC] PHP Stack trace:
-[16-Jul-2013 14:37:20 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:38:29 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:38:29 UTC] PHP Stack trace:
-[16-Jul-2013 14:38:29 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:39:41 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:39:41 UTC] PHP Stack trace:
-[16-Jul-2013 14:39:41 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:41:53 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 80
-[16-Jul-2013 14:41:53 UTC] PHP Stack trace:
-[16-Jul-2013 14:41:53 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:42:04 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 80
-[16-Jul-2013 14:42:04 UTC] PHP Stack trace:
-[16-Jul-2013 14:42:04 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:42:30 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 81
-[16-Jul-2013 14:42:30 UTC] PHP Stack trace:
-[16-Jul-2013 14:42:30 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:42:32 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 81
-[16-Jul-2013 14:42:32 UTC] PHP Stack trace:
-[16-Jul-2013 14:42:32 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:42:56 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 86
-[16-Jul-2013 14:42:56 UTC] PHP Stack trace:
-[16-Jul-2013 14:42:56 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:43:22 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 86
-[16-Jul-2013 14:43:22 UTC] PHP Stack trace:
-[16-Jul-2013 14:43:22 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:43:24 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 86
-[16-Jul-2013 14:43:24 UTC] PHP Stack trace:
-[16-Jul-2013 14:43:24 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:43:33 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 82
-[16-Jul-2013 14:43:33 UTC] PHP Stack trace:
-[16-Jul-2013 14:43:33 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:47:18 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:47:18 UTC] PHP Stack trace:
-[16-Jul-2013 14:47:18 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:47:20 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:47:20 UTC] PHP Stack trace:
-[16-Jul-2013 14:47:20 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:47:21 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:47:21 UTC] PHP Stack trace:
-[16-Jul-2013 14:47:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:47:24 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:47:24 UTC] PHP Stack trace:
-[16-Jul-2013 14:47:24 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:49:57 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:49:57 UTC] PHP Stack trace:
-[16-Jul-2013 14:49:57 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:49:59 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:49:59 UTC] PHP Stack trace:
-[16-Jul-2013 14:49:59 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:50:08 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:50:08 UTC] PHP Stack trace:
-[16-Jul-2013 14:50:08 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:50:20 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:50:20 UTC] PHP Stack trace:
-[16-Jul-2013 14:50:20 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:51:34 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:51:34 UTC] PHP Stack trace:
-[16-Jul-2013 14:51:34 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:53:04 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 81
-[16-Jul-2013 14:53:04 UTC] PHP Stack trace:
-[16-Jul-2013 14:53:04 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:53:14 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 77
-[16-Jul-2013 14:53:14 UTC] PHP Stack trace:
-[16-Jul-2013 14:53:14 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:53:16 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 77
-[16-Jul-2013 14:53:16 UTC] PHP Stack trace:
-[16-Jul-2013 14:53:16 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:55:17 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 78
-[16-Jul-2013 14:55:17 UTC] PHP Stack trace:
-[16-Jul-2013 14:55:17 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:55:19 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 78
-[16-Jul-2013 14:55:19 UTC] PHP Stack trace:
-[16-Jul-2013 14:55:19 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:55:21 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 78
-[16-Jul-2013 14:55:21 UTC] PHP Stack trace:
-[16-Jul-2013 14:55:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:56:58 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 14:56:58 UTC] PHP Stack trace:
-[16-Jul-2013 14:56:58 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:57:14 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 77
-[16-Jul-2013 14:57:14 UTC] PHP Stack trace:
-[16-Jul-2013 14:57:14 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:58:04 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 83
-[16-Jul-2013 14:58:04 UTC] PHP Stack trace:
-[16-Jul-2013 14:58:04 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:58:21 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 83
-[16-Jul-2013 14:58:21 UTC] PHP Stack trace:
-[16-Jul-2013 14:58:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:58:56 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 92
-[16-Jul-2013 14:58:56 UTC] PHP Stack trace:
-[16-Jul-2013 14:58:56 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 14:59:47 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 92
-[16-Jul-2013 14:59:47 UTC] PHP Stack trace:
-[16-Jul-2013 14:59:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:00:58 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:00:58 UTC] PHP Stack trace:
-[16-Jul-2013 15:00:58 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:01:17 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:01:17 UTC] PHP Stack trace:
-[16-Jul-2013 15:01:17 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:18:11 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:18:11 UTC] PHP Stack trace:
-[16-Jul-2013 15:18:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:18:21 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:18:21 UTC] PHP Stack trace:
-[16-Jul-2013 15:18:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:19:05 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:19:05 UTC] PHP Stack trace:
-[16-Jul-2013 15:19:05 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:19:07 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:19:07 UTC] PHP Stack trace:
-[16-Jul-2013 15:19:07 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:19:14 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:19:14 UTC] PHP Stack trace:
-[16-Jul-2013 15:19:14 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:19:16 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:19:16 UTC] PHP Stack trace:
-[16-Jul-2013 15:19:16 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:19:18 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:19:18 UTC] PHP Stack trace:
-[16-Jul-2013 15:19:18 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:19:49 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:19:49 UTC] PHP Stack trace:
-[16-Jul-2013 15:19:49 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:19:51 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:19:51 UTC] PHP Stack trace:
-[16-Jul-2013 15:19:51 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:19:56 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:19:56 UTC] PHP Stack trace:
-[16-Jul-2013 15:19:56 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:19:58 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:19:58 UTC] PHP Stack trace:
-[16-Jul-2013 15:19:58 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:53:05 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:53:05 UTC] PHP Stack trace:
-[16-Jul-2013 15:53:05 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:53:08 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:53:08 UTC] PHP Stack trace:
-[16-Jul-2013 15:53:08 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:54:00 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:54:00 UTC] PHP Stack trace:
-[16-Jul-2013 15:54:00 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:54:02 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:54:02 UTC] PHP Stack trace:
-[16-Jul-2013 15:54:02 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:55:44 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:55:44 UTC] PHP Stack trace:
-[16-Jul-2013 15:55:44 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:56:28 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:56:28 UTC] PHP Stack trace:
-[16-Jul-2013 15:56:28 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:56:30 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:56:30 UTC] PHP Stack trace:
-[16-Jul-2013 15:56:30 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:56:31 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:56:31 UTC] PHP Stack trace:
-[16-Jul-2013 15:56:31 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 15:59:41 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 15:59:41 UTC] PHP Stack trace:
-[16-Jul-2013 15:59:41 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:01:26 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 16:01:26 UTC] PHP Stack trace:
-[16-Jul-2013 16:01:26 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:02:48 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 79
-[16-Jul-2013 16:02:48 UTC] PHP Stack trace:
-[16-Jul-2013 16:02:48 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:12:40 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 92
-[16-Jul-2013 16:12:40 UTC] PHP Stack trace:
-[16-Jul-2013 16:12:40 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:13:02 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 92
-[16-Jul-2013 16:13:02 UTC] PHP Stack trace:
-[16-Jul-2013 16:13:02 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:13:57 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 92
-[16-Jul-2013 16:13:57 UTC] PHP Stack trace:
-[16-Jul-2013 16:13:57 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:15:05 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 92
-[16-Jul-2013 16:15:05 UTC] PHP Stack trace:
-[16-Jul-2013 16:15:05 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:15:46 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 95
-[16-Jul-2013 16:15:46 UTC] PHP Stack trace:
-[16-Jul-2013 16:15:46 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:23:56 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 98
-[16-Jul-2013 16:23:56 UTC] PHP Stack trace:
-[16-Jul-2013 16:23:56 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:24:04 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 98
-[16-Jul-2013 16:24:04 UTC] PHP Stack trace:
-[16-Jul-2013 16:24:04 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:24:48 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 98
-[16-Jul-2013 16:24:48 UTC] PHP Stack trace:
-[16-Jul-2013 16:24:48 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:24:51 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 98
-[16-Jul-2013 16:24:51 UTC] PHP Stack trace:
-[16-Jul-2013 16:24:51 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:24:55 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 98
-[16-Jul-2013 16:24:55 UTC] PHP Stack trace:
-[16-Jul-2013 16:24:55 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:26:38 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 98
-[16-Jul-2013 16:26:38 UTC] PHP Stack trace:
-[16-Jul-2013 16:26:38 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:27:28 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 96
-[16-Jul-2013 16:27:28 UTC] PHP Stack trace:
-[16-Jul-2013 16:27:28 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:27:39 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 96
-[16-Jul-2013 16:27:39 UTC] PHP Stack trace:
-[16-Jul-2013 16:27:39 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:28:45 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 16:28:45 UTC] PHP Stack trace:
-[16-Jul-2013 16:28:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:29:26 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 16:29:26 UTC] PHP Stack trace:
-[16-Jul-2013 16:29:26 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:30:16 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 16:30:16 UTC] PHP Stack trace:
-[16-Jul-2013 16:30:16 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:30:26 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 16:30:26 UTC] PHP Stack trace:
-[16-Jul-2013 16:30:26 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:30:27 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 16:30:27 UTC] PHP Stack trace:
-[16-Jul-2013 16:30:27 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:30:32 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 16:30:32 UTC] PHP Stack trace:
-[16-Jul-2013 16:30:32 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:30:34 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 16:30:34 UTC] PHP Stack trace:
-[16-Jul-2013 16:30:34 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:48:15 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 16:48:15 UTC] PHP Stack trace:
-[16-Jul-2013 16:48:15 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:48:43 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 99
-[16-Jul-2013 16:48:43 UTC] PHP Stack trace:
-[16-Jul-2013 16:48:43 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:48:45 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 99
-[16-Jul-2013 16:48:45 UTC] PHP Stack trace:
-[16-Jul-2013 16:48:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:50:18 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 104
-[16-Jul-2013 16:50:18 UTC] PHP Stack trace:
-[16-Jul-2013 16:50:18 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:50:20 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 104
-[16-Jul-2013 16:50:20 UTC] PHP Stack trace:
-[16-Jul-2013 16:50:20 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:51:41 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 103
-[16-Jul-2013 16:51:41 UTC] PHP Stack trace:
-[16-Jul-2013 16:51:41 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:52:27 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 109
-[16-Jul-2013 16:52:27 UTC] PHP Stack trace:
-[16-Jul-2013 16:52:27 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:53:29 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 111
-[16-Jul-2013 16:53:29 UTC] PHP Stack trace:
-[16-Jul-2013 16:53:29 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 16:53:48 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 110
-[16-Jul-2013 16:53:48 UTC] PHP Stack trace:
-[16-Jul-2013 16:53:48 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 17:20:00 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 100
-[16-Jul-2013 17:20:00 UTC] PHP Stack trace:
-[16-Jul-2013 17:20:00 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 17:20:57 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 100
-[16-Jul-2013 17:20:57 UTC] PHP Stack trace:
-[16-Jul-2013 17:20:57 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 17:27:06 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 100
-[16-Jul-2013 17:27:06 UTC] PHP Stack trace:
-[16-Jul-2013 17:27:06 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 17:27:53 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 100
-[16-Jul-2013 17:27:53 UTC] PHP Stack trace:
-[16-Jul-2013 17:27:53 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 17:28:39 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 100
-[16-Jul-2013 17:28:39 UTC] PHP Stack trace:
-[16-Jul-2013 17:28:39 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 17:29:03 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 100
-[16-Jul-2013 17:29:03 UTC] PHP Stack trace:
-[16-Jul-2013 17:29:03 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:13:37 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:13:37 UTC] PHP Stack trace:
-[16-Jul-2013 18:13:37 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:17:21 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:17:21 UTC] PHP Stack trace:
-[16-Jul-2013 18:17:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:17:24 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:17:24 UTC] PHP Stack trace:
-[16-Jul-2013 18:17:24 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:17:35 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:17:35 UTC] PHP Stack trace:
-[16-Jul-2013 18:17:35 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:17:51 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:17:51 UTC] PHP Stack trace:
-[16-Jul-2013 18:17:51 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:18:07 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:18:07 UTC] PHP Stack trace:
-[16-Jul-2013 18:18:07 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:18:09 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:18:09 UTC] PHP Stack trace:
-[16-Jul-2013 18:18:09 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:18:11 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:18:11 UTC] PHP Stack trace:
-[16-Jul-2013 18:18:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:18:25 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:18:25 UTC] PHP Stack trace:
-[16-Jul-2013 18:18:25 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:18:29 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:18:29 UTC] PHP Stack trace:
-[16-Jul-2013 18:18:29 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:18:31 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:18:31 UTC] PHP Stack trace:
-[16-Jul-2013 18:18:31 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:21:33 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:21:33 UTC] PHP Stack trace:
-[16-Jul-2013 18:21:33 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:22:14 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:22:14 UTC] PHP Stack trace:
-[16-Jul-2013 18:22:14 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:22:54 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:22:54 UTC] PHP Stack trace:
-[16-Jul-2013 18:22:54 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:23:26 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:23:26 UTC] PHP Stack trace:
-[16-Jul-2013 18:23:26 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:23:29 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:23:29 UTC] PHP Stack trace:
-[16-Jul-2013 18:23:29 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:24:11 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:24:11 UTC] PHP Stack trace:
-[16-Jul-2013 18:24:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:24:13 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:24:13 UTC] PHP Stack trace:
-[16-Jul-2013 18:24:13 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:25:02 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:25:02 UTC] PHP Stack trace:
-[16-Jul-2013 18:25:02 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:25:45 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:25:45 UTC] PHP Stack trace:
-[16-Jul-2013 18:25:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:27:06 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:27:06 UTC] PHP Stack trace:
-[16-Jul-2013 18:27:06 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:27:10 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:27:10 UTC] PHP Stack trace:
-[16-Jul-2013 18:27:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:32:43 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:32:43 UTC] PHP Stack trace:
-[16-Jul-2013 18:32:43 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:36:01 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:36:01 UTC] PHP Stack trace:
-[16-Jul-2013 18:36:01 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:36:10 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:36:10 UTC] PHP Stack trace:
-[16-Jul-2013 18:36:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:36:45 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:36:45 UTC] PHP Stack trace:
-[16-Jul-2013 18:36:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:36:48 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:36:48 UTC] PHP Stack trace:
-[16-Jul-2013 18:36:48 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:37:28 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:37:28 UTC] PHP Stack trace:
-[16-Jul-2013 18:37:28 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:38:04 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:38:04 UTC] PHP Stack trace:
-[16-Jul-2013 18:38:04 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:40:30 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:40:30 UTC] PHP Stack trace:
-[16-Jul-2013 18:40:30 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:40:56 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:40:56 UTC] PHP Stack trace:
-[16-Jul-2013 18:40:56 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:43:09 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:43:09 UTC] PHP Stack trace:
-[16-Jul-2013 18:43:09 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 18:49:01 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 18:49:01 UTC] PHP Stack trace:
-[16-Jul-2013 18:49:01 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 20:42:38 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 20:42:38 UTC] PHP Stack trace:
-[16-Jul-2013 20:42:38 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 20:43:04 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 20:43:04 UTC] PHP Stack trace:
-[16-Jul-2013 20:43:04 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[16-Jul-2013 20:46:17 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 97
-[16-Jul-2013 20:46:17 UTC] PHP Stack trace:
-[16-Jul-2013 20:46:17 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[20-Jul-2013 20:15:37 UTC] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
-[20-Jul-2013 20:15:37 UTC] PHP Stack trace:
-[20-Jul-2013 20:15:37 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[20-Jul-2013 20:15:37 UTC] PHP   2. include() C:\wamp\www\soporte_akumen\seguimientoTicket.php:8
-[20-Jul-2013 20:15:37 UTC] PHP Notice:  Constant DIR_BASE already defined in C:\wamp\www\soporte_akumen\folder.php on line 3
-[20-Jul-2013 20:15:37 UTC] PHP Stack trace:
-[20-Jul-2013 20:15:37 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[20-Jul-2013 20:15:37 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\seguimientoTicket.php:11
-[20-Jul-2013 20:15:37 UTC] PHP   3. include() C:\wamp\www\soporte_akumen\class\class.consultas.php:10
-[20-Jul-2013 20:15:37 UTC] PHP   4. define() C:\wamp\www\soporte_akumen\folder.php:3
-[20-Jul-2013 20:15:37 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
-[20-Jul-2013 20:15:37 UTC] PHP Stack trace:
-[20-Jul-2013 20:15:37 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[20-Jul-2013 20:15:37 UTC] PHP   2. Empresa->obtenerEmpresa() C:\wamp\www\soporte_akumen\seguimientoTicket.php:65
-[20-Jul-2013 20:15:37 UTC] PHP   3. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.consultas.php:139
-[20-Jul-2013 20:17:00 UTC] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
-[20-Jul-2013 20:17:00 UTC] PHP Stack trace:
-[20-Jul-2013 20:17:00 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[20-Jul-2013 20:17:00 UTC] PHP   2. include() C:\wamp\www\soporte_akumen\seguimientoTicket.php:8
-[20-Jul-2013 20:17:00 UTC] PHP Notice:  Constant DIR_BASE already defined in C:\wamp\www\soporte_akumen\folder.php on line 3
-[20-Jul-2013 20:17:00 UTC] PHP Stack trace:
-[20-Jul-2013 20:17:00 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[20-Jul-2013 20:17:00 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\seguimientoTicket.php:11
-[20-Jul-2013 20:17:00 UTC] PHP   3. include() C:\wamp\www\soporte_akumen\class\class.consultas.php:10
-[20-Jul-2013 20:17:00 UTC] PHP   4. define() C:\wamp\www\soporte_akumen\folder.php:3
-[20-Jul-2013 20:17:00 UTC] PHP Fatal error:  Class 'configuracion' not found in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 17
-[20-Jul-2013 20:17:00 UTC] PHP Stack trace:
-[20-Jul-2013 20:17:00 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
-[20-Jul-2013 20:17:00 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\seguimientoTicket.php:11
-[23-Jul-2013 22:35:43 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[23-Jul-2013 22:35:43 UTC] PHP Stack trace:
-[23-Jul-2013 22:35:43 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[23-Jul-2013 22:35:43 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[23-Jul-2013 22:35:43 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[23-Jul-2013 22:35:43 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[23-Jul-2013 22:35:43 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[23-Jul-2013 22:36:08 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[23-Jul-2013 22:36:08 UTC] PHP Stack trace:
-[23-Jul-2013 22:36:08 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[23-Jul-2013 22:36:08 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[23-Jul-2013 22:36:08 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[23-Jul-2013 22:36:08 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[23-Jul-2013 22:36:08 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[23-Jul-2013 22:36:10 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[23-Jul-2013 22:36:10 UTC] PHP Stack trace:
-[23-Jul-2013 22:36:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[23-Jul-2013 22:36:10 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[23-Jul-2013 22:36:10 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[23-Jul-2013 22:36:10 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[23-Jul-2013 22:36:10 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[24-Jul-2013 14:44:10 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[24-Jul-2013 14:44:10 UTC] PHP Stack trace:
-[24-Jul-2013 14:44:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[24-Jul-2013 14:44:10 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[24-Jul-2013 14:44:10 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[24-Jul-2013 14:44:10 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[24-Jul-2013 14:44:10 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[24-Jul-2013 17:33:02 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[24-Jul-2013 17:33:02 UTC] PHP Stack trace:
-[24-Jul-2013 17:33:02 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[24-Jul-2013 17:33:02 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[24-Jul-2013 17:33:02 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[24-Jul-2013 17:33:02 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[24-Jul-2013 17:33:02 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[24-Jul-2013 17:33:19 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[24-Jul-2013 17:33:19 UTC] PHP Stack trace:
-[24-Jul-2013 17:33:19 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[24-Jul-2013 17:33:19 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[24-Jul-2013 17:33:19 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[24-Jul-2013 17:33:19 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[24-Jul-2013 17:33:19 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[24-Jul-2013 17:33:29 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[24-Jul-2013 17:33:29 UTC] PHP Stack trace:
-[24-Jul-2013 17:33:29 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[24-Jul-2013 17:33:29 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[24-Jul-2013 17:33:29 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[24-Jul-2013 17:33:29 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[24-Jul-2013 17:33:29 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[24-Jul-2013 17:33:47 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[24-Jul-2013 17:33:47 UTC] PHP Stack trace:
-[24-Jul-2013 17:33:47 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[24-Jul-2013 17:33:47 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[24-Jul-2013 17:33:47 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[24-Jul-2013 17:33:47 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[24-Jul-2013 17:33:47 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[24-Jul-2013 21:12:27 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[24-Jul-2013 21:12:27 UTC] PHP Stack trace:
-[24-Jul-2013 21:12:27 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[24-Jul-2013 21:12:27 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[24-Jul-2013 21:12:27 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[24-Jul-2013 21:12:27 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[24-Jul-2013 21:12:27 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 16:02:49 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 16:02:49 UTC] PHP Stack trace:
-[06-Aug-2013 16:02:49 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 16:02:49 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 16:02:49 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 16:02:49 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 16:02:49 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 16:30:18 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 16:30:18 UTC] PHP Stack trace:
-[06-Aug-2013 16:30:18 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 16:30:18 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 16:30:18 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 16:30:18 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 16:30:18 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 21:53:59 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 21:53:59 UTC] PHP Stack trace:
-[06-Aug-2013 21:53:59 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 21:53:59 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 21:53:59 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 21:53:59 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 21:53:59 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 22:04:21 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 22:04:21 UTC] PHP Stack trace:
-[06-Aug-2013 22:04:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 22:04:21 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 22:04:21 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 22:04:21 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 22:04:21 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 22:04:24 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 22:04:24 UTC] PHP Stack trace:
-[06-Aug-2013 22:04:24 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 22:04:24 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 22:04:24 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 22:04:24 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 22:04:24 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 22:36:50 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 22:36:50 UTC] PHP Stack trace:
-[06-Aug-2013 22:36:50 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 22:36:50 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 22:36:50 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 22:36:50 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 22:36:50 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 22:39:03 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 22:39:03 UTC] PHP Stack trace:
-[06-Aug-2013 22:39:03 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 22:39:03 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 22:39:03 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 22:39:03 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 22:39:03 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 22:44:21 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 22:44:21 UTC] PHP Stack trace:
-[06-Aug-2013 22:44:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 22:44:21 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 22:44:21 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 22:44:21 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 22:44:21 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 22:45:54 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 22:45:54 UTC] PHP Stack trace:
-[06-Aug-2013 22:45:54 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 22:45:54 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 22:45:54 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 22:45:54 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 22:45:54 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[06-Aug-2013 22:47:17 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[06-Aug-2013 22:47:17 UTC] PHP Stack trace:
-[06-Aug-2013 22:47:17 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[06-Aug-2013 22:47:17 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[06-Aug-2013 22:47:17 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[06-Aug-2013 22:47:17 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[06-Aug-2013 22:47:17 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[13-Aug-2013 16:24:28 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[13-Aug-2013 16:24:28 UTC] PHP Stack trace:
-[13-Aug-2013 16:24:28 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[13-Aug-2013 16:24:28 UTC] PHP   2. consultarTickets->getTicketsCount() C:\wamp\www\soporte_akumen\inicio.php:39
-[13-Aug-2013 16:24:28 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:90
-[13-Aug-2013 16:24:28 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[13-Aug-2013 16:24:28 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[13-Aug-2013 16:25:55 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\inicio.php on line 33
-[13-Aug-2013 16:25:55 UTC] PHP Stack trace:
-[13-Aug-2013 16:25:55 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[13-Aug-2013 16:25:56 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\inicio.php on line 33
-[13-Aug-2013 16:25:56 UTC] PHP Stack trace:
-[13-Aug-2013 16:25:56 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[13-Aug-2013 16:25:56 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\inicio.php on line 33
-[13-Aug-2013 16:25:56 UTC] PHP Stack trace:
-[13-Aug-2013 16:25:56 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[13-Aug-2013 16:25:57 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\inicio.php on line 33
-[13-Aug-2013 16:25:57 UTC] PHP Stack trace:
-[13-Aug-2013 16:25:57 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[13-Aug-2013 16:25:59 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\inicio.php on line 33
-[13-Aug-2013 16:25:59 UTC] PHP Stack trace:
-[13-Aug-2013 16:25:59 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[13-Aug-2013 16:26:00 UTC] PHP Fatal error:  Class 'consultarTickets' not found in C:\wamp\www\soporte_akumen\inicio.php on line 33
-[13-Aug-2013 16:26:00 UTC] PHP Stack trace:
-[13-Aug-2013 16:26:00 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\inicio.php:0
-[13-Aug-2013 17:54:23 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\conexion.php on line 8
-[13-Aug-2013 17:54:23 UTC] PHP Stack trace:
-[13-Aug-2013 17:54:23 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\reporte_ticket_v2.php:0
-[13-Aug-2013 17:54:23 UTC] PHP   2. include() C:\wamp\www\soporte_akumen\reporte_ticket_v2.php:6
-[13-Aug-2013 17:54:23 UTC] PHP   3. mysql_connect() C:\wamp\www\soporte_akumen\conexion.php:8
-[13-Aug-2013 18:07:10 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[13-Aug-2013 18:07:10 UTC] PHP Stack trace:
-[13-Aug-2013 18:07:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\generar_reporte.php:0
-[13-Aug-2013 18:07:10 UTC] PHP   2. consultarTickets->getReporteTicket() C:\wamp\www\soporte_akumen\generar_reporte.php:21
-[13-Aug-2013 18:07:10 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:75
-[13-Aug-2013 18:07:10 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[13-Aug-2013 18:07:10 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[13-Aug-2013 18:16:51 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[13-Aug-2013 18:16:51 UTC] PHP Stack trace:
-[13-Aug-2013 18:16:51 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\generar_reporte.php:0
-[13-Aug-2013 18:16:51 UTC] PHP   2. consultarTickets->getReporteTicket() C:\wamp\www\soporte_akumen\generar_reporte.php:21
-[13-Aug-2013 18:16:51 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:75
-[13-Aug-2013 18:16:51 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[13-Aug-2013 18:16:51 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[16-Aug-2013 22:26:07 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[16-Aug-2013 22:26:07 UTC] PHP Stack trace:
-[16-Aug-2013 22:26:07 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\generar_reporte.php:0
-[16-Aug-2013 22:26:07 UTC] PHP   2. consultarTickets->getReporteTicket() C:\wamp\www\soporte_akumen\generar_reporte.php:21
-[16-Aug-2013 22:26:07 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:75
-[16-Aug-2013 22:26:07 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[16-Aug-2013 22:26:07 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[16-Aug-2013 22:35:30 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\conexion.php on line 8
-[16-Aug-2013 22:35:30 UTC] PHP Stack trace:
-[16-Aug-2013 22:35:30 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\master.php:0
-[16-Aug-2013 22:35:30 UTC] PHP   2. include() C:\wamp\www\soporte_akumen\master.php:6
-[16-Aug-2013 22:35:30 UTC] PHP   3. mysql_connect() C:\wamp\www\soporte_akumen\conexion.php:8
-[16-Aug-2013 22:38:11 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[16-Aug-2013 22:38:11 UTC] PHP Stack trace:
-[16-Aug-2013 22:38:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\ver_reporte.php:0
-[16-Aug-2013 22:38:11 UTC] PHP   2. consultarEmpresa->getEmpresas() C:\wamp\www\soporte_akumen\ver_reporte.php:96
-[16-Aug-2013 22:38:11 UTC] PHP   3. consultarEmpresa->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:287
-[16-Aug-2013 22:38:11 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:292
-[16-Aug-2013 22:38:11 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[19-Aug-2013 17:50:23 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[19-Aug-2013 17:50:23 UTC] PHP Stack trace:
-[19-Aug-2013 17:50:23 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\generar_reporte.php:0
-[19-Aug-2013 17:50:23 UTC] PHP   2. consultarTickets->getReporteTicket() C:\wamp\www\soporte_akumen\generar_reporte.php:21
-[19-Aug-2013 17:50:23 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:75
-[19-Aug-2013 17:50:23 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[19-Aug-2013 17:50:23 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[19-Aug-2013 17:50:27 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[19-Aug-2013 17:50:27 UTC] PHP Stack trace:
-[19-Aug-2013 17:50:27 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\generar_reporte.php:0
-[19-Aug-2013 17:50:27 UTC] PHP   2. consultarTickets->getReporteTicket() C:\wamp\www\soporte_akumen\generar_reporte.php:21
-[19-Aug-2013 17:50:27 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:75
-[19-Aug-2013 17:50:27 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[19-Aug-2013 17:50:27 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[19-Aug-2013 17:53:09 UTC] PHP Warning:  mysql_connect(): Access denied for user 'soporte_akumen'@'localhost' (using password: YES) in C:\wamp\www\soporte_akumen\class\maestra.php on line 11
-[19-Aug-2013 17:53:09 UTC] PHP Stack trace:
-[19-Aug-2013 17:53:09 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\generar_reporte.php:0
-[19-Aug-2013 17:53:09 UTC] PHP   2. consultarTickets->getReporteTicket() C:\wamp\www\soporte_akumen\generar_reporte.php:21
-[19-Aug-2013 17:53:09 UTC] PHP   3. consultarTickets->consultaDatos() C:\wamp\www\soporte_akumen\class\maestra.php:75
-[19-Aug-2013 17:53:09 UTC] PHP   4. Conectar::conectarBaseDatos() C:\wamp\www\soporte_akumen\class\maestra.php:255
-[19-Aug-2013 17:53:09 UTC] PHP   5. mysql_connect() C:\wamp\www\soporte_akumen\class\maestra.php:11
-[27-Aug-2013 14:43:25 UTC] PHP Warning:  require_once(class/maestra.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\generar_reporte.php on line 11
-[27-Aug-2013 14:43:25 UTC] PHP Stack trace:
-[27-Aug-2013 14:43:25 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\generar_reporte.php:0
-[27-Aug-2013 14:43:25 UTC] PHP Fatal error:  require_once(): Failed opening required 'class/maestra.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\generar_reporte.php on line 11
-[27-Aug-2013 14:43:25 UTC] PHP Stack trace:
-[27-Aug-2013 14:43:25 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\generar_reporte.php:0
-[27-Aug-2013 16:10:30 UTC] PHP Parse error:  syntax error, unexpected ';' in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 204
-[27-Aug-2013 16:10:30 UTC] PHP Stack trace:
-[27-Aug-2013 16:10:30 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
-[27-Aug-2013 19:24:48 UTC] PHP Fatal error:  Class 'Usuario' not found in C:\wamp\www\soporte_akumen\prueba.php on line 11
-[27-Aug-2013 19:24:48 UTC] PHP Stack trace:
-[27-Aug-2013 19:24:48 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\prueba.php:0
-[19-Sep-2013 15:46:33 UTC] PHP Fatal error:  Call to undefined method empresaBeta::getEmpresa() in C:\wamp\www\soporte_akumen\crearUsuario.php on line 25
-[19-Sep-2013 15:46:33 UTC] PHP Stack trace:
-[19-Sep-2013 15:46:33 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
-[19-Sep-2013 15:46:38 UTC] PHP Fatal error:  Call to undefined method empresaBeta::getEmpresa() in C:\wamp\www\soporte_akumen\crearUsuario.php on line 25
-[19-Sep-2013 15:46:38 UTC] PHP Stack trace:
-[19-Sep-2013 15:46:38 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
-[19-Sep-2013 22:23:30 UTC] PHP Parse error:  syntax error, unexpected '$oEmpresa' (T_VARIABLE) in C:\wamp\www\soporte_akumen\editarEmpresa.php on line 40
-[19-Sep-2013 22:23:46 UTC] PHP Fatal error:  Class 'empresaBeta' not found in C:\wamp\www\soporte_akumen\editarEmpresa.php on line 40
-[19-Sep-2013 22:23:46 UTC] PHP Stack trace:
-[19-Sep-2013 22:23:46 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\editarEmpresa.php:0
+[01-Oct-2013 16:37:05 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:05 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:05 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:05 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:05 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:05 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:37:53 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:53 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:53 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:53 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:53 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:53 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:37:54 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:54 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:54 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:54 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:54 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:54 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:37:55 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:55 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:55 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:55 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:55 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:55 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:37:56 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:56 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:56 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:56 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:56 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:56 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:37:56 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:56 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:56 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:56 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:56 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:56 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:37:57 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:57 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:57 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:57 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:57 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:57 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:37:58 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:58 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:58 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:58 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:58 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:58 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:37:59 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:59 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:59 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:59 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:59 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:59 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:37:59 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:37:59 UTC] PHP Stack trace:
+[01-Oct-2013 16:37:59 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:37:59 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:37:59 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:37:59 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:38:00 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:38:00 UTC] PHP Stack trace:
+[01-Oct-2013 16:38:00 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:38:00 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:38:00 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:38:00 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:38:36 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:38:36 UTC] PHP Stack trace:
+[01-Oct-2013 16:38:36 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:38:36 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:38:36 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:38:36 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:38:49 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:38:49 UTC] PHP Stack trace:
+[01-Oct-2013 16:38:49 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:38:49 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:38:49 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:38:49 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:38:53 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:38:53 UTC] PHP Stack trace:
+[01-Oct-2013 16:38:53 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:38:53 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:38:53 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:38:53 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:38:55 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:38:55 UTC] PHP Stack trace:
+[01-Oct-2013 16:38:55 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\editarUsuario.php:0
+[01-Oct-2013 16:38:55 UTC] PHP   2. Empresa->obtenerEmpresa() C:\wamp\www\soporte_akumen\editarUsuario.php:47
+[01-Oct-2013 16:38:55 UTC] PHP   3. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.consultas.php:227
+[01-Oct-2013 16:39:00 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[01-Oct-2013 16:39:00 UTC] PHP Stack trace:
+[01-Oct-2013 16:39:00 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:39:00 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:39:00 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:39:00 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 16:40:38 UTC] PHP Warning:  parse_ini_file(configuracn.ini): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\cfg\config.php on line 17
+[01-Oct-2013 16:40:38 UTC] PHP Stack trace:
+[01-Oct-2013 16:40:38 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:40:38 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:40:38 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:40:38 UTC] PHP   4. conectorDB->__construct() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 16:40:38 UTC] PHP   5. configuracion->conectar() C:\wamp\www\soporte_akumen\class\class.consultas.php:19
+[01-Oct-2013 16:40:38 UTC] PHP   6. parse_ini_file() C:\wamp\www\soporte_akumen\cfg\config.php:17
+[01-Oct-2013 16:40:46 UTC] PHP Warning:  parse_ini_file(configuracn.ini): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\cfg\config.php on line 17
+[01-Oct-2013 16:40:46 UTC] PHP Stack trace:
+[01-Oct-2013 16:40:46 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\editarUsuario.php:0
+[01-Oct-2013 16:40:46 UTC] PHP   2. Empresa->obtenerEmpresa() C:\wamp\www\soporte_akumen\editarUsuario.php:47
+[01-Oct-2013 16:40:46 UTC] PHP   3. conectorDB->__construct() C:\wamp\www\soporte_akumen\class\class.consultas.php:226
+[01-Oct-2013 16:40:46 UTC] PHP   4. configuracion->conectar() C:\wamp\www\soporte_akumen\class\class.consultas.php:19
+[01-Oct-2013 16:40:46 UTC] PHP   5. parse_ini_file() C:\wamp\www\soporte_akumen\cfg\config.php:17
+[01-Oct-2013 16:40:46 UTC] PHP Fatal error:  Uncaught exception 'Exception' with message 'No se puede abrir el archivo configuracn.ini.' in C:\wamp\www\soporte_akumen\cfg\config.php:17
+Stack trace:
+#0 C:\wamp\www\soporte_akumen\class\class.consultas.php(19): configuracion->conectar()
+#1 C:\wamp\www\soporte_akumen\class\class.consultas.php(226): conectorDB->__construct()
+#2 C:\wamp\www\soporte_akumen\editarUsuario.php(47): Empresa->obtenerEmpresa()
+#3 {main}
+  thrown in C:\wamp\www\soporte_akumen\cfg\config.php on line 17
+[01-Oct-2013 16:40:50 UTC] PHP Warning:  parse_ini_file(configuracn.ini): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\cfg\config.php on line 17
+[01-Oct-2013 16:40:50 UTC] PHP Stack trace:
+[01-Oct-2013 16:40:50 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 16:40:50 UTC] PHP   2. empresaBeta->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 16:40:50 UTC] PHP   3. empresaBeta->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 16:40:50 UTC] PHP   4. conectorDB->__construct() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 16:40:50 UTC] PHP   5. configuracion->conectar() C:\wamp\www\soporte_akumen\class\class.consultas.php:19
+[01-Oct-2013 16:40:50 UTC] PHP   6. parse_ini_file() C:\wamp\www\soporte_akumen\cfg\config.php:17
+[01-Oct-2013 17:18:58 UTC] PHP Fatal error:  Cannot redeclare class conectorDB in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 59
+[01-Oct-2013 17:18:58 UTC] PHP Stack trace:
+[01-Oct-2013 17:18:58 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:18:58 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\crearUsuario.php:13
+[01-Oct-2013 17:20:58 UTC] PHP Fatal error:  Cannot redeclare class conectorDB in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 66
+[01-Oct-2013 17:20:58 UTC] PHP Stack trace:
+[01-Oct-2013 17:20:58 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:20:58 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\crearUsuario.php:13
+[01-Oct-2013 17:21:12 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:21:12 UTC] PHP Stack trace:
+[01-Oct-2013 17:21:12 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:21:12 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:24
+[01-Oct-2013 17:21:12 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:105
+[01-Oct-2013 17:21:12 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:122
+[01-Oct-2013 17:22:36 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:22:36 UTC] PHP Stack trace:
+[01-Oct-2013 17:22:36 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:22:36 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:22:36 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:22:36 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:23:26 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:23:26 UTC] PHP Stack trace:
+[01-Oct-2013 17:23:26 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:23:26 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:23:26 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:23:26 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:24:06 UTC] PHP Fatal error:  Call to undefined method Empresa::obtenerEmpresa() in C:\wamp\www\soporte_akumen\crearUsuario.php on line 25
+[01-Oct-2013 17:24:06 UTC] PHP Stack trace:
+[01-Oct-2013 17:24:06 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:26:21 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:26:21 UTC] PHP Stack trace:
+[01-Oct-2013 17:26:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:26:21 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:26:21 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:26:21 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:27:41 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:27:41 UTC] PHP Stack trace:
+[01-Oct-2013 17:27:41 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:27:41 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:27:41 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:27:41 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:28:18 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:28:18 UTC] PHP Stack trace:
+[01-Oct-2013 17:28:18 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:28:18 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:28:18 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:28:18 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:28:19 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:28:19 UTC] PHP Stack trace:
+[01-Oct-2013 17:28:19 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:28:19 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:28:19 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:28:19 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:28:20 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:28:20 UTC] PHP Stack trace:
+[01-Oct-2013 17:28:20 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:28:20 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:28:20 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:28:20 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:28:21 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:28:21 UTC] PHP Stack trace:
+[01-Oct-2013 17:28:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:28:21 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:28:21 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:28:21 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:28:22 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:28:22 UTC] PHP Stack trace:
+[01-Oct-2013 17:28:22 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:28:22 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:28:22 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:28:22 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:28:23 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:28:23 UTC] PHP Stack trace:
+[01-Oct-2013 17:28:23 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:28:23 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:28:23 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:28:23 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:29:06 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:29:06 UTC] PHP Stack trace:
+[01-Oct-2013 17:29:06 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:29:06 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:29:06 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:29:06 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:29:07 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:29:07 UTC] PHP Stack trace:
+[01-Oct-2013 17:29:07 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:29:07 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:29:07 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:29:07 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:29:08 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:29:08 UTC] PHP Stack trace:
+[01-Oct-2013 17:29:08 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:29:08 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:29:08 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:29:08 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:30:05 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:30:05 UTC] PHP Stack trace:
+[01-Oct-2013 17:30:05 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:30:05 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:30:05 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:30:05 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:30:05 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:30:05 UTC] PHP Stack trace:
+[01-Oct-2013 17:30:05 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:30:05 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:30:05 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:30:05 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:30:06 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:30:06 UTC] PHP Stack trace:
+[01-Oct-2013 17:30:06 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:30:06 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:30:06 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:30:06 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:30:07 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:30:07 UTC] PHP Stack trace:
+[01-Oct-2013 17:30:07 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:30:07 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:30:07 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:30:07 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:30:08 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:30:08 UTC] PHP Stack trace:
+[01-Oct-2013 17:30:08 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:30:08 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:30:08 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:30:08 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:30:09 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:30:09 UTC] PHP Stack trace:
+[01-Oct-2013 17:30:09 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:30:09 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:30:09 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:30:09 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:30:10 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:30:10 UTC] PHP Stack trace:
+[01-Oct-2013 17:30:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:30:10 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:30:10 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:30:10 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:30:10 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:30:10 UTC] PHP Stack trace:
+[01-Oct-2013 17:30:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:30:10 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:30:10 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:30:10 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:30:11 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:30:11 UTC] PHP Stack trace:
+[01-Oct-2013 17:30:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:30:11 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:30:11 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:30:11 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:33:00 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:33:00 UTC] PHP Stack trace:
+[01-Oct-2013 17:33:00 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:33:00 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:33:00 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:33:00 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:33:02 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:33:02 UTC] PHP Stack trace:
+[01-Oct-2013 17:33:02 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:33:02 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:33:02 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:33:02 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:33:02 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:33:02 UTC] PHP Stack trace:
+[01-Oct-2013 17:33:02 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:33:02 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:33:02 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:33:02 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:33:03 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:33:03 UTC] PHP Stack trace:
+[01-Oct-2013 17:33:03 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:33:03 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:33:03 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:33:03 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:33:04 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[01-Oct-2013 17:33:04 UTC] PHP Stack trace:
+[01-Oct-2013 17:33:04 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:33:04 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:33:04 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:33:04 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:121
+[01-Oct-2013 17:33:32 UTC] PHP Warning:  parse_ini_file(C:\wamp\www\soporte_akumen\configuracion.ini): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\cfg\config.php on line 17
+[01-Oct-2013 17:33:32 UTC] PHP Stack trace:
+[01-Oct-2013 17:33:32 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:33:32 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:33:32 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:33:32 UTC] PHP   4. conectorDB->__construct() C:\wamp\www\soporte_akumen\class\class.empresa.php:120
+[01-Oct-2013 17:33:32 UTC] PHP   5. configuracion->conectar() C:\wamp\www\soporte_akumen\class\class.conexion.php:12
+[01-Oct-2013 17:33:32 UTC] PHP   6. parse_ini_file() C:\wamp\www\soporte_akumen\cfg\config.php:17
+[01-Oct-2013 17:33:33 UTC] PHP Warning:  parse_ini_file(C:\wamp\www\soporte_akumen\configuracion.ini): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\cfg\config.php on line 17
+[01-Oct-2013 17:33:33 UTC] PHP Stack trace:
+[01-Oct-2013 17:33:33 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearUsuario.php:0
+[01-Oct-2013 17:33:33 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\crearUsuario.php:25
+[01-Oct-2013 17:33:33 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:104
+[01-Oct-2013 17:33:33 UTC] PHP   4. conectorDB->__construct() C:\wamp\www\soporte_akumen\class\class.empresa.php:120
+[01-Oct-2013 17:33:33 UTC] PHP   5. configuracion->conectar() C:\wamp\www\soporte_akumen\class\class.conexion.php:12
+[01-Oct-2013 17:33:33 UTC] PHP   6. parse_ini_file() C:\wamp\www\soporte_akumen\cfg\config.php:17
+[02-Oct-2013 16:18:05 UTC] PHP Fatal error:  Cannot redeclare class conectorDB in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 59
+[02-Oct-2013 16:18:05 UTC] PHP Stack trace:
+[02-Oct-2013 16:18:05 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\editarUsuario.php:0
+[02-Oct-2013 16:18:05 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\editarUsuario.php:13
+[02-Oct-2013 16:18:36 UTC] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\editarUsuario.php on line 45
+[02-Oct-2013 16:18:36 UTC] PHP Stack trace:
+[02-Oct-2013 16:18:36 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\editarUsuario.php:0
+[02-Oct-2013 16:18:52 UTC] PHP Fatal error:  Call to undefined method Empresa::obtenerEmpresa() in C:\wamp\www\soporte_akumen\editarUsuario.php on line 48
+[02-Oct-2013 16:18:52 UTC] PHP Stack trace:
+[02-Oct-2013 16:18:52 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\editarUsuario.php:0
+[02-Oct-2013 16:56:50 UTC] PHP Fatal error:  Cannot redeclare class conectorDB in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 59
+[02-Oct-2013 16:56:50 UTC] PHP Stack trace:
+[02-Oct-2013 16:56:50 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\editarEmpresa.php:0
+[02-Oct-2013 16:56:50 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\editarEmpresa.php:13
+[02-Oct-2013 12:06:41 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 143
+[02-Oct-2013 12:06:41 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:06:41 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:06:51 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 143
+[02-Oct-2013 12:06:51 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:06:51 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:07:06 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 143
+[02-Oct-2013 12:07:06 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:07:06 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:07:40 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 143
+[02-Oct-2013 12:07:40 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:07:40 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:09:23 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 144
+[02-Oct-2013 12:09:23 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:09:23 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:09:42 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 144
+[02-Oct-2013 12:09:42 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:09:42 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:09:43 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 144
+[02-Oct-2013 12:09:43 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:09:43 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:09:44 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 144
+[02-Oct-2013 12:09:44 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:09:44 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:09:44 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 144
+[02-Oct-2013 12:09:44 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:09:44 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:10:57 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 144
+[02-Oct-2013 12:10:57 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:10:57 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:10:59 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 144
+[02-Oct-2013 12:10:59 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:10:59 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 12:11:27 America/Mexico_City] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\crearTicket.php on line 144
+[02-Oct-2013 12:11:27 America/Mexico_City] PHP Stack trace:
+[02-Oct-2013 12:11:27 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 17:11:45 UTC] PHP Fatal error:  Cannot redeclare class conectorDB in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 59
+[02-Oct-2013 17:11:45 UTC] PHP Stack trace:
+[02-Oct-2013 17:11:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\crearTicket.php:0
+[02-Oct-2013 17:11:45 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\crearTicket.php:10
+[02-Oct-2013 18:28:40 UTC] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 36
+[02-Oct-2013 18:28:40 UTC] PHP Stack trace:
+[02-Oct-2013 18:28:40 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
+[02-Oct-2013 18:29:22 UTC] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 36
+[02-Oct-2013 18:29:22 UTC] PHP Stack trace:
+[02-Oct-2013 18:29:22 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
+[02-Oct-2013 18:30:19 UTC] PHP Fatal error:  Call to undefined method Empresa::obtenerEmpresa() in C:\wamp\www\soporte_akumen\seguimientoTicket.php on line 40
+[02-Oct-2013 18:30:19 UTC] PHP Stack trace:
+[02-Oct-2013 18:30:19 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
+[02-Oct-2013 21:55:31 UTC] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\reporteTicket.php on line 107
+[02-Oct-2013 21:55:31 UTC] PHP Stack trace:
+[02-Oct-2013 21:55:31 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\reporteTicket.php:0
+[02-Oct-2013 21:57:06 UTC] PHP Fatal error:  Call to undefined method Empresa::obtenerEmpresa() in C:\wamp\www\soporte_akumen\reporteTicket.php on line 110
+[02-Oct-2013 21:57:06 UTC] PHP Stack trace:
+[02-Oct-2013 21:57:06 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\reporteTicket.php:0
+[02-Oct-2013 21:57:07 UTC] PHP Fatal error:  Call to undefined method Empresa::obtenerEmpresa() in C:\wamp\www\soporte_akumen\reporteTicket.php on line 110
+[02-Oct-2013 21:57:07 UTC] PHP Stack trace:
+[02-Oct-2013 21:57:07 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\reporteTicket.php:0
+[02-Oct-2013 23:32:13 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:32:13 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:32:13 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:32:13 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:32:13 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:32:13 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:10 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:10 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:10 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:10 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:10 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:10 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:11 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:11 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:11 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:11 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:11 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:11 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:12 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:12 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:12 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:12 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:12 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:12 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:12 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:12 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:12 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:12 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:12 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:12 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:59 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:59 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:59 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:59 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:59 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:59 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:59 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:59 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:59 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:33:59 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:33:59 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:33:59 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:00 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:00 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:00 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:00 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:00 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:00 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:01 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:01 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:01 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:01 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:01 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:01 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:02 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:02 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:02 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:02 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:02 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:02 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:03 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:03 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:03 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:03 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:03 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:03 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:04 Europe/London] PHP Warning:  require_once(C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:04 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:04 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:04 Europe/London] PHP Fatal error:  require_once(): Failed opening required 'C:\wamp\www\soporte_akumen/../Classes/PHPExcel.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 38
+[02-Oct-2013 23:34:04 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:04 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:19 Europe/London] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
+[02-Oct-2013 23:34:19 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:19 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:19 Europe/London] PHP   2. include() C:\wamp\www\soporte_akumen\pruebaexcel.php:38
+[02-Oct-2013 23:34:35 Europe/London] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
+[02-Oct-2013 23:34:35 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:35 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:35 Europe/London] PHP   2. include() C:\wamp\www\soporte_akumen\pruebaexcel.php:38
+[02-Oct-2013 23:34:51 Europe/London] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
+[02-Oct-2013 23:34:51 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:34:51 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:34:51 Europe/London] PHP   2. include() C:\wamp\www\soporte_akumen\pruebaexcel.php:38
+[02-Oct-2013 23:36:18 Europe/London] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
+[02-Oct-2013 23:36:18 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:36:18 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:36:18 Europe/London] PHP   2. include() C:\wamp\www\soporte_akumen\pruebaexcel.php:38
+[02-Oct-2013 23:36:49 Europe/London] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
+[02-Oct-2013 23:36:49 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:36:49 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:36:49 Europe/London] PHP   2. include() C:\wamp\www\soporte_akumen\pruebaexcel.php:38
+[02-Oct-2013 22:37:43 UTC] PHP Parse error:  syntax error, unexpected 'API' (T_STRING) in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 112
+[02-Oct-2013 23:59:30 Europe/London] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
+[02-Oct-2013 23:59:30 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:59:30 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:59:30 Europe/London] PHP   2. include() C:\wamp\www\soporte_akumen\pruebaexcel.php:40
+[02-Oct-2013 23:59:30 Europe/London] PHP Notice:  Constant DIR_BASE already defined in C:\wamp\www\soporte_akumen\folder.php on line 3
+[02-Oct-2013 23:59:30 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:59:30 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:59:30 Europe/London] PHP   2. require_once() C:\wamp\www\soporte_akumen\pruebaexcel.php:41
+[02-Oct-2013 23:59:30 Europe/London] PHP   3. include() C:\wamp\www\soporte_akumen\class\class.tickets.php:10
+[02-Oct-2013 23:59:30 Europe/London] PHP   4. define() C:\wamp\www\soporte_akumen\folder.php:3
+[02-Oct-2013 23:59:30 Europe/London] PHP Notice:  Constant DIR_BASE already defined in C:\wamp\www\soporte_akumen\folder.php on line 3
+[02-Oct-2013 23:59:30 Europe/London] PHP Stack trace:
+[02-Oct-2013 23:59:30 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[02-Oct-2013 23:59:30 Europe/London] PHP   2. require_once() C:\wamp\www\soporte_akumen\pruebaexcel.php:41
+[02-Oct-2013 23:59:30 Europe/London] PHP   3. require_once() C:\wamp\www\soporte_akumen\class\class.tickets.php:11
+[02-Oct-2013 23:59:30 Europe/London] PHP   4. include() C:\wamp\www\soporte_akumen\class\class.conexion.php:3
+[02-Oct-2013 23:59:30 Europe/London] PHP   5. define() C:\wamp\www\soporte_akumen\folder.php:3
+[02-Oct-2013 17:59:30 America/Mexico_City] PHP Fatal error:  Uncaught exception 'PHPExcel_Exception' with message 'Invalid character found in sheet title' in C:\wamp\www\soporte_akumen\class\PHPExcel\Worksheet.php:430
+Stack trace:
+#0 C:\wamp\www\soporte_akumen\class\PHPExcel\Worksheet.php(802): PHPExcel_Worksheet::_checkSheetTitle('Reporte generad...')
+#1 C:\wamp\www\soporte_akumen\pruebaexcel.php(75): PHPExcel_Worksheet->setTitle('Reporte generad...')
+#2 {main}
+  thrown in C:\wamp\www\soporte_akumen\class\PHPExcel\Worksheet.php on line 430
+[03-Oct-2013 00:00:58 Europe/London] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
+[03-Oct-2013 00:00:58 Europe/London] PHP Stack trace:
+[03-Oct-2013 00:00:58 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[03-Oct-2013 00:00:58 Europe/London] PHP   2. include() C:\wamp\www\soporte_akumen\pruebaexcel.php:40
+[03-Oct-2013 00:00:58 Europe/London] PHP Notice:  Constant DIR_BASE already defined in C:\wamp\www\soporte_akumen\folder.php on line 3
+[03-Oct-2013 00:00:58 Europe/London] PHP Stack trace:
+[03-Oct-2013 00:00:58 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[03-Oct-2013 00:00:58 Europe/London] PHP   2. require_once() C:\wamp\www\soporte_akumen\pruebaexcel.php:41
+[03-Oct-2013 00:00:58 Europe/London] PHP   3. include() C:\wamp\www\soporte_akumen\class\class.tickets.php:10
+[03-Oct-2013 00:00:58 Europe/London] PHP   4. define() C:\wamp\www\soporte_akumen\folder.php:3
+[03-Oct-2013 00:00:58 Europe/London] PHP Notice:  Constant DIR_BASE already defined in C:\wamp\www\soporte_akumen\folder.php on line 3
+[03-Oct-2013 00:00:58 Europe/London] PHP Stack trace:
+[03-Oct-2013 00:00:58 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[03-Oct-2013 00:00:58 Europe/London] PHP   2. require_once() C:\wamp\www\soporte_akumen\pruebaexcel.php:41
+[03-Oct-2013 00:00:58 Europe/London] PHP   3. require_once() C:\wamp\www\soporte_akumen\class\class.tickets.php:11
+[03-Oct-2013 00:00:58 Europe/London] PHP   4. include() C:\wamp\www\soporte_akumen\class\class.conexion.php:3
+[03-Oct-2013 00:00:58 Europe/London] PHP   5. define() C:\wamp\www\soporte_akumen\folder.php:3
+[03-Oct-2013 15:10:03 Europe/London] PHP Notice:  Use of undefined constant DIR_BASE - assumed 'DIR_BASE' in C:\wamp\www\soporte_akumen\folder.php on line 2
+[03-Oct-2013 15:10:03 Europe/London] PHP Stack trace:
+[03-Oct-2013 15:10:03 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[03-Oct-2013 15:10:03 Europe/London] PHP   2. include() C:\wamp\www\soporte_akumen\pruebaexcel.php:40
+[03-Oct-2013 15:10:03 Europe/London] PHP Notice:  Constant DIR_BASE already defined in C:\wamp\www\soporte_akumen\folder.php on line 3
+[03-Oct-2013 15:10:03 Europe/London] PHP Stack trace:
+[03-Oct-2013 15:10:03 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[03-Oct-2013 15:10:03 Europe/London] PHP   2. require_once() C:\wamp\www\soporte_akumen\pruebaexcel.php:41
+[03-Oct-2013 15:10:03 Europe/London] PHP   3. include() C:\wamp\www\soporte_akumen\class\class.tickets.php:10
+[03-Oct-2013 15:10:03 Europe/London] PHP   4. define() C:\wamp\www\soporte_akumen\folder.php:3
+[03-Oct-2013 15:10:03 Europe/London] PHP Notice:  Constant DIR_BASE already defined in C:\wamp\www\soporte_akumen\folder.php on line 3
+[03-Oct-2013 15:10:03 Europe/London] PHP Stack trace:
+[03-Oct-2013 15:10:03 Europe/London] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[03-Oct-2013 15:10:03 Europe/London] PHP   2. require_once() C:\wamp\www\soporte_akumen\pruebaexcel.php:41
+[03-Oct-2013 15:10:03 Europe/London] PHP   3. require_once() C:\wamp\www\soporte_akumen\class\class.tickets.php:11
+[03-Oct-2013 15:10:03 Europe/London] PHP   4. include() C:\wamp\www\soporte_akumen\class\class.conexion.php:3
+[03-Oct-2013 15:10:03 Europe/London] PHP   5. define() C:\wamp\www\soporte_akumen\folder.php:3
+[03-Oct-2013 15:01:21 UTC] PHP Fatal error:  Call to undefined method PHPExcel_Worksheet::getActiveSheet() in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 78
+[03-Oct-2013 15:01:21 UTC] PHP Stack trace:
+[03-Oct-2013 15:01:21 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[03-Oct-2013 15:14:46 UTC] PHP Fatal error:  Uncaught exception 'PHPExcel_Exception' with message 'Parameter $source should be an array.' in C:\wamp\www\soporte_akumen\class\PHPExcel\Worksheet.php:2396
+Stack trace:
+#0 C:\wamp\www\soporte_akumen\pruebaexcel.php(119): PHPExcel_Worksheet->fromArray(NULL, NULL, 'C5')
+#1 {main}
+  thrown in C:\wamp\www\soporte_akumen\class\PHPExcel\Worksheet.php on line 2396
+[03-Oct-2013 11:05:01 America/Mexico_City] PHP Fatal error:  Call to undefined method PHPExcel::getColumnDimension() in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 157
+[03-Oct-2013 11:05:01 America/Mexico_City] PHP Stack trace:
+[03-Oct-2013 11:05:01 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[03-Oct-2013 11:11:57 America/Mexico_City] PHP Fatal error:  Call to undefined method PHPExcel_Worksheet_ColumnDimension::setHeight() in C:\wamp\www\soporte_akumen\pruebaexcel.php on line 157
+[03-Oct-2013 11:11:57 America/Mexico_City] PHP Stack trace:
+[03-Oct-2013 11:11:57 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\pruebaexcel.php:0
+[13-Jan-2014 16:30:45 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[13-Jan-2014 16:30:45 UTC] PHP Stack trace:
+[13-Jan-2014 16:30:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\seguimientoTicket.php:0
+[13-Jan-2014 16:30:45 UTC] PHP   2. Empresa->consultaEmpresa() C:\wamp\www\soporte_akumen\seguimientoTicket.php:40
+[13-Jan-2014 16:30:45 UTC] PHP   3. Empresa->consultar() C:\wamp\www\soporte_akumen\class\class.empresa.php:116
+[13-Jan-2014 16:30:45 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.empresa.php:133

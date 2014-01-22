@@ -9,7 +9,6 @@
  
 //DEFINIMOS LOS DIRECTORIOS
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 
 session_start();
@@ -37,7 +36,7 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 <div class="container">
 <?php include("header.php");
 
-$oEmpresa = new empresaBeta;
+$oEmpresa = new Empresa;
 $empresas = $oEmpresa->consultaEmpresa();
 //print_r($oEmpresa);
 ?>
@@ -89,7 +88,7 @@ function editarEmpresa(){
 	
 	var editSiglas = editEmpresa.next();
 	var siglaEmpresa = editSiglas.html();
-	var inputSigla =  "<input type='text' name='inSiglas' class='span1' value='"+siglaEmpresa+"'>";
+	var inputSigla =  "<input type='text' name='inSiglas' class='span1' value='"+siglaEmpresa+"' maxlength='3'>";
 	editSiglas.html(inputSigla);
 	
 	var editCorreo = editSiglas.next();

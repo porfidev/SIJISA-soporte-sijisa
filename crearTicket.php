@@ -6,10 +6,12 @@ Desarrollado por Akumen.com.mx
 
 //DEFINIMOS LOS DIRECTORIOS
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
+require_once(DIR_BASE."/class/class.tickets.php");
+require_once(DIR_BASE."/class/class.empresa.php");
 
 //Iniciamos trabajo con sesiones
 session_start();
+session_write_close();
 
 //redirección si desean ingresar sin haberse logueado
 if ($_SESSION['tipo_usuario'] == null or !isset($_SESSION["tipo_usuario"])){
@@ -102,7 +104,7 @@ $(function(){
 	<div class="control-group">
 		<label class="control-label">Tipo de Solicitud</label>
 		<div class="controls">
-		<select name="tipoticket" autofocus required id="tipoticket">
+		<select name="tipoticket" required id="tipoticket">
 			<option value="">- Seleccione un tipo -</option>
 			<option value="Incidencia">Incidencia</option>
 			<option value="Control">Control de Cambios</option>
@@ -141,7 +143,7 @@ $(function(){
 			<option value="">- Seleccione una empresa -</option>
 			<?php
 			$oDatosEmpresa = new Empresa;
-			$empresasregistradas = $oDatosEmpresa->obtenerEmpresa();
+			$empresasregistradas = $oDatosEmpresa->consultaEmpresa();
 			
 			foreach($empresasregistradas as $indice => $campo){
 				echo "<option value=\"".$campo['intIdEmpresa']."\">".$campo['Descripcion']."</option>";

@@ -9,10 +9,10 @@
 
 //Incluimos clases
 include("folder.php");
-//require_once(DIR_BASE."/class/class.consultas.php");
 
 //Iniciamos trabajo con sesiones
 session_start();
+session_write_close();
 
 //Verificamos que sea adminstrador
 if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
@@ -61,7 +61,7 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 	<div class="control-group">
 		<div class="controls">
 			<input type="submit" name="guardar" id="guardar" value="Crear empresa" class="btn btn-primary btn-large">
-			<input type="reset" name="reset" id="reset" value="Reiniciar" class="btn btn-large" onClick="reiniciarCrearEmpresa();">
+			<input type="reset" name="resetFormEmpresa" id="resetFormEmpresa" value="Reiniciar" class="btn btn-large" onClick="reiniciarCrearEmpresa();">
 		</div>
 	</div>
 	<div class="clr"></div>

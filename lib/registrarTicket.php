@@ -1,11 +1,10 @@
 <?php
 //iniciamos sesion
 session_start();
-
+session_write_close();
 
 //Incluimos clases
 include("folder.php");
-require_once(DIR_BASE."/class/class.consultas.php");
 require_once(DIR_BASE."/class/class.tickets.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 require_once(DIR_BASE."/class/class.archivo.php");
@@ -24,8 +23,10 @@ if($_POST == null or !isset($_POST)){
 }
 else {
 	if(isset($_POST['tipo']) and $_POST['tipo'] == "seguimiento"){
-		$oTicket = new ticketBeta;
-		$oTicket->isUpdate();
+		$status = $_POST['estado'];
+		
+		$oTicket = new Ticket;
+		$oTicket->isUpdate($status);
 
 		if(isset($_FILES) and !empty($_FILES)){
 			$oArchivo = new Archivo;
@@ -51,7 +52,8 @@ else {
 									"prioridad" =>$_POST['prioridad'],
 									"fecha_cierre"=>$oTicket->timeZone(),
 									"fecha_asignacion"=>$oTicket->timeZone(),
-									"fecha_termino"=>$oTicket->timeZone()
+									"fecha_termino"=>$oTicket->timeZone(),
+									"tipo_atencion"=>$_POST['atencion']
 									));
 		
 		/*
@@ -88,10 +90,10 @@ else {
 		}*/	
 	}
 	else{
-		$oTicket = new ticketBeta;
+		$oTicket = new Ticket;
 		$oTicket->isRegister();
 		
-		$oEmpresa = new empresaBeta;
+		$oEmpresa = new Empresa;
 		$oEmpresa->isQuery(true);
 		$oEmpresa->setValores(array("id_empresa"=>$_POST['empresa']));
 		$empresa = $oEmpresa->consultaEmpresa();

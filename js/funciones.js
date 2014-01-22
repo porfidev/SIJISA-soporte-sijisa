@@ -20,16 +20,22 @@ function login(){
 		data:  {"usuario": usuario, "password": password},
 		url: 'lib/iniciarSesion.php',
 		type:  'post',
+		beforeSend: function(){
+			$("#login_form :input").attr("disabled", true);
+		},
         success: function(respuesta){
 			if(!respuesta.login){
 				$('#respuesta').html('<p>'+respuesta.mensaje+'</p>');
 			}
 			else{
-				window.location = respuesta.vinculo;
+				$(location).attr('href',respuesta.url);
 			}
+			$("#login_form :input").attr("disabled", false);
 		},
-		error: function(msg){
+		error: function(xhr,err){
 			$('#respuesta').html('<p>No se pudo procesar la solicitud</p>');
+			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+			alert("responseText: "+xhr.responseText);
 		}
 	});
 	
@@ -42,13 +48,13 @@ function login(){
 /* ####### se llama desde: CrearUsuario.php */
 function registrarUsuario(){
 	var nombre = $("#nombre").val();
-	var usuario = $("#usuario").val();
+	var usuario = $("#inUsuario").val();
 	var password = $("#password").val();
-	var email = $("#email").val();
-	var empresa = $("#empresa").val();
+	var email = $("#inMail").val();
+	var empresa = $("#inEmpresa").val();
 	var tipo_usuario = $("#tipo_usuario").val();
 	var crear = $("#crear").val();
-	var n_empresa = $("#n_empresa").val();
+	var n_empresa = $("#inNEmpresa").val();
 	
 	$("div").removeClass("info");
 	$(".help-inline").hide();
@@ -74,21 +80,27 @@ function registrarUsuario(){
 				$("#campo_usuario").addClass("info");
 				$("#campo_usuario .help-inline").show();
 				$("#formNuevoUsuario :input").attr("disabled", false);
+				$("#inUsuario").focus();
 			}
 			if(respuesta.email){
 				$("#campo_email").addClass("info");
 				$("#campo_email .help-inline").show();
 				$("#formNuevoUsuario :input").attr("disabled", false);
+				$("#inMail").focus();
 			}
 			if(respuesta.empresa){
 				$("#empresa_nueva").addClass("info");
 				$("#empresa_nueva .help-inline").show();
 				$("#formNuevoUsuario :input").attr("disabled", false);
+				$("#inEmpresa").focus();
 			}
 			if(respuesta.registro){
 				$("#crear").removeClass("btn-primary").addClass("btn-success").attr("value","Usuario creado");
 				$("#crear").attr("type","button");
-				$("#reset").attr("disabled",false);
+				$("#resetearUserForm").attr("disabled",false);
+			}
+			if(respuesta.mensaje){
+				console.error(respuesta.mensaje);
 			}
 		},
 		error: function(xhr,err){
@@ -141,7 +153,7 @@ function registrarEmpresa(){
 			if(respuesta.registro){
 				$("#guardar").removeClass("btn-primary").addClass("btn-success").attr("value","Empresa creada");
 				$("#guardar").attr("type","button");
-				$("#reset").attr("disabled",false);
+				$("#resetFormEmpresa").attr("disabled",false);
 			}
 			else{
 				alert(respuesta.mensaje);
@@ -169,28 +181,33 @@ function reiniciarCrearEmpresa(){
 ///////////////////////////////////////////////////////////////
 // METODO AJAX PARA SELECCIONAR LOS CLIENTES DE UNA EMPRESA
 function buscarClientes(empresa){
-	$.ajax({
-		beforeSend: function(bloquear){
-			$("#procedencia").attr("disabled","disabled");
-		},
-		dataType: "json",
-		data: {"empresa": empresa},
-		url: "lib/buscarClientes.php",
-		type: "POST",
-		success: function(respuesta){
-			$("#procedencia").removeAttr("disabled");
-			if(respuesta.clientes){
-				$('#remitente').html(respuesta.clientes);
+	if(empresa != "") {
+		$.ajax({
+			beforeSend: function(bloquear){
+				$("#procedencia").attr("disabled","disabled");
+			},
+			dataType: "json",
+			data: {"empresa": empresa, "ticket": true},
+			url: "lib/buscarUsuarios.php",
+			type: "POST",
+			success: function(respuesta){
+				$("#procedencia").removeAttr("disabled");
+				if(respuesta.clientes){
+					$('#remitente').html(respuesta.clientes);
+				}
+				else {
+					$('#remitente').html("<option value=''>- Sin clientes -</option>");
+				}
+			},
+			error:	function(xhr,err){
+				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+				alert("responseText: "+xhr.responseText);
 			}
-			else {
-				$('#remitente').html("<option value=''>- Sin clientes -</option>");
-			}
-		},
-		error:	function(xhr,err){
-			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-			alert("responseText: "+xhr.responseText);
-		}
-	});
+		});
+	}
+	else {
+		$('#remitente').html("<option value=''>- Seleccione un cliente -</option>");
+	}
 }
 
 ///////////////////////////////////////////////////////////////

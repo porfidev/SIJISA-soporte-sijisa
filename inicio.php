@@ -9,6 +9,7 @@
  
 //Iniciamos trabajo con sesiones
 session_start();
+session_write_close();
 
 //redirección si desean ingresar sin haberse logueado
 if ($_SESSION['nombre'] == null){
@@ -31,8 +32,8 @@ if ($_SESSION['nombre'] == null){
 	<?php include("header.php")?>
 	<!-- FIN DE HEADER -->
 	<div id="inicio">
-		<?php var_dump($_SESSION); ?>
 		<h3>Bienvenido <?php echo $_SESSION["nombre"] ?>.</h3>
+		<?php //var_dump($_SESSION); ?>
 	</div>
 </div>
 <!-- FOOTER -->

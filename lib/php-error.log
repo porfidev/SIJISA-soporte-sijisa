@@ -302,3 +302,182 @@ Stack trace:
 [19-Sep-2013 16:04:17 UTC] PHP Fatal error:  Call to protected method UsuarioBeta::consultar() from context '' in C:\wamp\www\soporte_akumen\lib\registrarUsuario.php on line 44
 [19-Sep-2013 16:04:17 UTC] PHP Stack trace:
 [19-Sep-2013 16:04:17 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarUsuario.php:0
+[30-Sep-2013 17:16:55 UTC] PHP Fatal error:  Call to undefined method UsuarioBeta::getUsuario() in C:\wamp\www\soporte_akumen\lib\iniciarSesion.php on line 40
+[30-Sep-2013 17:16:55 UTC] PHP Stack trace:
+[30-Sep-2013 17:16:55 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:0
+[30-Sep-2013 21:29:28 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[30-Sep-2013 21:29:28 UTC] PHP Stack trace:
+[30-Sep-2013 21:29:28 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:0
+[30-Sep-2013 21:29:28 UTC] PHP   2. UsuarioBeta->consultaUsuario() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:40
+[30-Sep-2013 21:29:28 UTC] PHP   3. UsuarioBeta->consultar() C:\wamp\www\soporte_akumen\class\class.usuario.php:140
+[30-Sep-2013 21:29:28 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.usuario.php:93
+[30-Sep-2013 21:32:02 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.consultas.php on line 27
+[30-Sep-2013 21:32:02 UTC] PHP Stack trace:
+[30-Sep-2013 21:32:02 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:0
+[30-Sep-2013 21:32:02 UTC] PHP   2. UsuarioBeta->consultaUsuario() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:40
+[30-Sep-2013 21:32:02 UTC] PHP   3. UsuarioBeta->consultar() C:\wamp\www\soporte_akumen\class\class.usuario.php:140
+[30-Sep-2013 21:32:02 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.usuario.php:93
+[01-Oct-2013 16:54:35 UTC] PHP Warning:  parse_ini_file(configuracn.ini): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\cfg\config.php on line 17
+[01-Oct-2013 16:54:35 UTC] PHP Stack trace:
+[01-Oct-2013 16:54:35 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:0
+[01-Oct-2013 16:54:35 UTC] PHP   2. UsuarioBeta->consultaUsuario() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:40
+[01-Oct-2013 16:54:35 UTC] PHP   3. UsuarioBeta->consultar() C:\wamp\www\soporte_akumen\class\class.usuario.php:140
+[01-Oct-2013 16:54:35 UTC] PHP   4. conectorDB->__construct() C:\wamp\www\soporte_akumen\class\class.usuario.php:92
+[01-Oct-2013 16:54:35 UTC] PHP   5. configuracion->conectar() C:\wamp\www\soporte_akumen\class\class.consultas.php:19
+[01-Oct-2013 16:54:35 UTC] PHP   6. parse_ini_file() C:\wamp\www\soporte_akumen\cfg\config.php:17
+[01-Oct-2013 16:54:54 UTC] PHP Warning:  parse_ini_file(configuracn.ini): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\cfg\config.php on line 17
+[01-Oct-2013 16:54:54 UTC] PHP Stack trace:
+[01-Oct-2013 16:54:54 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:0
+[01-Oct-2013 16:54:54 UTC] PHP   2. UsuarioBeta->consultaUsuario() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:40
+[01-Oct-2013 16:54:54 UTC] PHP   3. UsuarioBeta->consultar() C:\wamp\www\soporte_akumen\class\class.usuario.php:140
+[01-Oct-2013 16:54:54 UTC] PHP   4. conectorDB->__construct() C:\wamp\www\soporte_akumen\class\class.usuario.php:92
+[01-Oct-2013 16:54:54 UTC] PHP   5. configuracion->conectar() C:\wamp\www\soporte_akumen\class\class.consultas.php:19
+[01-Oct-2013 16:54:54 UTC] PHP   6. parse_ini_file() C:\wamp\www\soporte_akumen\cfg\config.php:17
+[01-Oct-2013 17:05:30 UTC] PHP Fatal error:  Class 'Usuario' not found in C:\wamp\www\soporte_akumen\lib\iniciarSesion.php on line 38
+[01-Oct-2013 17:05:30 UTC] PHP Stack trace:
+[01-Oct-2013 17:05:30 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:0
+[01-Oct-2013 18:00:10 UTC] PHP Fatal error:  Cannot redeclare class conectorDB in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 59
+[01-Oct-2013 18:00:10 UTC] PHP Stack trace:
+[01-Oct-2013 18:00:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarUsuario.php:0
+[01-Oct-2013 18:00:10 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\lib\registrarUsuario.php:8
+[01-Oct-2013 18:08:13 UTC] PHP Fatal error:  Call to undefined method Usuario::getUsuario() in C:\wamp\www\soporte_akumen\lib\registrarUsuario.php on line 62
+[01-Oct-2013 18:08:13 UTC] PHP Stack trace:
+[01-Oct-2013 18:08:13 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarUsuario.php:0
+[01-Oct-2013 18:09:07 UTC] PHP Fatal error:  Call to undefined method Usuario::getUsuario() in C:\wamp\www\soporte_akumen\lib\registrarUsuario.php on line 123
+[01-Oct-2013 18:09:07 UTC] PHP Stack trace:
+[01-Oct-2013 18:09:07 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarUsuario.php:0
+[02-Oct-2013 16:19:37 UTC] PHP Fatal error:  Cannot redeclare class conectorDB in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 59
+[02-Oct-2013 16:19:37 UTC] PHP Stack trace:
+[02-Oct-2013 16:19:37 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarUsuarios.php:0
+[02-Oct-2013 16:19:37 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\lib\buscarUsuarios.php:13
+[02-Oct-2013 16:20:10 UTC] PHP Fatal error:  Call to undefined method Usuario::getUsuario() in C:\wamp\www\soporte_akumen\lib\buscarUsuarios.php on line 17
+[02-Oct-2013 16:20:10 UTC] PHP Stack trace:
+[02-Oct-2013 16:20:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarUsuarios.php:0
+[02-Oct-2013 16:20:24 UTC] PHP Fatal error:  Call to undefined method Usuario::getUsuario() in C:\wamp\www\soporte_akumen\lib\buscarUsuarios.php on line 17
+[02-Oct-2013 16:20:24 UTC] PHP Stack trace:
+[02-Oct-2013 16:20:24 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarUsuarios.php:0
+[02-Oct-2013 16:36:37 UTC] PHP Fatal error:  Call to undefined method Usuario::getUsuario() in C:\wamp\www\soporte_akumen\lib\registrarUsuario.php on line 48
+[02-Oct-2013 16:36:37 UTC] PHP Stack trace:
+[02-Oct-2013 16:36:37 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarUsuario.php:0
+[02-Oct-2013 16:48:45 UTC] PHP Fatal error:  Call to protected method Usuario::consultar() from context '' in C:\wamp\www\soporte_akumen\lib\registrarUsuario.php on line 23
+[02-Oct-2013 16:48:45 UTC] PHP Stack trace:
+[02-Oct-2013 16:48:45 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarUsuario.php:0
+[02-Oct-2013 16:51:35 UTC] PHP Fatal error:  Cannot redeclare class conectorDB in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 59
+[02-Oct-2013 16:51:35 UTC] PHP Stack trace:
+[02-Oct-2013 16:51:35 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\registrarEmpresa.php:0
+[02-Oct-2013 16:51:35 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\lib\registrarEmpresa.php:8
+[02-Oct-2013 17:12:36 UTC] PHP Fatal error:  Class 'Usuario' not found in C:\wamp\www\soporte_akumen\lib\buscarClientes.php on line 15
+[02-Oct-2013 17:12:36 UTC] PHP Stack trace:
+[02-Oct-2013 17:12:36 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarClientes.php:0
+[02-Oct-2013 18:30:40 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\buscarTickets.php on line 15
+[02-Oct-2013 18:30:40 UTC] PHP Stack trace:
+[02-Oct-2013 18:30:40 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:0
+[02-Oct-2013 18:31:14 UTC] PHP Fatal error:  Call to undefined method Ticket::obtenerTickets() in C:\wamp\www\soporte_akumen\lib\buscarTickets.php on line 16
+[02-Oct-2013 18:31:14 UTC] PHP Stack trace:
+[02-Oct-2013 18:31:14 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:0
+[02-Oct-2013 18:32:09 UTC] PHP Fatal error:  Class 'Empresa' not found in C:\wamp\www\soporte_akumen\lib\buscarTickets.php on line 18
+[02-Oct-2013 18:32:09 UTC] PHP Stack trace:
+[02-Oct-2013 18:32:09 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\buscarTickets.php:0
+[02-Oct-2013 18:44:18 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\detallesTicket.php on line 6
+[02-Oct-2013 18:44:18 UTC] PHP Stack trace:
+[02-Oct-2013 18:44:18 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\detallesTicket.php:0
+[02-Oct-2013 20:05:50 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\detallesTicket.php on line 6
+[02-Oct-2013 20:05:50 UTC] PHP Stack trace:
+[02-Oct-2013 20:05:50 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\detallesTicket.php:0
+[02-Oct-2013 20:07:03 UTC] PHP Fatal error:  Call to undefined method Ticket::obtenerTickets() in C:\wamp\www\soporte_akumen\lib\detallesTicket.php on line 7
+[02-Oct-2013 20:07:03 UTC] PHP Stack trace:
+[02-Oct-2013 20:07:03 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\detallesTicket.php:0
+[02-Oct-2013 20:07:10 UTC] PHP Fatal error:  Call to undefined method Ticket::obtenerTickets() in C:\wamp\www\soporte_akumen\lib\detallesTicket.php on line 7
+[02-Oct-2013 20:07:10 UTC] PHP Stack trace:
+[02-Oct-2013 20:07:10 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\detallesTicket.php:0
+[02-Oct-2013 20:11:55 UTC] PHP Fatal error:  Call to a member function getUploadDir() on a non-object in C:\wamp\www\soporte_akumen\lib\detallesTicket.php on line 16
+[02-Oct-2013 20:11:55 UTC] PHP Stack trace:
+[02-Oct-2013 20:11:55 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\detallesTicket.php:0
+[02-Oct-2013 20:18:26 UTC] PHP Fatal error:  Class 'Archivo' not found in C:\wamp\www\soporte_akumen\lib\detallesTicket.php on line 16
+[02-Oct-2013 20:18:26 UTC] PHP Stack trace:
+[02-Oct-2013 20:18:26 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\detallesTicket.php:0
+[02-Oct-2013 20:19:11 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\historicoTicket.php on line 6
+[02-Oct-2013 20:19:11 UTC] PHP Stack trace:
+[02-Oct-2013 20:19:11 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\historicoTicket.php:0
+[02-Oct-2013 20:19:17 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\historicoTicket.php on line 6
+[02-Oct-2013 20:19:17 UTC] PHP Stack trace:
+[02-Oct-2013 20:19:17 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\historicoTicket.php:0
+[02-Oct-2013 22:01:08 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 31
+[02-Oct-2013 22:01:08 UTC] PHP Stack trace:
+[02-Oct-2013 22:01:08 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[02-Oct-2013 22:07:38 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 33
+[02-Oct-2013 22:07:38 UTC] PHP Stack trace:
+[02-Oct-2013 22:07:38 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[02-Oct-2013 22:07:40 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 33
+[02-Oct-2013 22:07:40 UTC] PHP Stack trace:
+[02-Oct-2013 22:07:40 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[02-Oct-2013 22:07:41 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 33
+[02-Oct-2013 22:07:41 UTC] PHP Stack trace:
+[02-Oct-2013 22:07:41 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[02-Oct-2013 22:07:41 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 33
+[02-Oct-2013 22:07:41 UTC] PHP Stack trace:
+[02-Oct-2013 22:07:41 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[02-Oct-2013 22:07:41 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 33
+[02-Oct-2013 22:07:41 UTC] PHP Stack trace:
+[02-Oct-2013 22:07:41 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[02-Oct-2013 22:07:42 UTC] PHP Fatal error:  Class 'Ticket' not found in C:\wamp\www\soporte_akumen\lib\generarReporte.php on line 33
+[02-Oct-2013 22:07:42 UTC] PHP Stack trace:
+[02-Oct-2013 22:07:42 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\generarReporte.php:0
+[13-Jan-2014 16:30:57 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[13-Jan-2014 16:30:57 UTC] PHP Stack trace:
+[13-Jan-2014 16:30:57 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:0
+[13-Jan-2014 16:30:57 UTC] PHP   2. Usuario->consultaUsuario() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:40
+[13-Jan-2014 16:30:57 UTC] PHP   3. Usuario->consultar() C:\wamp\www\soporte_akumen\class\class.usuario.php:143
+[13-Jan-2014 16:30:57 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.usuario.php:93
+[13-Jan-2014 16:31:24 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in C:\wamp\www\soporte_akumen\class\class.conexion.php on line 20
+[13-Jan-2014 16:31:24 UTC] PHP Stack trace:
+[13-Jan-2014 16:31:24 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:0
+[13-Jan-2014 16:31:24 UTC] PHP   2. Usuario->consultaUsuario() C:\wamp\www\soporte_akumen\lib\iniciarSesion.php:40
+[13-Jan-2014 16:31:24 UTC] PHP   3. Usuario->consultar() C:\wamp\www\soporte_akumen\class\class.usuario.php:143
+[13-Jan-2014 16:31:24 UTC] PHP   4. conectorDB->consultarBD() C:\wamp\www\soporte_akumen\class\class.usuario.php:93
+[14-Jan-2014 16:31:29 UTC] PHP Warning:  require(_folder.php): failed to open stream: No such file or directory in C:\wamp\www\soporte_akumen\class\class.correo.php on line 2
+[14-Jan-2014 16:31:29 UTC] PHP Stack trace:
+[14-Jan-2014 16:31:29 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:0
+[14-Jan-2014 16:31:29 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:6
+[14-Jan-2014 16:31:29 UTC] PHP   3. require_once() C:\wamp\www\soporte_akumen\class\class.system.php:14
+[14-Jan-2014 16:31:29 UTC] PHP Fatal error:  require(): Failed opening required '_folder.php' (include_path='.;C:\php\pear') in C:\wamp\www\soporte_akumen\class\class.correo.php on line 2
+[14-Jan-2014 16:31:29 UTC] PHP Stack trace:
+[14-Jan-2014 16:31:29 UTC] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:0
+[14-Jan-2014 16:31:29 UTC] PHP   2. require_once() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:6
+[14-Jan-2014 16:31:29 UTC] PHP   3. require_once() C:\wamp\www\soporte_akumen\class\class.system.php:14
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP Warning:  stream_socket_enable_crypto(): this stream does not support SSL/crypto in C:\wamp\www\soporte_akumen\class\class.smtp.php on line 274
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP Stack trace:
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:0
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP   2. Sistema->restablecerCorreo() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:36
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP   3. Sistema->enviarMensajeCorreo() C:\wamp\www\soporte_akumen\class\class.system.php:43
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP   4. Correo->enviarCorreoA() C:\wamp\www\soporte_akumen\class\class.system.php:61
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP   5. PHPMailer->send() C:\wamp\www\soporte_akumen\class\class.correo.php:37
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP   6. PHPMailer->postSend() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:928
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP   7. PHPMailer->smtpSend() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:1021
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP   8. PHPMailer->smtpConnect() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:1177
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP   9. SMTP->startTLS() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:1297
+[14-Jan-2014 10:31:56 America/Mexico_City] PHP  10. stream_socket_enable_crypto() C:\wamp\www\soporte_akumen\class\class.smtp.php:274
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP Warning:  stream_socket_enable_crypto(): this stream does not support SSL/crypto in C:\wamp\www\soporte_akumen\class\class.smtp.php on line 274
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP Stack trace:
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:0
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP   2. Sistema->restablecerCorreo() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:36
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP   3. Sistema->enviarMensajeCorreo() C:\wamp\www\soporte_akumen\class\class.system.php:43
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP   4. Correo->enviarCorreoA() C:\wamp\www\soporte_akumen\class\class.system.php:61
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP   5. PHPMailer->send() C:\wamp\www\soporte_akumen\class\class.correo.php:37
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP   6. PHPMailer->postSend() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:928
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP   7. PHPMailer->smtpSend() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:1021
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP   8. PHPMailer->smtpConnect() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:1177
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP   9. SMTP->startTLS() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:1297
+[14-Jan-2014 10:31:57 America/Mexico_City] PHP  10. stream_socket_enable_crypto() C:\wamp\www\soporte_akumen\class\class.smtp.php:274
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP Warning:  stream_socket_enable_crypto(): this stream does not support SSL/crypto in C:\wamp\www\soporte_akumen\class\class.smtp.php on line 274
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP Stack trace:
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP   1. {main}() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:0
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP   2. Sistema->restablecerCorreo() C:\wamp\www\soporte_akumen\lib\restablecerContrasena.php:36
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP   3. Sistema->enviarMensajeCorreo() C:\wamp\www\soporte_akumen\class\class.system.php:43
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP   4. Correo->enviarCorreoA() C:\wamp\www\soporte_akumen\class\class.system.php:61
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP   5. PHPMailer->send() C:\wamp\www\soporte_akumen\class\class.correo.php:37
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP   6. PHPMailer->postSend() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:928
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP   7. PHPMailer->smtpSend() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:1021
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP   8. PHPMailer->smtpConnect() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:1177
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP   9. SMTP->startTLS() C:\wamp\www\soporte_akumen\class\class.phpmailer.php:1297
+[14-Jan-2014 10:32:14 America/Mexico_City] PHP  10. stream_socket_enable_crypto() C:\wamp\www\soporte_akumen\class\class.smtp.php:274
