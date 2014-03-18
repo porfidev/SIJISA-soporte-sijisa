@@ -14,7 +14,7 @@ if (version_compare(PHP_VERSION, '5.4.12', '<')) {
 
 
 //DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
+include("folder.php");
 
 //Iniciamos trabajo con sesiones
 session_start();
@@ -22,9 +22,13 @@ session_write_close();
 
 //Usuario inicializado iniciar_sesion.php redirecciona automaticamente
 if(!isset($_SESSION['tipo_usuario']) or $_SESSION['tipo_usuario'] == null){
-    require_once("login.php");
+	
+    require("login.php");
+    
+    /** Descontinueda version 5.8 */
+    //header('Location: inicio.php');
 }
 elseif($_SESSION['nombre'] != null){
-    require_once("inicio.php");
+    require("inicio.php");
 }
 ?>

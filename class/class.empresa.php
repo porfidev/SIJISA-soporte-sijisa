@@ -6,7 +6,7 @@
 * @package soporteAkumen
 * @author Porfirio Chávez <elporfirio@gmail.com>
 */
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.conexion.php");
 
 class Empresa
@@ -90,13 +90,6 @@ class Empresa
 		}
 	}
 	
-    
-    public function obtenerMail(){
-        $consulta = "SELECT emailEmpresa
-                     FROM catempresas
-                     WHERE intIdEmpresa = :id_empresa";
-    }
-    
 	public function obtenerSiglas($parametros){ //recibe "id_empresa"
 		$valores = null;
 		$consulta = "SELECT siglasEmpresa FROM catempresas";

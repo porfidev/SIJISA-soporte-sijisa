@@ -1,5 +1,5 @@
 <?php
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.tickets.php");
 require_once(DIR_BASE."/class/class.archivo.php");
 
@@ -13,16 +13,11 @@ if(isset($_POST)){
 	$oDatosTicket = new Ticket;
 	$tickets = $oDatosTicket->obtenerSeguimientoTicket(array("id_ticket"=>$_POST['ticket']));
 	*/
-$status = "";
 if(!empty($tickets)){
 	$i = 0;
 	foreach($tickets as $indice => $campo){
 		$i++;
 		
-        //se asigna el ultimo valor
-        if($status == ""){
-            $status = $campo["intIdEstatus"];
-        }
 		//Estilos para prioridad
 		switch($campo['prioridad']){
 			case "Baja":
@@ -73,11 +68,11 @@ if(!empty($tickets)){
 					</div>";
 	}
 	
-	$respuesta = array("tickets"=>true, "datos"=>$valores, "estatus"=>$status);
+	$respuesta = array("tickets"=>true, "datos"=>$valores);
 	echo json_encode($respuesta);
 }
 else {
-	$respuesta = array("tickets"=>false, "estatus"=> "1");
+	$respuesta = array("tickets"=>false);
 	echo json_encode($respuesta);
 }
 }

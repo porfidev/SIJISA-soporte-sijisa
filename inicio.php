@@ -10,13 +10,12 @@
 //Iniciamos trabajo con sesiones
 session_start();
 session_write_close();
+
 //redirección si desean ingresar sin haberse logueado
 if ($_SESSION['nombre'] == null){
 		header('Location: index.php');
 		exit;
 	}
-    
-require_once("_folder.php");
 ?>
 <!doctype html>
 <html>
@@ -30,17 +29,15 @@ require_once("_folder.php");
 
 <body>
 <div class="container">
-	<?php include(DIR_BASE."/template/header.php")?>
+	<?php include("header.php")?>
 	<!-- FIN DE HEADER -->
-    <div class = "row">
-        <div id="inicio" class="col-md-12">
-            <h3>Bienvenido <?php echo $_SESSION["nombre"] ?>.</h3>
-            <?php //var_dump($_SESSION); ?>
-        </div>
-    </div>
-    
-    <!-- FOOTER -->
-    <?php include(DIR_BASE."/template/footer.php");?>
+	<div id="inicio">
+		<h3>Bienvenido <?php echo $_SESSION["nombre"] ?>.</h3>
+		<?php //var_dump($_SESSION); ?>
+	</div>
+</div>
+<!-- FOOTER -->
+<?php include("footer.php");?>
 </div>
 </body>
 </html>

@@ -5,7 +5,7 @@ Desarrollado por Akumen.com.mx
 */
 
 //DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 require_once(DIR_BASE."/class/class.tickets.php");
 
@@ -126,80 +126,63 @@ function solicitarReporteExcel(){
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-        
-        <?php include(DIR_BASE."/template/header.php")?>
-        <!-- FIN DE HEADER -->
-        <form name="formElegirEmpresaTicket" id="formElegirEmpresaTicket" method="POST" role="form">
-            <legend>Reportes de Ticket</legend>
-            <div class="input-group col-md-6">
-                <select name="empresa" autofocus required id="empresa" class="form-control">
-                    <option value="">- Seleccione una empresa -</option>
-                    <?php
-                    $oEmpresa = new Empresa;
-                    $empresas = $oEmpresa->consultaEmpresa();
-                            
-                    foreach($empresas as $indice){
-                        echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
-                    }
-                    ?>
-                    <option value="0">- Mostrar todos -</option>
-                </select>
-            </div>
-            <div class="input-group col-md-6" style="padding-top: 10px">
-                <input class="form-control" id="fechaInicio" type="text" placeholder="Fecha de inicio" required>
-                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-
-                <input class="form-control" id="fechaFin" type="text" placeholder="Fecha de termino">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
-
-                <!--
-                <select name="empresa" autofocus required id="empresa" class="form-control">
-                    <option value="">- Seleccione una empresa -</option>
-                    <?php
-                    /*
-                    $oEmpresa = new Empresa;
-                    $empresas = $oEmpresa->consultaEmpresa();
-                            
-                    foreach($empresas as $indice){
-                        echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
-                    }*/
-                    ?>
-                    <option value="0">- Mostrar todos -</option>
-                </select>
-                -->
-            </div>
-            <div class="input-group" style="padding-top: 20px">
-                <button class="btn btn-default" type="button" id="buscarticket">Buscar tickets</button>
-                <button class="btn btn-default btn-success" type="button" id="exportarExcel">Exportar a Excel</button>
-            </div>
-        </form>
-        <div id="tickets" style="padding-top: 50px">
-            <table id="tblReporte" width="100%" class="table">
-                <thead>
-                    <tr>
-                        <th>ID Ticket</th>
-                        <th>Problema</th>
-                        <th>Estatus Actual</th>
-                        <th>Fecha Recepción</th>
-                        <th>Fecha Asignación</th>
-                        <th>Fecha Inicio Atención</th>
-                        <th>Fercha Término</th>
-                        <th>Tiempo de Atención</th>
-                        <th>Tiempo de respuesta</th>
-                        <th>Tiempo Total</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td colspan="10"><div class="alert-info">Elija una empresa para mostrar los datos</div></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        </div>
-    </div>
+	<?php include("header.php")?>
+	<!-- FIN DE HEADER -->
+	<form name="formElegirEmpresaTicket" id="formElegirEmpresaTicket" method="POST">
+		<legend>Reportes de Ticket</legend>
+		<div class="input-append">
+		    <div class="input-prepend">
+    			<span class="add-on"><i class="icon-calendar"></i></span>
+    				<input class="span2" id="fechaInicio" type="text" placeholder="desde" required>
+    		</div>
+			<div class="input-prepend">
+    			<span class="add-on"><i class="icon-calendar"></i></span>
+    				<input class="span2" id="fechaFin" type="text" placeholder="hasta">
+    		</div>
+  <div class="input-prepend">
+    			<span class="add-on"><i class="icon-cog"></i></span>
+			<select name="empresa" autofocus required id="empresa" class="span4">
+				<option value="">- Seleccione una empresa -</option>
+				<?php
+				$oEmpresa = new Empresa;
+				$empresas = $oEmpresa->consultaEmpresa();
+						
+				foreach($empresas as $indice){
+					echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
+				}
+				?>
+				<option value="0">- Mostrar todos -</option>
+			</select>
+		</div>
+		<div class="input-append">
+			<button class="btn" type="button" id="buscarticket">Buscar tickets</button>
+			<button class="btn" type="button" id="exportarExcel">Exportar a Excel</button>
+		</div>
+		</div>
+	</form>
+	<div id="tickets">
+		<table id="tblReporte" width="100%" class="table">
+			<thead>
+				<tr>
+					<th>ID Ticket</th>
+					<th>Problema</th>
+					<th>Estatus Actual</th>
+					<th>Fecha Asignación</th>
+					<th>Fecha Recepción</th>
+					<th>Fecha Inicio Atención</th>
+					<th>Fercha Término</th>
+					<th>Tiempo de Atención</th>
+					<th>Tiempo de respuesta</th>
+					<th>Tiempo Total</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td colspan="10"><div class="alert-info">Elija una empresa para mostrar los datos</div></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 <?php } else { die("debe iniciar sesi&oacute;n"); } ?>
 </body>

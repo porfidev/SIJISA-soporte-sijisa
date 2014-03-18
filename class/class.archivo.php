@@ -1,6 +1,6 @@
 <?php
 
-require_once("_folder.php");
+include("folder.php");
 
 class Archivo
 {

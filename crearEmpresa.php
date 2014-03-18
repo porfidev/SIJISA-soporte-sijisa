@@ -8,7 +8,7 @@
  */
 
 //Incluimos clases
-require_once("_folder.php");
+include("folder.php");
 
 //Iniciamos trabajo con sesiones
 session_start();
@@ -33,45 +33,41 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 
 <body>
 <div class="container">
-<?php include(DIR_BASE."/template/header.php")?>
+<?php include("header.php")?>
 <!-- FIN DE HEADER -->
-    <div class="row">
-        <div class="col-md-12">
-            <form id="formRegistrarEmpresa" name="formRegistrarEmpresa" method="post" action="" class="form-horizontal" onSubmit="return registrarEmpresa();">
-            <fieldset>
-            <legend>Crear empresa</legend>
-            <div class="form-group" id="campo_nombre">
-                <label class="col-md-2 control-label">Nombre Empresa</label>
-                <div class="col-md-4">
-                    <input name="nombre" type="text" id="nombre" class="form-control"  autofocus required placeholder="ej: Akumen Company">
-                    <span class="help-inline" style="display: none">Ya existe la empresa, ingrese una diferente</span>
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">Siglas</label>
-                <div class="col-md-4">
-                    <input name="siglas" type="text" required id="siglas" class="form-control"  placeholder="ej: AKM" maxlength="3">
-                </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">Correo CC</label>
-                <div class="col-md-4">
-                    <input name="email" type="email" id="email" class="form-control"  placeholder="ej: general@akumen.com">
-                </div>
-            </div>
-            </fieldset>
-            <div class="form-group">
-                <div class="col-md-4 col-md-offset-2">
-                    <input type="submit" name="guardar" id="guardar" value="Crear empresa" class="btn btn-primary btn-lg">
-                    <input type="reset" name="resetFormEmpresa" id="resetFormEmpresa" value="Reiniciar" class="btn btn-lg" onClick="reiniciarCrearEmpresa();">
-                </div>
-            </div>
-            <div class="clr"></div>
-            </form>
-        </div>
-    </div>
-    <!-- FOOTER -->
-    <?php include(DIR_BASE."/template/footer.php");?>
+	<form id="formRegistrarEmpresa" name="formRegistrarEmpresa" method="post" action="" class="form-horizontal" onSubmit="return registrarEmpresa();">
+	<fieldset>
+	<legend>Crear empresa</legend>
+	<div class="control-group" id="campo_nombre">
+		<label class="control-label">Nombre Empresa</label>
+		<div class="controls">
+			<input name="nombre" type="text" id="nombre" autofocus required placeholder="ej: Akumen Company">
+			<span class="help-inline" style="display: none">Ya existe la empresa, ingrese una diferente</span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Siglas</label>
+		<div class="controls">
+			<input name="siglas" type="text" required id="siglas" placeholder="ej: AKM" maxlength="3">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Correo CC</label>
+		<div class="controls">
+			<input name="email" type="email" id="email" placeholder="ej: general@akumen.com">
+		</div>
+	</div>
+	</fieldset>
+	<div class="control-group">
+		<div class="controls">
+			<input type="submit" name="guardar" id="guardar" value="Crear empresa" class="btn btn-primary btn-large">
+			<input type="reset" name="resetFormEmpresa" id="resetFormEmpresa" value="Reiniciar" class="btn btn-large" onClick="reiniciarCrearEmpresa();">
+		</div>
+	</div>
+	<div class="clr"></div>
+	</form>
 </div>
+<!-- FOOTER -->
+<?php include("footer.php");?>
 </body>
 </html>

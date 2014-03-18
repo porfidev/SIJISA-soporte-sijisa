@@ -8,7 +8,7 @@
  */
  
 //DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 
 session_start();
@@ -34,48 +34,44 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 
 <body>
 <div class="container">
-<?php include(DIR_BASE."/template/header.php");
+<?php include("header.php");
 
 $oEmpresa = new Empresa;
 $empresas = $oEmpresa->consultaEmpresa();
 //print_r($oEmpresa);
 ?>
-    <div class="row">
-        <div class="col-md-12">
-            <legend>Editar Empresa</legend>
-            
-            <table class="table" id="usuarios">
-                <thead>
-                    <tr>
-                        <th>Nombre</th>
-                        <th>Siglas</th>
-                        <th>Correo electrónico</th>
-                        <th>&nbsp;</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <?php
-                        foreach($empresas as $indice => $campo){
-                            echo "<tr>
-                                    <td>".$campo['Descripcion']."</td>
-                                    <td>".$campo['siglasEmpresa']."</td>
-                                    <td>".$campo['emailEmpresa']."</td>
-                                    <td>
-                                        <input type=\"hidden\" value=\"".$campo['intIdEmpresa']."\" name=\"inIdEmpresa\">
-                                        <a class=\"btn btn-sm btn-default editar\">Editar</a>
-                                    </td>
-                                  </tr>";
-                        }
-                        ?>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
+<legend>Editar Empresa</legend>
+
+<table class="table" id="usuarios">
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Siglas</th>
+			<th>Correo electrónico</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<?php
+			foreach($empresas as $indice => $campo){
+				echo "<tr>
+						<td>".$campo['Descripcion']."</td>
+						<td>".$campo['siglasEmpresa']."</td>
+						<td>".$campo['emailEmpresa']."</td>
+						<td>
+							<input type=\"hidden\" value=\"".$campo['intIdEmpresa']."\" name=\"inIdEmpresa\">
+							<a class=\"btn btn-small editar\">Editar</a>
+						</td>
+					  </tr>";
+			}
+			?>
+		</tr>
+	</tbody>
+</table>
 </div>
 <!-- FOOTER -->
-<?php include(DIR_BASE."/template/footer.php");?>
+<?php include("footer.php");?>
 <script>
 $('table').on('click', '.editar', editarEmpresa);
 $('table').on('click', '.guardar', guardarEmpresa);
@@ -87,17 +83,17 @@ function editarEmpresa(){
 	
 	var editEmpresa = $(this).closest("tr").children().eq(0);
 	var nameEmpresa = editEmpresa.html();
-	var inputNombre = "<input type='text' name='inNombre' class='form-control' value='"+nameEmpresa+"'>";
+	var inputNombre = "<input type='text' name='inNombre' class='span5' value='"+nameEmpresa+"'>";
 	editEmpresa.html(inputNombre);
 	
 	var editSiglas = editEmpresa.next();
 	var siglaEmpresa = editSiglas.html();
-	var inputSigla =  "<input type='text' name='inSiglas' class='form-control' value='"+siglaEmpresa+"' maxlength='3'>";
+	var inputSigla =  "<input type='text' name='inSiglas' class='span1' value='"+siglaEmpresa+"' maxlength='3'>";
 	editSiglas.html(inputSigla);
 	
 	var editCorreo = editSiglas.next();
 	var correoEmpresa = editCorreo.html();
-	var inputCorreo =  "<input type='text' name='inCorreo' class='form-control' value='"+correoEmpresa+"'>";
+	var inputCorreo =  "<input type='text' name='inCorreo' class='span3' value='"+correoEmpresa+"'>";
 	editCorreo.html(inputCorreo);
 	
 	return false;

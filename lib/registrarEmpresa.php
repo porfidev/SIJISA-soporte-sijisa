@@ -3,7 +3,7 @@
 session_start();
 
 //Incluimos clases
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 
 if ($_SESSION['tipo_usuario'] != 1){

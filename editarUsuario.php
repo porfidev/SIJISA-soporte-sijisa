@@ -8,7 +8,7 @@
  */
  
 //DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.usuario.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 
@@ -33,68 +33,49 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 <script src="js/bootstrap.min.js"></script>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <script src="js/bootbox.min.js"></script>
-<style>
-.top-pad-50{
-    padding-top: 50px;
-}
-</style>
 </head>
 
 <body>
 <div class="container">
-<?php include(DIR_BASE."/template/header.php")?>
+<?php include("header.php")?>
 
-    <div class="row">
-        <div class="col-md-12">
-            <legend>Editar / Eliminar Usuarios</legend>
-            <div class="row">
-                <div class="col-md-6 col-md-offset-1">
-                <form name="formElegirEmpresaUsuario" id="formElegirEmpresaUsuario" action="" method="POST" class="form-inline" onSubmit="return buscarUsuarioXEmpresa();" role="form">
-                    <div class="input-group">
-                        <select name="empresauser" required id="empresauser" class="form-control">
-                            <option value="">- Seleccione una empresa -</option>
-                            <?php
-                            $oDatosEmpresa = new Empresa;
-                            $empresas = $oDatosEmpresa->consultaEmpresa();
-                            foreach($empresas as $indice){
-                                echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
-                            }
-                            ?>
-                            <option value="0">- Mostrar todos -</option>
-                        </select>
-                        <span class="input-group-btn">
-                            <button class="btn btn-default" type="submit">Mostrar usuarios</button>
-                        </span>
-                    </div>
-                </form>
-                </div>
-            </div>
-       </div>
-   </div>
-   <div class="row top-pad-50">
-        <div class="col-md-12">
-            <table class="table" id="usuarios">
-            <thead>
-                <tr>
-                    <th>Nombre</th>
-                    <th>Usuario</th>
-                    <th>Tipo</th>
-                    <th>Correo electrónico</th>
-                    <th>&nbsp;</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td colspan="5"> - Elija una empresa - </td>
-                </tr>
-            </tbody>
-            </table>
-        </div>
-    </div>
-
-<!-- FOOTER -->
-<?php include(DIR_BASE."/template/footer.php");?>
+	<form name="formElegirEmpresaUsuario" id="formElegirEmpresaUsuario" action="" method="POST" class="form-search" onSubmit="return buscarUsuarioXEmpresa();">
+		<legend>Editar / Eliminar Usuarios</legend>
+		<div class="input-append">
+			<select name="empresauser" required id="empresauser" class="span4 search-query">
+				<option value="">- Seleccione una empresa -</option>
+				<?php
+		$oDatosEmpresa = new Empresa;
+		$empresas = $oDatosEmpresa->consultaEmpresa();
+		foreach($empresas as $indice){
+			echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
+		}
+		?>
+				<option value="0">- Mostrar todos -</option>
+			</select>
+			<button type="submit" class="btn">Mostrar usuarios</button>
+		</div>
+	</form>
+	
+	<table class="table" id="usuarios">
+	<thead>
+		<tr>
+			<th>Nombre</th>
+			<th>Usuario</th>
+			<th>Tipo</th>
+			<th>Correo electrónico</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td colspan="5"> - Elija una empresa - </td>
+		</tr>
+	</tbody>
+	</table>
 </div>
+<!-- FOOTER -->
+<?php include("footer.php");?>
 <script>
 
 $('table').on('click', '.editar', editarUsuario);
@@ -141,17 +122,17 @@ function editarUsuario(){
 	
 	nombre_editable = $(this).closest("tr").children().eq(0);
 	nombre = nombre_editable.html();	
-	inNombre = "<input type='text' name='inNombre' class='form-control' value='"+nombre+"'>";
+	inNombre = "<input type='text' name='inNombre' class='span3' value='"+nombre+"'>";
 	nombre_editable.html(inNombre);
 	
 	usuario_edit = nombre_editable.next();
 	usuario = usuario_edit.html();
-	inUsuario = '<input type="text" name="inUsuario" class="form-control" value="'+usuario+'">';
+	inUsuario = '<input type="text" name="inUsuario" class="span2" value="'+usuario+'">';
 	usuario_edit.html(inUsuario);
 	
 	tipo_edit = usuario_edit.next();
 	tipo = tipo_edit.html();
-	inTipo = '<select name="inTipo" class="form-control">';
+	inTipo = '<select name="inTipo" class="span2">';
 	var opt = "";
 	if(tipo == 'Cliente') {
 		opt = "selected";
@@ -172,7 +153,7 @@ function editarUsuario(){
 	
 	mail_edit = tipo_edit.next();
 	mail = mail_edit.html();
-	inMail = '<input type="text" name="inMail" class="form-control" value="'+ mail +'">';
+	inMail = '<input type="text" name="inMail" class="span3" value="'+ mail +'">';
 	mail_edit.html(inMail);
 	
 	$(this).html("Guardar").addClass("btn-primary");
@@ -249,7 +230,7 @@ function eliminarUsuario(){
 	$elthis = $(this);
 	$id = $(this).closest("tr").find("input[type=hidden]").val();
 	
-	confirm("¿Desea eliminar a este usuario?. Esta acción no se puede revertir.", function(result) {
+	bootbox.confirm("¿Desea eliminar a este usuario?. Esta acción no se puede revertir.", function(result) {
 		if(result){
 			var $envio = {};
 			$envio["id"] = $id;
@@ -276,7 +257,64 @@ function eliminarUsuario(){
 			}
 		});
 		}
+	}); 
+	/*
+	$datos = $(this).closest('tr').find('input');
+	//console.log($datos);
+	var valido = true;
+	
+	
+	var $envio = {};
+	$datos.each(function(index, element) {
+		//console.log($(this).val());
+		if($(this).val() ==""){
+			valido = false;
+			alert("Todos los campos son requeridos");
+		}
+		$nombre = $(this).attr("name");
+		$valor = $(this).val();
+		$envio[$nombre] = $valor;
 	});
+	
+	$envio["actualizar"] = true;
+	
+	if(valido){
+		$.ajax({
+			data: $envio,
+			url: "lib/registrar_usuario.php",
+			type: "POST",
+			dataType: "json",
+			success: function(respuesta){
+				if(respuesta.actualiza){
+					alert("Datos actualizados");
+				}
+				else {
+					alert(respuesta.mensaje);
+				}
+			},
+			error:	function(xhr,err){
+				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
+				alert("responseText: "+xhr.responseText);
+			}
+		});
+	}
+	
+	var tr = $(this).closest('tr');
+	var tds = $(tr).find('td').not(':last');
+	
+	$.each(tds, function(){
+		if(!$(this).children().is("select")){
+			var value = $(this).children().val();
+		}
+		else {
+			var value = $(this).children().find(":selected").text();
+		}
+		$(this).html(value);
+	});
+	
+	$(this).html("Editar").removeClass("btn-primary");
+	
+	return false;*/
 } 
 
 </script>

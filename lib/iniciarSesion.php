@@ -8,7 +8,7 @@
  */
 
 //Incluimos clases
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.usuario.php");
 
 // IF PRINCIPAL: Deben enviar datos vía POST

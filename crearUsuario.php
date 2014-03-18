@@ -8,7 +8,7 @@
  */
  
 //DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 
 session_start();
@@ -56,95 +56,81 @@ $(function(){
 
 <body>
 <div class="container">
-<?php include(DIR_BASE."/template/header.php")?>
+<?php include("header.php")?>
+<?php //var_dump($empresas); ?>
 <!-- FIN DE HEADER -->
-    <div class="row">
-        <div class="col-md-12">
-        <form id="formNuevoUsuario" name="formNuevoUsuario" method="post" class="form-horizontal" onSubmit="return registrarUsuario();" role="form">
-        <!--
-                            <div class="form-group">
-                        <label for="tipoticket" class="col-md-2 col-md-2 control-label">Tipo de Solicitud</label>
-                        <div class="col-md-4">
-                            <select name="tipoticket" class="form-control" required id="tipoticket">
-                                <option value="">- Seleccione un tipo -</option>
-                                <option value="Incidencia">Incidencia</option>
-                                <option value="Control">Control de Cambios</option>
-                            </select>
-                        </div>
-                    </div>-->
-            <fieldset>
-            <legend>Crear Usuario</legend>
-            <div class="form-group">
-                <label class="col-md-2 col-md-2 control-label">Nombre</label>
-                <div class="col-md-4">
-                    <input name="nombre" type="text" class="form-control" autofocus required id="nombre" placeholder="ej: Juan Perez">
-                </div>
-            </div>
-            <div class="form-group" id="campo_usuario">
-                <label class="col-md-2 control-label">Login ID</label>
-                <div class="col-md-4">
-                    <input type="text" name="inUsuario" id="inUsuario" class="form-control" placeholder="ej: jperez" required>
-                    <span class="help-inline" style="display: none">Ya existe el usuario, ingrese un usuario diferente</span> </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">secret Key</label>
-                <div class="col-md-4">
-                    <input type="password" name="password" id="password" class="form-control" placeholder="contraseña" required>
-                </div>
-            </div>
-            <div class="form-group" id="campo_email">
-                <label class="col-md-2 control-label"  for="email">e-mail</label>
-                <div class="col-md-4">
-                    <input type="email" name="inMail" id="inMail" class="form-control" placeholder="ej: jperez@akumen.com" required>
-                    <span class="help-inline" style="display: none">Ya existe el email, ingrese un email diferente</span> </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">Empresa</label>
-                <div class="col-md-4">
-                    <select name="inEmpresa" required id="inEmpresa" class="form-control">
-                        <option value="">- Elija una opción -</option>
-                        <?php
-                        if (!empty($empresas)){
-                            foreach($empresas as $indice => $empresa){
-                                printf("<option value='%s'>%s</option>", $empresa["intIdEmpresa"], $empresa["Descripcion"]);
-                            }
-                        }
-                        ?>
-                        <option value="nueva">- Crear nueva empresa -</option>
-                    </select>
-                </div>
-            </div>
-            <div id="empresa_nueva" class="form-group" style="display: none">
-                <label class="col-md-2 control-label">Nueva empresa</label>
-                <div class="col-md-4">
-                    <input type="text" name="inNEmpresa" id="inNEmpresa" class="form-control" disabled="disabled" required>
-                    <span class="help-inline" style="display: none">Ya existe la empresa, ingrese una nueva o elija la correcta</span> </div>
-            </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">Tipo de usuario</label>
-                <div class="col-md-4">
-                    <select name="tipo_usuario" required id="tipo_usuario" class="form-control">
-                        <option value="" selected>- Elija una opción -</option>
-                        <option value="3">Cliente</option>
-                        <option value="2">Operador</option>
-                        <option value="1">Administrador</option>
-                    </select>
-                </div>
-            </div>
-            </fieldset>
-            <div id="advertencias"></div>
-            <div class="form-group">
-                <div class="col-md-4 col-md-offset-2">
-                    <input type="submit" name="crear" id="crear" value="Crear usuario" class="btn btn-primary btn-lg">
-                    <input type="reset" name="resetearUserForm" id="resetearUserForm" value="Reiniciar" class="btn btn-lg" onClick="reiniciarBoton();">
-                </div>
-            </div>
-            <div class="clr"></div>
-        </form>
-        </div>
-    </div>
+<form id="formNuevoUsuario" name="nuevousuario" method="post" action="" class="form-horizontal" onSubmit="return registrarUsuario();">
+	<fieldset>
+	<legend>Crear Usuario</legend>
+	<div class="control-group">
+		<label class="control-label">Nombre</label>
+		<div class="controls">
+			<input name="nombre" type="text" autofocus required id="nombre" placeholder="ej: Juan Perez">
+		</div>
+	</div>
+	<div class="control-group" id="campo_usuario">
+		<label class="control-label">Login ID</label>
+		<div class="controls">
+			<input type="text" name="inUsuario" id="inUsuario" placeholder="ej: jperez" required>
+			<span class="help-inline" style="display: none">Ya existe el usuario, ingrese un usuario diferente</span> </div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">secret Key</label>
+		<div class="controls">
+			<input type="password" name="password" id="password" placeholder="contraseña" required>
+		</div>
+	</div>
+	<div class="control-group" id="campo_email">
+		<label class="control-label"  for="email">e-mail</label>
+		<div class="controls">
+			<input type="email" name="inMail" id="inMail" placeholder="ej: jperez@akumen.com" required>
+			<span class="help-inline" style="display: none">Ya existe el email, ingrese un email diferente</span> </div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Empresa</label>
+		<div class="controls">
+			<select name="inEmpresa" required id="inEmpresa">
+				<option value="">- Elija una opción -</option>
+				<?php
+				if (!empty($empresas)){
+					foreach($empresas as $indice => $empresa){
+						printf("<option value='%s'>%s</option>", $empresa["intIdEmpresa"], $empresa["Descripcion"]);
+					}
+				}
+				?>
+				<option value="nueva">- Crear nueva empresa -</option>
+			</select>
+		</div>
+	</div>
+	<div id="empresa_nueva" class="control-group" style="display: none">
+		<label class="control-label">Nueva empresa</label>
+		<div class="controls">
+			<input type="text" name="inNEmpresa" id="inNEmpresa" disabled="disabled" required>
+			<span class="help-inline" style="display: none">Ya existe la empresa, ingrese una nueva o elija la correcta</span> </div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">Tipo de usuario</label>
+		<div class="controls">
+			<select name="tipo_usuario" required id="tipo_usuario">
+				<option value="" selected>- Elija una opción -</option>
+				<option value="3">Cliente</option>
+				<option value="2">Operador</option>
+				<option value="1">Administrador</option>
+			</select>
+		</div>
+	</div>
+	</fieldset>
+	<div id="advertencias"></div>
+	<div class="control-group">
+		<div class="controls">
+			<input type="submit" name="crear" id="crear" value="Crear usuario" class="btn btn-primary btn-large">
+			<input type="reset" name="resetearUserForm" id="resetearUserForm" value="Reiniciar" class="btn btn-large" onClick="reiniciarBoton();">
+		</div>
+	</div>
+	<div class="clr"></div>
+</form>
 </div>
 <!-- FOOTER -->
-<?php include(DIR_BASE."/template/footer.php");?>
+<?php include("footer.php");?>
 </body>
 </html>

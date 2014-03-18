@@ -37,7 +37,7 @@ if (PHP_SAPI == 'cli')
 /** Include PHPExcel */
 require_once dirname(__FILE__) . '/class/PHPExcel.php';
 
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.tickets.php");
 
 session_start();

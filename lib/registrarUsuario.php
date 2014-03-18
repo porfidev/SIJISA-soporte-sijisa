@@ -4,7 +4,7 @@ session_start();
 session_write_close();
 
 //Incluimos clases
-require_once("_folder.php");
+include("folder.php");
 require_once(DIR_BASE."/class/class.usuario.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 
