@@ -213,21 +213,12 @@ function buscarClientes(empresa){
 ///////////////////////////////////////////////////////////////
 // METODO AJAX PARA REGISTRAR EL NUEVO TICKET
 
-function registrarTicket(){/*
-	var tipo_solicitud = $("#tipoticket").val();
-	var fecha_control = $("#fecha_alta").val();
-	var fecha_problema = $("#fecha_problema").val();
-	var prioridad = $("#prioridad").val();
-	var empresa = $("#procedencia").val();
-	var cliente = $("#remitente").val();
-	var tipo_ticket = $("#destinatario").val();
-	var problema = $("#problema").val();
-	var observaciones = $("#observaciones").val();
-	*/
+function registrarTicket($form){
 	
+    $($form).children(".infoResponse").html("");   
+    var $divInfo = $($form).children(".infoResponse");
+    
 	var ajaxData = new FormData();
-	//ajaxData.append( 'action','uploadImages');
-	
 	ajaxData.append("tipo_solicitud", $("#tipoticket").val());
 	ajaxData.append("fecha_control", $("#fecha_alta").val());
 	ajaxData.append("fecha_problema", $("#fecha_problema").val());
@@ -243,7 +234,7 @@ function registrarTicket(){/*
         $.each(obj.files,function(j,file){
             ajaxData.append('archivo_adjunto['+i+']', file);
         })
-});
+    });
 	
 	$.ajax({
 		dataType: "json",
@@ -254,8 +245,23 @@ function registrarTicket(){/*
 		processData: false,  // tell jQuery not to process the data
   		contentType: false,   // tell jQuery not to set contentType
 		beforeSend: function(bloquear){
-			$("#formRegistrarTicket :input").attr("disabled","disabled");
+            $($form.id + ":input").attr("disabled", true);
+            $divInfo.removeClass().addClass("infoResponse");
+            
+			//$("#formRegistrarTicket :input").attr("disabled","disabled");
 		},
+        
+        success: function(respuesta){
+            console.log(respuesta);
+			if(respuesta.mensaje){
+				$divInfo.html('<p>'+respuesta.mensaje+'</p>');
+                $divInfo.addClass("alert alert-"+respuesta.estado);
+                scrollToAnchor('respuestaInfo');
+            }
+            
+			$($form.id + ":input").attr("disabled", false);
+		},
+        /*
 		success: function(respuesta){
 			if(respuesta.registro){
 				$("#crear").removeClass("btn-primary").addClass("btn-success").attr("value","Ticket creado");
@@ -266,15 +272,27 @@ function registrarTicket(){/*
 			else{
 				alert(respuesta.mensaje);
 			}
-		},
-		error: function(xhr,err){
-			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-			alert("responseText: "+xhr.responseText);
+		},*/
+	    error: function(request, status, error){
+            //console.log(request);
+            //console.info(status);
+            //console.log(error);
+            $error = '<p><b>No se pudo procesar la solicitud</b></p><hr>' + status +': <b>' + error + '</b><br>';
+            $error += 'Estado: ' + request.readyState + '<br>';
+            $error += 'respuesta: ' + request.responseText + '<br>';
+			$($form).children(".infoResponse").addClass("alert alert-warning alert-dismissable").html($error);
+            $($form.id + ":input").attr("disabled", false);
 		}
 	});
 	
 	return false;
 }
+
+function scrollToAnchor(aid){
+    var aTag = $("div [id='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
 
 function reiniciarCrearTicket(){
 	$("#crear").removeClass("btn-success").attr("value","Crear ticket");
@@ -289,17 +307,24 @@ function reiniciarCrearTicket(){
 
 //////////////////////////////////////////////////////////////////
 // se llama desde seguimientoTicket.php 
-function buscarTicketXEmpresa(){
-	var empresa = $("#empresaticket").val();
-	$.ajax({
+function buscarTicketXEmpresa($form){
+	//console.log($form);
+    //var empresa = $("#empresaticket").val();
+	
+    $datos = $($form).serializeArray();
+    console.log($datos);
+    
+    
+    $.ajax({
 		beforeSend: function(bloquear){
 			$("#empresaticket").attr("disabled","disabled");
 			$('#tickets tbody').children().remove();
 			$('#tickets tbody').html("<tr><td colspan='5'>Buscando tickets por favor espere...<br><div class='progress progress-striped active'><div class='bar' style='width: 80%;'></div></div></td></tr>");
 		},
 		dataType: "json",
-		data: {"empresa": empresa},
-		url: "lib/buscarTickets.php",
+		//data: {"empresa": empresa},
+		data: $datos,
+        url: "lib/buscarTickets.php",
 		type: "POST",
 		success: function(respuesta){
 			$("#empresaticket").removeAttr("disabled");
@@ -320,8 +345,9 @@ function buscarTicketXEmpresa(){
 		}
 	});
 	
-	return false;
+	return false; 
 }
+
 
 ///////////////////////////////////////////////////////////////////
 

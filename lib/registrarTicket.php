@@ -4,17 +4,12 @@ session_start();
 session_write_close();
 
 //Incluimos clases
-include("folder.php");
+require_once("_folder.php");
 require_once(DIR_BASE."/class/class.tickets.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 require_once(DIR_BASE."/class/class.archivo.php");
-/*
-if ($_SESSION['tipo_usuario'] != 1){
-	$respuesta = array("mensaje"=>"No tiene autorización para crear usuarios",
-	"registro"=>false);
-	echo json_encode($respuesta);
-	exit;
-}*/
+require_once(DIR_BASE."/class/class.correo.php");
+require_once(DIR_BASE."/class/class.usuario.php");
 
 if($_POST == null or !isset($_POST)){
 	echo "No se pueden ingresar";
@@ -22,6 +17,9 @@ if($_POST == null or !isset($_POST)){
 	exit;
 }
 else {
+    ##################################
+    ####  REGISTRAR SEGUIMIENTO  ####
+    ##################################
 	if(isset($_POST['tipo']) and $_POST['tipo'] == "seguimiento"){
 		$status = $_POST['estado'];
 		
@@ -56,41 +54,41 @@ else {
 									"tipo_atencion"=>$_POST['atencion']
 									));
 		
-		/*
-		$oTicket->setValores(array("idtrans"=>null,
-									"idticket"=>$_POST['id_ticket'],
-									"estatus"=>$_POST['estado'],
-									"prioridad"=>$_POST['prioridad'],
-									"usuario"=>$_SESSION['id_usuario'],
-									"observaciones"=>$_POST['observaciones'],
-									"fecha"=>$oTicket->timeZone(),
-									"archivo"=>"".$archivo[0]."&>".$archivo[1]."&>".$archivo[2].""));
-									
-		$oTicket->setValores(array("prioridad" =>$_POST['prioridad'],
-									"estatus"=>$_POST['estado'],
-									"idticket"=>$_POST['id_ticket']));
-									
-		$oTicket->setValores(array("fecha_cierre"=>$oTicket->timeZone(),"idticket"=>$_POST['id_ticket']));
-		$oTicket->setValores(array("fecha_asignacion"=>$oTicket->timeZone(),"idticket"=>$_POST['id_ticket']));
-		$oTicket->setValores(array("fecha_termino"=>$oTicket->timeZone(),"idticket"=>$_POST['id_ticket']));
-		*/
 		$seguimiento_ticket = $oTicket->consultaTicket();
 		
 		if(empty($seguimiento_ticket)){
-			$respuesta = array("registro"=>true, "mensaje"=>"seguimiento registrado");
-			echo json_encode($respuesta);
-		}
-		/*
-		$oDatosTicket = new Ticket;
-		$seguimiento_ticket = $oDatosTicket->actualizarTicket(array($_POST,"archivo_adjunto"=>$_FILES));
-		
-		if(empty($seguimiento_ticket)){
-			$respuesta = array("registro"=>true, "mensaje"=>"seguimiento registrado");
-			echo json_encode($respuesta);
-		}*/	
+            
+            $oTicketB = new Ticket;
+            $oTicketB->isQuery("ticket");
+            $oTicketB->setValores(array("idticket"=>$_POST['id_ticket']));
+            $resultado = $oTicketB->consultaTicket();
+            $ticket = $resultado[0]["intIdUnico"];
+            
+            $observaciones = filter_var($_POST['observaciones'], FILTER_SANITIZE_STRING);
+            
+            $oCorreo = new Correo;
+            $envio = $oCorreo->correoSeguimientoTicket($correo_usuario, "",$ticket,$observaciones);
+            
+            
+            $status ="success";
+            $mensaje = "seguimiento registrado";
+            $registro = true;
+            
+            if($envio != true){
+                $status = "danger";
+                $mensaje = "No se pudo enviar el mail: ".$envio;
+            }
+            
+			//$respuesta = array("registro"=>true,"estado" => $status, "mensaje"=> $mensaje);
+			//echo json_encode($respuesta);
+        }
 	}
 	else{
-		$oTicket = new Ticket;
+        ##################################
+        ####  REGISTRAR NUEVO ####
+        ##################################
+        
+        $oTicket = new Ticket;
 		$oTicket->isRegister();
 		
 		$oEmpresa = new Empresa;
@@ -137,52 +135,45 @@ else {
 		$nuevo_ticket = $oTicket->consultaTicket();
 		
 		if(empty($nuevo_ticket)){
-			$respuesta = array("registro"=>true);
-			echo json_encode($respuesta);
-		}	
-		
-		/*
-				//Obtenemos las siglas de la empresa, si existiesen
-		$oDatosEmpresa = new Empresa;
-		
-		/** REVISAR AQUI YA QUE SOLO LLEGA EL CAMPO EMPRESA IS LEVANTA LE TICKET UN ADMIN */
-		//$empresa = $oDatosEmpresa->obtenerEmpresa(array("id_empresa"=>$parametros['datos_formulario']['empresa']));
-		
-		//print_r($empresa);
-		/*
-		foreach($empresa as $indice => $campo){
-			$siglas = ($campo['siglasEmpresa'] != "") ? $campo['siglasEmpresa'] : strtoupper(substr($campo['Descripción'],0,3));
-			$id_unico = substr($parametros['datos_formulario']['tipo_solicitud'],0,1)."-".$siglas."-".date("Ymd").date("Hs").rand(1, 9);
+            $status = "success";
+            $mensaje = "Ticket registrado";
+            
+            if($_SESSION["tipo_usuario"] != 3){
+                $mensaje = "<b>Ticket registrado:</b> <br>
+                            <a href='seguimientoTicket.php?seccion=ticket&ticketId=".$id_unico."'><h3>".$id_unico. "</h3> para dar seguimiento haga clic aquí </a>";
+            }
+            
+            #envio de correo
+            
+            $oUsuario = new Usuario;
+            $oUsuario->obtenerEmail();
+            $oUsuario->setValores(array("id_usuario" => $_POST["cliente"]));
+            $resultado= $oUsuario->consultaUsuario();
+            $correo_usuario = $resultado[0]["email"];
+            
+            $oEmpresa->obtenerMail();
+            $resultado = $oEmpresa->consultaEmpresa();
+            
+            if(!empty($resultado)){
+                $correo_empresa = $resultado[0]["emailEmpresa"];
+            }
+            $status ="success";
+            $mensaje = "seguimiento registrado";
+            $registro = true;
+            
+            $oCorreo = new Correo;
+            $envio = $oCorreo->correoNuevoTicket($correo_usuario, $correo_empresa, $id_unico, $_POST['problema'], $_POST['observaciones']);
+            
+            if($envio != true){
+                $status = "danger";
+                $mensaje = "No se pudo enviar el mail: ".$envio;
+            }
 		}
-		
-				$valores = array("id_unico"=>$id_unico,
-						"tipo"=>$parametros['datos_formulario']['tipo_solicitud'],
-						"fecha_alta"=>$parametros['datos_formulario']['fecha_control'],
-						"fecha_problema"=>$parametros['datos_formulario']['fecha_problema'],
-						"id_empresa"=>$parametros['datos_formulario']['empresa'],
-						"prioridad"=>$parametros['datos_formulario']['prioridad'],
-						"id_usuario"=>$parametros['datos_formulario']['cliente'],
-						"destinatario"=>$parametros['datos_formulario']['tipo_ticket'],
-						"problema"=>$parametros['datos_formulario']['problema'],
-						"observaciones"=>$parametros['datos_formulario']['observaciones'],
-						"archivo1"=>$archivo[0],
-						"archivo2"=>$archivo[1],
-						"archivo3"=>$archivo[2],
-						"estatus"=>1,
-						"fecha_asignacion"=>null,
-						"fecha_termino"=>null,
-						"fecha_cierre"=>null
-		);
-		*/
-		/*
-		$oDatosTicket = new Ticket;
-		$nuevo_ticket = $oDatosTicket->registrarTicket(array("datos_formulario"=>$_POST,"archivo_adjunto"=>$_FILES));
-		
-		if(empty($nuevo_ticket)){
-			$respuesta = array("registro"=>true);
-			echo json_encode($respuesta);
-		}*/	
 	}
 }
+
+#Respuesta al AJAX de Jquery
+$respuesta = array("registro" => $registro, "estado" => $status, "mensaje" => $mensaje);
+echo json_encode($respuesta);
 
 ?>

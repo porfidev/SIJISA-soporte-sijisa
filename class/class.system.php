@@ -7,7 +7,7 @@
 * @package soporteAkumen
 * @author Porfirio Chávez <elporfirio@gmail.com>
 */
-include("folder.php");
+require_once("_folder.php");
 require_once(DIR_BASE."/class/class.conexion.php");
 require_once(DIR_BASE."/class/class.urlcrypt.php");
 //require_once(DIR_BASE."/class/class.phpmailer.php");
@@ -57,7 +57,7 @@ class Sistema{
     
     private function enviarMensajeCorreo($correo = "", $nombre = "", $token = ""){
         
-        $url = "http://172.16.1.8:8001/reset.php?token=".$token;
+        $url = "http://sijisa.mx/soporte/reset.php?token=".$token;
         
         //$url = "http://200.52.135.105:8001/reset.php?v=".$token;
         

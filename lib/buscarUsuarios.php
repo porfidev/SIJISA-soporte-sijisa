@@ -8,7 +8,7 @@
  */
  
 //Incluimos clases
-include("folder.php");
+require_once("_folder.php");
 require_once(DIR_BASE."/class/class.usuario.php");
 
 $oUsuario = new Usuario;
@@ -58,8 +58,8 @@ else { //CUANDO NO ES TICKET (pendiente revision)
 								<td>".$campo['email']."</td>
 								<td>
 									<input type=\"hidden\" value=\"".$campo['intIdUsuario']."\" name=\"inId\">
-									<a class=\"btn btn-small editar\">Editar</a>
-									<a class=\"btn btn-small eliminar\">Eliminar</a>
+									<a class=\"btn btn-sm btn-default editar\">Editar</a>
+									<a class=\"btn btn-sm btn-default eliminar\">Eliminar</a>
 								</td>
 						</tr>
 				";

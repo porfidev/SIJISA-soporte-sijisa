@@ -5,7 +5,7 @@ Desarrollado por Akumen.com.mx
 */
 
 //DEFINIMOS LOS DIRECTORIOS
-include("folder.php");
+require_once("_folder.php");
 require_once(DIR_BASE."/class/class.tickets.php");
 require_once(DIR_BASE."/class/class.empresa.php");
 
@@ -24,11 +24,187 @@ if ($_SESSION['tipo_usuario'] == null or !isset($_SESSION["tipo_usuario"])){
 <head>
 <meta charset="utf-8">
 <title>Crear Ticket | Akumen Tecnología en Sistemas S.A. de C.V.</title>
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/funciones.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-ui-1.10.2.custom.min.js"></script>
-<script src="js/jquery-ui-timepicker-addon.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/cupertino/jquery-ui-1.10.2.custom.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+    <?php include(DIR_BASE."/template/header.php")?>
+    <!-- FIN DE HEADER -->
+    <div class="row">
+        <div class="col-md-12">
+            <form name="formRegistrarTicket" id="formRegistrarTicket" action="" method="POST" enctype="multipart/form-data" class="form-horizontal" onSubmit="return registrarTicket(this);" role="form">
+                <fieldset>
+                    <legend>Crear Ticket</legend>
+                    <div class="form-group">
+                        <label for="tipoticket" class="col-md-2 control-label">Tipo de Solicitud</label>
+                        <div class="col-md-4">
+                            <select name="tipoticket" class="form-control" required id="tipoticket">
+                                <option value="">- Seleccione un tipo -</option>
+                                <option value="Incidencia">Incidencia</option>
+                                <option value="Control">Control de Cambios</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- ############ -->
+                    <div class="form-group">
+                        <label for="fecha_alta" class="col-md-2 control-label">Fecha de control</label>
+                        <div class="col-md-4">
+                            <input name="fecha_alta" class="form-control" type="text" id="fecha_alta" value="<?php date_default_timezone_set("America/Mexico_City"); echo $dateTo = date("Y/m/d H:i:s", strtotime('now')); ?>" readonly/>
+                        </div>
+                    </div>
+                    <!-- ############ -->
+                    <div class="form-group">
+                        <label for="fecha_problema" class="col-md-2 control-label">Fecha recepción</label>
+                        <div class="col-md-4">
+                            <input name="fecha_problema" class="form-control" type="text" required id="fecha_problema" placeholder="Clic aquí para elegir"/>
+                        </div>
+                    </div>
+                    <!-- ############ -->
+                    <div class="form-group">
+                        <label for="prioridad" class="col-md-2 control-label">Prioridad</label>
+                        <div class="col-md-4">
+                            <select class="form-control" name="prioridad" required id="prioridad">
+                                <option value="Alta">Alta</option>
+                                <option value="Media">Media</option>
+                                <option value="Baja" selected>Baja</option>
+                                <option value="Conocimiento">Conocimiento</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- ############ -->
+                    <?php
+                if($_SESSION["tipo_usuario"] != 3):
+                ?>
+                    <div class="form-group">
+                        <label for"procedencia" class="col-md-2 control-label">Empresa</label>
+                        <div class="col-md-4">
+                            <select class="form-control" name="procedencia" required id="procedencia">
+                                <option value="">- Seleccione una empresa -</option>
+                                <?php
+                            $oDatosEmpresa = new Empresa;
+                            $empresasregistradas = $oDatosEmpresa->consultaEmpresa();
+                
+                            foreach($empresasregistradas as $indice => $campo){
+                                echo "<option value=\"".$campo['intIdEmpresa']."\">".$campo['Descripcion']."</option>";
+                            }
+                            ?>
+                            </select>
+                        </div>
+                    </div>
+                    <?php
+                else: // FIN IF $SESSION != 3
+                ?>
+                    <div class="form-group">
+                        <label for="procedencia" class="col-md-2 control-label">Empresa</label>
+                        <div class="col-md-4">
+                            <?php
+                    $oDatosEmpresaP = new Empresa;
+                    $myempresa = $oDatosEmpresaP->obtenerEmpresa(array("id_empresa"=>$_SESSION['id_empresa']));
+                    foreach($myempresa as $indice => $campo){
+                        echo "<input name=\"procedencia\"type=\"text\" value=\"".$campo['Descripcion']."\" readonly>";
+                        //echo "<input type=\"hidden\" value=\"".$campo['intIdEmpresa']."\">";
+                    }
+                    ?>
+                        </div>
+                    </div>
+                    <!-- ############ -->
+                    <?php
+                endif;// FIN ELSE $SESSION != 3
+                
+                if($_SESSION["tipo_usuario"] == 3): ?>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Usuario</label>
+                        <div class="col-md-4">
+                            <input class="form-control" name="remitente" type="text" id="remitente" value="<?php echo $_SESSION['nombre']; ?>" readonly/>
+                        </div>
+                    </div>
+                    <?php
+                else: //FIN IF $SESSION ==
+                ?>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Cliente</label>
+                        <div class="col-md-4">
+                            <select class="form-control" name="remitente" required id="remitente">
+                                <option value="">- Elija un cliente -</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- ############ -->
+                    <?php
+                endif; // FIN ELSE
+                ?>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Tipo ticket</label>
+                        <div class="col-md-4">
+                            <input class="form-control" type="text" value="soporte" name="destinatario" id="destinatario" disabled>
+                        </div>
+                    </div>
+                    <!-- ############ -->
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Descripción del problema</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" name="problema" rows="4" required id="problema" placeholder="Descripción en resumen del problema"></textarea>
+                            <div id="contador_problema">--</div>
+                        </div>
+                    </div>
+                    <!-- ############ -->
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Observaciones</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" name="observaciones" rows="6" required id="observaciones" placeholder="Descripción a detalle del problema"></textarea>
+                            <div id="contador_observaciones">--</div>
+                        </div>
+                    </div>
+                    <!-- ############ -->
+                </fieldset>
+                <fieldset>
+                    <legend>Archivos adicionales</legend>
+                    <p class="col-md-12">Si tienes algunas pantallas del problema, fotografias o alg&uacute;n tipo de documento relacionado con el problema anexalo aqu&iacute;. <br>
+                        <?php
+                $max_upload = (int)(ini_get('upload_max_filesize'));
+                $max_post = (int)(ini_get('post_max_size'));
+                $memory_limit = (int)(ini_get('memory_limit'));
+                $upload_mb = min($max_upload, $max_post, $memory_limit);
+    
+                echo "Tamaño maximo permitido <strong>$upload_mb Mb</strong> &raquo; ";
+                ?>
+                        Tipo de archivo permitido <em>jpg|jpeg|gif|png|doc|docx|txt|rtf|pdf|xls|xlsx</em></p>
+                    <div class="form-group">
+                        <label class="col-md-2 control-label">Archivos Adjuntos</label>
+                        <div class="col-md-4">
+                            <input name="adjunto[]" type="file" />
+                            <input name="adjunto[]" type="file" />
+                            <input name="adjunto[]" type="file" />
+                        </div>
+                    </div>
+                </fieldset>
+                <hr>
+                <div class="form-group">
+                    <div class="col-md-4 col-md-offset-2">
+                        <input type="submit" name="crear" id="crear" value="Crear Ticket" class="btn btn-primary btn-lg btn-block">
+                        <!--<input type="reset" name="reset" id="reset" value="Reiniciar" class="btn btn-lg" onClick="reiniciarCrearTicket();">--> 
+                    </div>
+                </div>
+                <div class="infoResponse" id="respuestaInfo"></div>
+            </form>
+        </div>
+    </div>
+    <div id="pruebascontrol"></div>
+    <!-- FOOTER -->
+    <?php include(DIR_BASE."/template/footer.php");?>
+</div>
+<script src="js/jquery-1.9.1.min.js"></script> 
+<script src="js/funciones.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/jquery-ui-1.10.2.custom.min.js"></script> 
+<script src="js/jquery-ui-timepicker-addon.js"></script> 
+<script>
+    $("#procedencia").on("change",function(e){
+        buscarClientes($("#procedencia").val())
+        });
+    </script> 
 <script>
 $(function(){
 	var ano = new Date().getFullYear();
@@ -90,165 +266,5 @@ $(function(){
 	});
 });
 </script>
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<link href="css/cupertino/jquery-ui-1.10.2.custom.min.css" rel="stylesheet" type="text/css">
-</head>
-
-<body>
-<div class="container">
-<?php include("header.php")?>
-<!-- FIN DE HEADER -->
-<form name="formRegistrarTicket" id="formRegistrarTicket" action="" method="POST" enctype="multipart/form-data" class="form-horizontal" onSubmit="return registrarTicket();">
-<fieldset>
-	<legend>Crear Ticket</legend>
-	<div class="control-group">
-		<label class="control-label">Tipo de Solicitud</label>
-		<div class="controls">
-		<select name="tipoticket" required id="tipoticket">
-			<option value="">- Seleccione un tipo -</option>
-			<option value="Incidencia">Incidencia</option>
-			<option value="Control">Control de Cambios</option>
-		</select>
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Fecha de control</label>
-		<div class="controls">
-		<input name="fecha_alta" type="text" id="fecha_alta" value="<?php date_default_timezone_set("America/Mexico_City"); echo $dateTo = date("Y/m/d H:i:s", strtotime('now')); ?>" readonly/>
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Fecha recepción</label>
-		<div class="controls">
-		<input name="fecha_problema" type="text" required id="fecha_problema" placeholder="Clic aquí para elegir"/>
-		</div>
-	</div>
-	<div class="control-group">
-		<label class="control-label">Prioridad</label>
-		<div class="controls">
-		<select name="prioridad" required id="prioridad">
-			<option value="Alta">Alta</option>
-			<option value="Media">Media</option>
-			<option value="Baja" selected>Baja</option>
-			<option value="Conocimiento">Conocimiento</option>
-		</select>
-		</div>
-	</div>
-	<?php
-	if($_SESSION["tipo_usuario"] != 3){ ?>
-	<div class="control-group">
-		<label class="control-label">Empresa</label>
-		<div class="controls">
-		<select name="procedencia" required id="procedencia">
-			<option value="">- Seleccione una empresa -</option>
-			<?php
-			$oDatosEmpresa = new Empresa;
-			$empresasregistradas = $oDatosEmpresa->consultaEmpresa();
-			
-			foreach($empresasregistradas as $indice => $campo){
-				echo "<option value=\"".$campo['intIdEmpresa']."\">".$campo['Descripcion']."</option>";
-			}
-	?>
-		</select>
-		</div>
-	</div>
-	<?php } // FIN IF $SESSION != 3
-	else{ ?>
-	<div class="control-group">
-		<label class="control-label">Empresa</label>
-		<div class="controls">
-		<?php
-		$oDatosEmpresaP = new Empresa;
-		$myempresa = $oDatosEmpresaP->obtenerEmpresa(array("id_empresa"=>$_SESSION['id_empresa']));
-		foreach($myempresa as $indice => $campo){
-			echo "<input name=\"procedencia\"type=\"text\" value=\"".$campo['Descripcion']."\" readonly>";
-			//echo "<input type=\"hidden\" value=\"".$campo['intIdEmpresa']."\">";
-		}
-		?>
-		</div>
-	</div>
-	<?php } // FIN ELSE $SESSION != 3
-	
-	if($_SESSION["tipo_usuario"] == 3){ ?>
-	<div class="control-group">
-		<label class="control-label">Usuario</label>
-		<div class="controls">
-		<input name="remitente" type="text" id="remitente" value="<?php echo $_SESSION['nombre']; ?>" readonly/>
-		</div>
-	</div>
-	<?php } //FIN IF $SESSION == 3
-	else { ?>
-	<div class="control-group">
-	<label class="control-label">Cliente</label>
-		<div class="controls">
-		<select name="remitente" required id="remitente">
-			<option value="">- Elija un cliente -</option>	
-		</select>
-		</div>
-	</div>
-			<?php
-	} // FIN ELSE?>
-	<div class="control-group">
-	<label class="control-label">Tipo ticket</label>
-		<div class="controls">
-		<input type="text" value="soporte" name="destinatario" id="destinatario" disabled>
-		</div>
-	</div>
-	<div class="control-group">
-	<label class="control-label">Descripción del problema</label>
-		<div class="controls">
-		<textarea name="problema" rows="4" required id="problema" class="span5" placeholder="Descripción en resumen del problema"></textarea>
-		<div id="contador_problema">--</div>
-		</div>
-	</div>
-	<div class="clr"></div>
-	<div class="control-group">
-	<label class="control-label">Observaciones</label>
-		<div class="controls">
-		<textarea name="observaciones" rows="6" required id="observaciones" class="span5" placeholder="Descripción a detalle del problema"></textarea>
-		<div id="contador_observaciones">--</div>
-		</div>
-	</div>
-	<div class="clr"></div>
-	</fieldset>
-	<fieldset>
-	<p>Si tienes algunas pantallas del problema, fotografias o alg&uacute;n tipo de documento relacionado con el problema anexalo aqu&iacute;.<br>
-		<?php
-		$max_upload = (int)(ini_get('upload_max_filesize'));
-		$max_post = (int)(ini_get('post_max_size'));
-		$memory_limit = (int)(ini_get('memory_limit'));
-		$upload_mb = min($max_upload, $max_post, $memory_limit);
-
-		echo "Tamaño maximo permitido <strong>$upload_mb Mb</strong> &raquo; ";
-		?>
-		Tipo de archivo permitido <em>jpg|jpeg|gif|png|doc|docx|txt|rtf|pdf|xls|xlsx</em></p>
-	<br>
-	<div class="control-group">
-	<label class="control-label">Archivos Adjuntos</label>
-		<div class="controls">
-			<input name="adjunto[]" type="file" />
-			<input name="adjunto[]" type="file" />
-			<input name="adjunto[]" type="file" />
-		</div>
-	</div>
-	</fieldset>
-	<div class="control-group">
-		<div class="controls">
-			<input type="submit" name="crear" id="crear" value="Crear Ticket" class="btn btn-primary btn-large">
-			<input type="reset" name="reset" id="reset" value="Reiniciar" class="btn btn-large" onClick="reiniciarCrearTicket();">
-		</div>
-	</div>
-	</form>
-	</div>
-</div>
-
-<div id="pruebascontrol"></div>
-<script>
-$("#procedencia").on("change",function(e){
-	buscarClientes($("#procedencia").val())
-	});
-</script>
-<!-- FOOTER -->
-<?php include("footer.php");?>
 </body>
 </html>

@@ -7,7 +7,7 @@
 * @package soporteAkumen
 * @author Porfirio Chávez <elporfirio@gmail.com>
 */
-include("folder.php");
+require_once("_folder.php");
 require_once(DIR_BASE."/class/class.conexion.php");
 
 class Ticket
@@ -43,11 +43,95 @@ class Ticket
 			case "ticket":
 				$this->consulta .= " WHERE intIdticket = :id_ticket";
 				break;
+            case "id_unico":
+                $this->consulta .= " WHERE intIdUnico = :id_unico";
+                break;
 			default:
 				throw new Exception("No se ha ingresado un parametro correcto para establecer la busqueda");
 				break;
 		}
 	}
+    
+    public function isSearch($idEmpresa = "", $prioridad = array(), $estado = array(), $fechaInicio = "", $fechaFin = ""){
+        $this->consulta = "SELECT * FROM tickets";
+        
+        if($idEmpresa != 0){
+            $this->consulta .= " WHERE intIdEmpresa = ".$idEmpresa;
+            $check = false;
+            
+            if(!empty($prioridad)){
+                $this->consulta .= " AND prioridad IN (";
+                $x = 0;
+                foreach($prioridad as $valor){
+                    $this->consulta .= ($x >0) ? "," : "";
+                    $this->consulta .= "'".$valor."'";
+                    $x++;
+                }
+                $this->consulta .= ")";
+            }
+        
+            
+            if(!empty($estado)){
+                $this->consulta .= " AND intIdEstatus IN (";
+                $y = 0;
+                foreach($estado as $valor){
+                    $this->consulta .= ($y >0) ? "," : "";
+                    $this->consulta .= "'".$valor."'";
+                    $y++;
+                }
+                $this->consulta .= ")";
+            }
+            
+            if($fechaInicio != ""){
+                if($fechaFin != ""){
+                    $this->consulta .= " AND fecha_alta BETWEEN '".$fechaInicio."' AND '". $fechaFin ."'";
+                }
+                else{
+                    $this->consulta .= " AND fecha_alta >= '".$fechaInicio."'";
+                }
+            }
+        }
+        else{
+            $check = false;
+            if(!empty($prioridad)){
+                $this->consulta .= ($check == false) ? " WHERE prioridad IN (" : " AND prioridad IN (" ;
+                $x = 0;
+                foreach($prioridad as $valor){
+                    $this->consulta .= ($x >0) ? "," : "";
+                    $this->consulta .= "'".$valor."'";
+                    $x++;
+                }
+                $this->consulta .= ")";
+                $check = true;
+            }
+            
+            if(!empty($estado)){
+                $this->consulta .= ($check == false) ? " WHERE intIdEstatus IN (" : " AND intIdEstatus IN (";
+                $y = 0;
+                foreach($estado as $valor){
+                    $this->consulta .= ($y >0) ? "," : "";
+                    $this->consulta .= "'".$valor."'";
+                    $y++;
+                }
+                $this->consulta .= ")";
+                $check = true;
+            }
+            
+            if($fechaInicio != ""){
+                if($fechaFin != ""){
+                    $this->consulta .= ($check == false) ? " WHERE fecha_alta BETWEEN '".$fechaInicio."' AND '". $fechaFin ."'" : " AND fecha_alta BETWEEN '".$fechaInicio."' AND '". $fechaFin ."'";
+                }
+                else{
+                    $this->consulta .= ($check == false) ? "WHERE fecha_alta >= '".$fechaInicio."'" : " AND fecha_alta >= '".$fechaInicio."'";
+                }
+                $check = true;
+            }
+        }
+        
+  
+        
+        
+    }
 	
 	
 	public function isFollow(){
@@ -137,7 +221,7 @@ class Ticket
 		}
 	}
 	
-	public function isReport($inicio = null, $fin = null, $empresa = null){
+	public function isReport($tipo = null){
 		$this->consulta = "SELECT intIdUnico,
 							intIdEmpresa,
 							problema,
@@ -147,9 +231,14 @@ class Ticket
 							fecha_termino,
 							catestatus.Descripcion AS estado_actual
 							FROM tickets
-							JOIN catestatus ON catestatus.intIdEstatus = tickets.intIdEstatus
-							WHERE intIdEmpresa = :empresa
-							AND fecha_alta BETWEEN :fechainicio AND :fechafin";
+							JOIN catestatus ON catestatus.intIdEstatus = tickets.intIdEstatus";
+        if($tipo != null and $tipo != "0"){
+            $this->consulta .= " WHERE intIdEmpresa = :empresa
+                                AND fecha_alta BETWEEN :fechainicio AND :fechafin";
+        }
+        else {
+            $this->consulta .=" WHERE fecha_alta BETWEEN :fechainicio AND :fechafin";
+        }
 	}
 	
 	public function timeZone(){

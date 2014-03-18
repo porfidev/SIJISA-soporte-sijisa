@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>PHPMailer Test</title>
 </head>
@@ -9,15 +10,19 @@
     <div align="center">
       <a href="https://github.com/PHPMailer/PHPMailer/"><img src="../img/logo_conavi.png" height="89" width="478" alt="Logo CONAVI"></a>
     </div>
-    <h1>Solicitud para restablecer contraseña</h1>
+    <h1>Nuevo ticket {TICKET}    </h1>
     <hr>
-    <h2>{INTERESADO}</h2>
+    <h2><!--{INTERESADO}--></h2>
     <!--<p>This example uses <strong>HTML</strong>.</p>-->
-    <p>Este correo se envió para realizar un cambio de contraseña, para el usuario del sistema de atención a clientes. Si usted no solicito este cambio, haga caso omiso de este correo.</p>
-    <p>Para cambiar la contraseña, haga clic en el siguiente vinculo, o copie y pegue en su navegador.</p>
-    <p>{URL}</p>
+    <p>Se generó un nuevo ticket con los siguientes datos:</p>
+    <h3>Descripción del problema:</h3>
+    <p>{PROBLEMA}</p>
+    <h3>Observaciones:</h3>
+    <p>{OBSERVACIONES}</p>
+    <p>&nbsp;</p>
+    <p>Este correo solo es de carácter informativo, por lo que NO es necesario que lo conteste.</p>
     <p>--<br>
-      Si tiene duda comuniquese con nostotros en <a href="mailto:servicioaclientes@sijisa.mx">servicioaclientes@akumen.com.mx</a></p>
+      Si tiene duda comuniquese con nostotros en <a href="mailto:servicioaclientes@akumen.com.mx">servicioaclientes@akumen.com.mx</a></p>
   </div>
 </body>
 </html>

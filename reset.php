@@ -4,7 +4,7 @@ if(isset($_GET["token"]) and $_GET["token"] != null){
     
     $token = filter_var($_GET["token"], FILTER_SANITIZE_STRING);
     
-    include("folder.php");
+    require_once("_folder.php");
     require_once(DIR_BASE."/class/class.usuario.php");
     require_once(DIR_BASE."/class/class.system.php");
     

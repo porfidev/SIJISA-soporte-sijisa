@@ -7,7 +7,7 @@
  * 
  */
  
-include("folder.php");
+require_once("_folder.php");
 //Se requiere el archivo de configuracion
 require(DIR_BASE."/cfg/config.php");
 

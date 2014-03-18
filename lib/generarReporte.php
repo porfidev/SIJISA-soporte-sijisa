@@ -12,7 +12,7 @@ if(!$_POST){
 }
  
 //Incluimos clases
-include("folder.php");
+require_once("_folder.php");
 require_once(DIR_BASE."/class/class.tickets.php");
 
 session_start();
@@ -35,7 +35,7 @@ if ($_SESSION['tipo_usuario'] == null or !isset($_SESSION['tipo_usuario'])){
 	}
 	
 	$oTicket = new Ticket;
-	$oTicket->isReport();
+	$oTicket->isReport($_POST["empresa"]);
 	$oTicket->setValores(array("empresa"=>$_POST["empresa"],
 								"fechainicio"=>$_POST["fecha_inicio"],
 								"fechafin"=>$_POST["fecha_fin"]));
@@ -56,8 +56,10 @@ if(sizeof($mytickets) > 0){
 			<td>".$contenido["intIdUnico"]."</td>
 			<td>".$contenido["problema"]."</td>
 			<td>".$contenido["estado_actual"]."</td>
-			<td>".$contenido["fecha_alta"]."</td>
+			
 			<td>".$contenido["fecha_problema"]."</td>
+            <td>".$contenido["fecha_alta"]."</td>
+            
 			<td>".$contenido["fecha_asignacion"]."</td>
 			<td>".$contenido["fecha_termino"]."</td>
 			<td>".$tiempo_atencion."</td>
