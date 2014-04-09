@@ -7,7 +7,7 @@
 * @package soporteAkumen
 * @author Porfirio Chávez <elporfirio@gmail.com>
 */
-include("folder.php");
+require_once("_folder.php");
 require_once(DIR_BASE."/class/class.conexion.php");
 
 class Usuario{
@@ -67,7 +67,7 @@ class Usuario{
        else {
            $this->consulta = "SELECT * FROM usuarios";
 		
-           if($this->empresa != ''){
+           if($this->empresa != '' and $this->empresa != "0"){
                $this->consulta.= " WHERE intIdEmpresa = :ID_empresa";
                $this->valores = array("ID_empresa"=>$this->empresa);
             }
@@ -138,6 +138,12 @@ class Usuario{
 		return $resultado;
 	}
 	
+    
+    public function obtenerEmail(){
+        $this->consulta = "SELECT email
+                           FROM usuarios
+                           WHERE intIdUsuario = :id_usuario";
+    }
 	
 	/**
 	* Fija el modo de consulta a login

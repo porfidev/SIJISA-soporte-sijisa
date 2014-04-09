@@ -1,5 +1,5 @@
 <?php
-include("folder.php");
+require_once("_folder.php");
 require_once(DIR_BASE."/class/class.tickets.php");
 require_once(DIR_BASE."/class/class.archivo.php");
 

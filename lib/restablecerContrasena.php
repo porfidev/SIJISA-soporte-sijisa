@@ -1,6 +1,6 @@
 <?php
 //Incluimos clases
-include("folder.php");
+require_once("_folder.php");
 
 require_once(DIR_BASE."/class/class.usuario.php");
 require_once(DIR_BASE."/class/class.system.php");

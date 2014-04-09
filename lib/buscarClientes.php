@@ -8,7 +8,7 @@
  */
  
 //Incluimos clases
-include("folder.php");
+require_once("_folder.php");
 //require_once(DIR_BASE."/class/class.consultas.php");
 require_once("../class/class.consultas.php");
 

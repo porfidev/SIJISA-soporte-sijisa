@@ -1,3 +1,6 @@
+<?php
+require_once("_folder.php");
+?>
 <!doctype html>
 <html>
 <head>
@@ -56,10 +59,11 @@ body {
 </head>
 
 <body>
-<!-- HEADER -->
-<?php include("header.php");?>
+
 <!-- CONTENIDO -->
 <div class="container">
+    <!-- HEADER -->
+<?php include(DIR_BASE."/template/header.php")?>
     <form name="login_form" id="login_form" class="form-signin" onsubmit="return login()" role="form">
         <legend>Inicio de sesión</legend>
         <input type="text" name="usuario" id="usuario" placeholder="usuario" class="form-control" required autofocus>
@@ -102,7 +106,7 @@ body {
 <!-- /.modal --> 
 
 <!-- FOOTER -->
-<?php include("footer.php");?>
+<?php include(DIR_BASE."/template/footer.php");?>
 
 <script>
 function restablecer($form){

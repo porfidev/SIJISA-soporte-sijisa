@@ -6,7 +6,7 @@ if(isset($_POST["inNuevoPass"]) and $_POST["inNuevoPass"] != ""){
     $contrasenaEncriptada = sha1($contrasena);
     $token = filter_var($_POST["inToken"], FILTER_SANITIZE_STRING);
     
-    include("folder.php");
+    require_once("_folder.php");
     require_once(DIR_BASE."/class/class.usuario.php");
     require_once(DIR_BASE."/class/class.system.php");
     
