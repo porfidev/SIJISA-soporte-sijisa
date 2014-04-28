@@ -1,3 +1,6 @@
 AddDefaultCharset UTF-8
-php_value log_errors 1
-php_value error_log php-error.log
+# File modified on Wed Feb 26 09:58:20 2014 by server
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value log_errors 1
+# For security reasons, mod_php is not used on this server. Use a php.ini file for php directives
+# php_value error_log php-error.log
