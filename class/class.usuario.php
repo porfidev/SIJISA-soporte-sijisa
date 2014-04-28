@@ -162,6 +162,10 @@ class Usuario{
 		$this->consulta = "INSERT INTO usuarios
 							VALUES (null, :nombre, :usuario, :contrasena, :email, :empresa, null, :tipousuario);";
 	}
+
+    public function addToCatalog(){
+        $this->consulta = "INSERT INTO catusuarios (id_usuario, nombre) VALUES (:id_usuario, :nombre)";
+    }
 	/**
 	* Fija los valores para la consulta
 	* 

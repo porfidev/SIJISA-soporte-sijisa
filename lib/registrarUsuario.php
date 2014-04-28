@@ -129,16 +129,27 @@ if(isset($_POST["crear"])){
 	
 	if(!$duplicado){
 		try {
+            $valores = array("nombre"=>$_POST['nombre'],
+                             "usuario"=>$_POST['usuario'],
+                             "contrasena"=>$_POST['password'],
+                             "email"=>$_POST['email'],
+                             "empresa"=>$empresa_reg,
+                             "tipousuario"=>$_POST['tipo_usuario']);
+
 			$empresa_reg = isset($nuevaEmpresa['id']) ? $nuevaEmpresa['id'] : $_POST['empresa'];
 			$oNUsuario = new Usuario;
 			$oNUsuario->isRegister();
-			$oNUsuario->setValores(array("nombre"=>$_POST['nombre'],
-										"usuario"=>$_POST['usuario'],
-										"contrasena"=>$_POST['password'],
-										"email"=>$_POST['email'],
-										"empresa"=>$empresa_reg,
-										"tipousuario"=>$_POST['tipo_usuario']));
+			$oNUsuario->setValores($valores);
 			$nuevo_registro = $oNUsuario->consultaUsuario();
+
+            var_dump($nuevo_registro);
+            $oNUsuario->addToCatalog();
+
+            $valores["id_usuario"] = $nuevo_registro;
+
+            $oNUsuario->setValores($valores);
+            $oNUsuario->consultaUsuario();
+
 			if(empty($nuevo_registro)){
 				$respuesta = array("registro"=>true);
 				echo json_encode($respuesta);

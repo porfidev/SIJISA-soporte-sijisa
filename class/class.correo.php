@@ -7,41 +7,25 @@ require_once(DIR_BASE."/class/class.smtp.php");
 
 class Correo
 {
-    private $mailCharset;
-    private $mailHost;
-    private $mailSMTP;
-    private $mailUsername;
-    private $mailPassword;
-    private $mailPort;
-    
-    public function __construct(){
-        $this->mailCharset = "UTF-8";
-        $this->mailHost = "mail.sijisa.mx";
-        $this->mailSMTP = true;
-        $this->mailUsername = "servicioaclientes@sijisa.mx";
-        $this->mailPassword = "-3I_dewn*qmf";
-        $this->mailPort = 26;
-    }
-    
     public function enviarCorreoA($correo = "", $nombre = "", $url = ""){
         $oCorreo = new PHPMailer;
         
         $oCorreo->isSMTP();
-     
-        $oCorreo->CharSet = $this->mailCharset;
-        $oCorreo->Host = $this->mailHost;
-        $oCorreo->SMTPAuth = $this->mailSMTP;
-        $oCorreo->Username = $this->mailUsername;
-        $oCorreo->Password = $this->mailPassword;
+        $oCorreo->CharSet = "UTF-8";
+        
+        $oCorreo->Host = "mail.sijisa.mx";
+        $oCorreo->SMTPAuth = true;
+        $oCorreo->Username = "servicioaclientes@sijisa.mx";
+        $oCorreo->Password = "-3I_dewn*qmf";
        // $oCorreo->SMTPSecure = "tls";
-        $oCorreo->Port = $this->mailPort;
+        $oCorreo->Port = 26;
         
         $oCorreo->From = "servicioaclientes@sijisa.mx";
         $oCorreo->FromName = "Sistema de Soporte Técnico SIJISA";
         $oCorreo->addAddress($correo, $nombre);
         //$oCorreo->addCC("jzamora@akumen.com.mx", "Julio Zamora");
         
-        $oCorreo->Subject = "Restablecer contraseña - Sistema de soporte SIJISA";
+        $oCorreo->Subject = "Mensaje de prueba";
         
         $html = file_get_contents(DIR_BASE."/lib/contents.html");
         $reemplazar = array("{INTERESADO}", "{URL}");
@@ -65,22 +49,22 @@ class Correo
         $oCorreo = new PHPMailer;
         
         $oCorreo->isSMTP();
-     
-        $oCorreo->CharSet = $this->mailCharset;
-        $oCorreo->Host = $this->mailHost;
-        $oCorreo->SMTPAuth = $this->mailSMTP;
-        $oCorreo->Username = $this->mailUsername;
-        $oCorreo->Password = $this->mailPassword;
+        $oCorreo->CharSet = "UTF-8"; 
+        
+        $oCorreo->Host = "mail.sijisa.mx";
+        $oCorreo->SMTPAuth = true;
+        $oCorreo->Username = "servicioaclientes@sijisa.mx";
+        $oCorreo->Password = "-3I_dewn*qmf";
        // $oCorreo->SMTPSecure = "tls";
-        $oCorreo->Port = $this->mailPort;
+        $oCorreo->Port = 26;
         
         $oCorreo->From = "servicioaclientes@sijisa.mx";
         $oCorreo->FromName = "Sistema de Soporte Técnico SIJISA";
         
         //var_dump("correo Usuario: ".$correo_usuario);
         $oCorreo->addAddress($correo_usuario);
-        $oCorreo->addCC("porfirio.chavez@sijisa.mx");
-        $oCorreo->addCC("soporte_paloalto@sijisa.mx");
+        $oCorreo->addCC("pchavez@akumen.com.mx");
+        $oCorreo->addCC("soporte_paloalto@akumen.com.mx");
         //$oCorreo->addCC("jzamora@akumen.com.mx", "Julio Zamora");
         
         if($correo_empresa != ""){
@@ -115,22 +99,21 @@ class Correo
         $oCorreo = new PHPMailer;
         
         $oCorreo->isSMTP();
-     
-        $oCorreo->CharSet = $this->mailCharset;
-        $oCorreo->Host = $this->mailHost;
-        $oCorreo->SMTPAuth = $this->mailSMTP;
-        $oCorreo->Username = $this->mailUsername;
-        $oCorreo->Password = $this->mailPassword;
+        $oCorreo->CharSet = "UTF-8"; 
+        $oCorreo->Host = "mail.sijisa.mx";
+        $oCorreo->SMTPAuth = true;
+        $oCorreo->Username = "servicioaclientes@sijisa.mx";
+        $oCorreo->Password = "-3I_dewn*qmf";
        // $oCorreo->SMTPSecure = "tls";
-        $oCorreo->Port = $this->mailPort;
+        $oCorreo->Port = 26;
         
         $oCorreo->From = "servicioaclientes@sijisa.mx";
         $oCorreo->FromName = "Sistema de Soporte Técnico SIJISA";
         
         //var_dump("correo Usuario: ".$correo_usuario);
         $oCorreo->addAddress($correo_usuario);
-        $oCorreo->addCC("porfirio.chavez@sijisa.mx");
-        $oCorreo->addCC("soporte_paloalto@sijisa.mx");
+        $oCorreo->addCC("pchavez@akumen.com.mx");
+        $oCorreo->addCC("soporte_paloalto@akumen.com.mx");
         //$oCorreo->addCC("jzamora@akumen.com.mx", "Julio Zamora");
         
         if($correo_empresa != ""){
