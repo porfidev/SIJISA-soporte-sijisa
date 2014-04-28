@@ -38,9 +38,9 @@ require_once("_folder.php");
             <?php //var_dump($_SESSION); ?>
         </div>
     </div>
-    
-    <!-- FOOTER -->
-    <?php include(DIR_BASE."/template/footer.php");?>
+</div>
+<!-- FOOTER -->
+<?php include(DIR_BASE."/template/footer.php");?>
 </div>
 </body>
 </html>

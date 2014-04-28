@@ -8,7 +8,7 @@ upload/
 sql/
 *.config
 *.log
-*.ini
+#*.ini
 
 
 #################
@@ -226,3 +226,4 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+.idea/
