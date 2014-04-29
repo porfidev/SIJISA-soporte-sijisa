@@ -1,0 +1,4 @@
+<FilesMatch "\.(htaccess|htpasswd|ini|phps|log|bak|txt)$">
+ Order Allow,Deny
+ Deny from all
+</FilesMatch>
