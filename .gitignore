@@ -3,9 +3,7 @@
 #################
 
 _notes/
-cfg/
 upload/
-sql/
 *.config
 *.log
 #*.ini
