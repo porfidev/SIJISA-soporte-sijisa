@@ -22,7 +22,7 @@ CREATE TABLE `usuarios` (
                             `username` varchar(180) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL,
                             `password` varchar(180) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL,
                             `email` varchar(180) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL,
-                            `id_tipo_usuario` INT DEFAULT NULL,
+                            `id_tipo_usuario` INT NOT NULL,
                             UNIQUE (username, email),
                             FOREIGN KEY (id_tipo_usuario) REFERENCES cattipousuario(id)
 ) DEFAULT CHARSET=utf8mb3 COLLATE utf8mb3_spanish_ci;
