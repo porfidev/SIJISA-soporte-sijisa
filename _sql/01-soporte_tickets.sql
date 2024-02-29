@@ -34,7 +34,7 @@ CREATE TABLE `usuarios` (
 DROP TABLE IF EXISTS `catempresas`;
 CREATE TABLE `catempresas` (
                                id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-                               `descripcion` TINYTEXT CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci NOT NULL,
+                               `nombre` TINYTEXT CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci NOT NULL,
                                `siglas` varchar(3) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL
 ) DEFAULT CHARSET=utf8mb3 COLLATE utf8mb3_spanish_ci;
 

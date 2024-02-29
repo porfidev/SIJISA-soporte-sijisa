@@ -8,16 +8,16 @@
  */
 
 //Incluimos clases
-require_once("_folder.php");
+require_once "_folder.php";
 
 //Iniciamos trabajo con sesiones
 session_start();
 session_write_close();
 
 //Verificamos que sea adminstrador
-if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
-	echo "Debe ser un administrador para agregar empresas";
-	die;
+if ($_SESSION["tipo_usuario"] !== 1 or !isset($_SESSION)) {
+  echo "Debe ser un administrador para agregar empresas";
+  die();
 }
 ?>
 <!doctype html>
@@ -33,7 +33,7 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 
 <body>
 <div class="container">
-<?php include(DIR_BASE."/template/header.php")?>
+<?php include DIR_BASE . "/template/header.php"; ?>
 <!-- FIN DE HEADER -->
     <div class="row">
         <div class="col-md-12">
@@ -53,12 +53,6 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
                     <input name="siglas" type="text" required id="siglas" class="form-control"  placeholder="ej: AKM" maxlength="3">
                 </div>
             </div>
-            <div class="form-group">
-                <label class="col-md-2 control-label">Correo CC</label>
-                <div class="col-md-4">
-                    <input name="email" type="email" id="email" class="form-control"  placeholder="ej: general@akumen.com">
-                </div>
-            </div>
             </fieldset>
             <div class="form-group">
                 <div class="col-md-4 col-md-offset-2">
@@ -71,7 +65,7 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
         </div>
     </div>
     <!-- FOOTER -->
-    <?php include(DIR_BASE."/template/footer.php");?>
+    <?php include DIR_BASE . "/template/footer.php"; ?>
 </div>
 </body>
 </html>

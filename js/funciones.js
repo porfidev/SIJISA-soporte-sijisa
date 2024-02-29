@@ -127,24 +127,25 @@ function reiniciarBoton(){
 // METODO AJAX PARA REGISTRAR LA EMPRESA
 /* ####### se llama desde: crearEmpresa.php */
 function registrarEmpresa(){
-	var nombre = $("#nombre").val();
-	var siglas = $("#siglas").val();
-	var email = $("#email").val();
-	var guardar = $("#guardar").val();
+	var nombre = $("input[name=nombre]").val();
+	var siglas = $("input[name=siglas]").val();
 	
 	$.ajax({
 		dataType: "json",
-		data: {"nombre": nombre, 
-				"siglas": siglas,
-				"email": email,
-				"guardar": guardar,
-				},
-		url:   'lib/registrarEmpresa.php',
-        type:  'post',
+		data: {
+			"nombre": nombre,
+			"siglas": siglas
+		},
+		url: 'lib/registrarEmpresa.php',
+		type: 'post',
 		beforeSend: function(){
 			$("#formRegistrarEmpresa :input").attr("disabled", true);
 			},
         success: function(respuesta){
+			if(!respuesta.success) {
+				return alert(respuesta.mensaje);
+			}
+
 			if(respuesta.empresa){
 				$("#campo_nombre").addClass("info");
 				$("#campo_nombre .help-inline").show();
@@ -154,13 +155,12 @@ function registrarEmpresa(){
 				$("#guardar").attr("type","button");
 				$("#resetFormEmpresa").attr("disabled",false);
 			}
-			else{
-				alert(respuesta.mensaje);
-			}
 		},
-		error:	function(xhr,err){ 
-			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-			alert("responseText: "+xhr.responseText);
+		error:	function(xhr,err){
+			$("#formRegistrarEmpresa :input").attr("disabled", false);
+		},
+		complete: function(){
+			$("#formRegistrarEmpresa :input").attr("disabled", false);
 		}
 	});	
 	return false;

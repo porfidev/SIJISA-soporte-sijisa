@@ -1,4 +1,4 @@
-<div id="header" style="margin-top: 150px;" class="row">
+<div id="header" style="margin-top: 50px;" class="row">
 	<?php
  session_start();
  //var_dump($_SESSION);
