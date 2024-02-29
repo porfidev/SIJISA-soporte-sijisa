@@ -13,7 +13,7 @@ function login(){
 	$('#respuesta').html('');
 	const usuario = $("#usuario").val();
 	const password = $("#password").val();
-	
+
 	// Envio de datos para login -->
 	$.ajax({
 		dataType: "json",
@@ -24,13 +24,12 @@ function login(){
 			$("#login_form :input").attr("disabled", true);
 		},
         success: function(respuesta){
-			if(!respuesta.login){
-				$('#respuesta').html('<p>'+respuesta.mensaje+'</p>');
+			if(!respuesta.success){
+				return $('#respuesta').html('<p>'+respuesta.mensaje+'</p>');
 			}
-			else{
-				$(location).attr('href',respuesta.url);
-			}
+
 			$("#login_form :input").attr("disabled", false);
+			window.location.href = respuesta.url;
 		},
 		error: function(xhr,err){
 			console.log(xhr);

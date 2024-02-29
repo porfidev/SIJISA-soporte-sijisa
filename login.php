@@ -123,8 +123,7 @@ function restablecer($form){
 			$($form.id + ":input").attr("disabled", true);
             $divInfo.removeClass().addClass("infoResponse");
 		},
-        success: function(respuesta){
-            console.log(respuesta);
+    success: function(respuesta){
 			if(respuesta.mensaje){
 				$divInfo.html('<p>'+respuesta.mensaje+'</p>');
                 $divInfo.addClass("alert alert-"+respuesta.estado);
@@ -132,9 +131,6 @@ function restablecer($form){
 			$($form.id + ":input").attr("disabled", false);
 		},
 		error: function(request, status, error){
-            //console.log(request);
-            //console.info(status);
-            //console.log(error);
             $error = '<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>';
             $error += '<p><b>No se pudo procesar la solicitud</b></p><hr>' + status +': <b>' + error + '</b><br>';
             $error += 'Estado: ' + request.readyState + '<br>';
