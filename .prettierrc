@@ -1,0 +1,9 @@
+{
+    "endOfLine": "auto",
+    "printWidth": 80,
+    "tabWidth": 2,
+    "trailingComma": "es5",
+    "semi": false,
+    "parser": "php",
+    "plugins": ["@prettier/plugin-php"]
+}

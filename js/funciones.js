@@ -11,8 +11,8 @@
 // Script de respuesta a Login se llama desde index.php
 function login(){
 	$('#respuesta').html('');
-	var usuario = $("#usuario").val();
-	var password = $("#password").val();
+	const usuario = $("#usuario").val();
+	const password = $("#password").val();
 	
 	// Envio de datos para login -->
 	$.ajax({
@@ -33,9 +33,9 @@ function login(){
 			$("#login_form :input").attr("disabled", false);
 		},
 		error: function(xhr,err){
+			console.log(xhr);
 			$('#respuesta').html('<p>No se pudo procesar la solicitud</p>');
-			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-			alert("responseText: "+xhr.responseText);
+			$("#login_form :input").attr("disabled", false);
 		}
 	});
 	
