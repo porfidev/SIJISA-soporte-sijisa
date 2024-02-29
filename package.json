@@ -6,6 +6,9 @@
   "author": "porfi.dev <hola@porfi.dev>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "serve": "php -S localhost:8000"
+  },
   "devDependencies": {
     "@prettier/plugin-php": "^0.22.2",
     "prettier": "^3.2.5"

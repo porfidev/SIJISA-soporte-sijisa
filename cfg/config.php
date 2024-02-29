@@ -11,30 +11,10 @@
 abstract class Configuracion
 {
   protected $datahost;
-  private $archivo = "";
-
-  private function defineConfiguracion()
-  {
-    $currentHost = $_SERVER["HTTP_HOST"];
-    if (preg_match("/localhost/", $currentHost)) {
-      $this->archivo = "configuracion_local.ini";
-      return;
-    }
-    if (preg_match("/sijisa/", $currentHost)) {
-      $this->archivo = "configuracion_sijisa.ini";
-      return;
-    }
-
-    die(
-      "servidor no reconocido " .
-        $_SERVER["HTTP_HOST"] .
-        ", revise la clase Configuración"
-    );
-  }
+  private $archivo = "config.ini";
 
   protected function conectar()
   {
-    $this->defineConfiguracion();
     if (!($ajustes = parse_ini_file($this->archivo, true))) {
       throw new Exception(
         "No se puede abrir el archivo " . $this->archivo . "."

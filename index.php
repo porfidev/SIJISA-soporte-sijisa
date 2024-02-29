@@ -17,6 +17,7 @@ if (version_compare(PHP_VERSION, "5.4.12", "<")) {
 
 //DEFINIMOS LOS DIRECTORIOS
 require_once "_folder.php";
+require DIR_BASE . "/lib/checkInstallation.php";
 
 //Iniciamos trabajo con sesiones
 session_start();
