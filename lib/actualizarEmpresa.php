@@ -10,35 +10,18 @@ if (!isset($_POST)) {
   die("No se pueden ingresar");
 }
 
-if ($_SESSION["tipo_usuario"] != 1) {
-  $respuesta = [
-    "mensaje" => "No tiene autorización para crear Empresas",
-    "registro" => false,
-  ];
-  echo json_encode($respuesta);
-  exit();
-}
-
 try {
   $oEmpresa = new Empresa();
-  $oEmpresa->isQuery();
-  $empRegistrada = $oEmpresa->consultaEmpresa();
-  foreach ($empRegistrada as $indice => $empresa) {
-    if ($_POST["nombre"] == $empresa["nombre"]) {
-      $respuesta = ["mensaje" => "Empresa duplicada", "success" => false];
-      echo json_encode($respuesta);
-      exit();
-    }
-  }
-
-  $oEmpresa->isRegister();
+  $oEmpresa->isUpdate();
   $oEmpresa->setValores([
     "nombre" => $_POST["nombre"],
     "siglas" => strtoupper($_POST["siglas"]),
+    "id" => $_POST["id"],
   ]);
-  $nuevaEmpresa = $oEmpresa->consultaEmpresa();
+  $oEmpresa->consultaEmpresa();
   $respuesta = ["success" => true];
   echo json_encode($respuesta);
+  exit();
 } catch (Exception $e) {
   $mensaje = "Ocurrio una excepción: " . $e->getMessage();
   $respuesta = ["mensaje" => $mensaje, "success" => false];

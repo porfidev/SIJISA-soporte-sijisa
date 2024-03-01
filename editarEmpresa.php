@@ -6,19 +6,18 @@
  * Página para editar usuarios
  *
  */
- 
+
 //DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
-require_once(DIR_BASE."/class/class.empresa.php");
+require_once "_folder.php";
+require_once DIR_BASE . "/class/class.empresa.php";
 
 session_start();
 
 //Iniciamos trabajo con sesiones
-if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
-	echo "Debe ser un administrador para agregar usuarios";
-	die;
+if ($_SESSION["tipo_usuario"] !== 1 or !isset($_SESSION)) {
+  echo "Debe ser un administrador para agregar usuarios";
+  die();
 }
-
 ?>
 <!doctype html>
 <html>
@@ -34,11 +33,12 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 
 <body>
 <div class="container">
-<?php include(DIR_BASE."/template/header.php");
+<?php
+include DIR_BASE . "/template/header.php";
 
-$oEmpresa = new Empresa;
+$oEmpresa = new Empresa();
+$oEmpresa->isQuery();
 $empresas = $oEmpresa->consultaEmpresa();
-//print_r($oEmpresa);
 ?>
     <div class="row">
         <div class="col-md-12">
@@ -49,25 +49,27 @@ $empresas = $oEmpresa->consultaEmpresa();
                     <tr>
                         <th>Nombre</th>
                         <th>Siglas</th>
-                        <th>Correo electrónico</th>
                         <th>&nbsp;</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <?php
-                        foreach($empresas as $indice => $campo){
-                            echo "<tr>
-                                    <td>".$campo['Descripcion']."</td>
-                                    <td>".$campo['siglasEmpresa']."</td>
-                                    <td>".$campo['emailEmpresa']."</td>
+                        <?php foreach ($empresas as $indice => $campo) {
+                          echo "<tr>
+                                    <td>" .
+                            $campo["nombre"] .
+                            "</td>
+                                    <td>" .
+                            $campo["siglas"] .
+                            "</td>
                                     <td>
-                                        <input type=\"hidden\" value=\"".$campo['intIdEmpresa']."\" name=\"inIdEmpresa\">
+                                        <input type=\"hidden\" value=\"" .
+                            $campo["id"] .
+                            "\" name=\"id\">
                                         <a class=\"btn btn-sm btn-default editar\">Editar</a>
                                     </td>
                                   </tr>";
-                        }
-                        ?>
+                        } ?>
                     </tr>
                 </tbody>
             </table>
@@ -75,7 +77,7 @@ $empresas = $oEmpresa->consultaEmpresa();
     </div>
 </div>
 <!-- FOOTER -->
-<?php include(DIR_BASE."/template/footer.php");?>
+<?php include DIR_BASE . "/template/footer.php"; ?>
 <script>
 $('table').on('click', '.editar', editarEmpresa);
 $('table').on('click', '.guardar', guardarEmpresa);
@@ -87,18 +89,13 @@ function editarEmpresa(){
 	
 	var editEmpresa = $(this).closest("tr").children().eq(0);
 	var nameEmpresa = editEmpresa.html();
-	var inputNombre = "<input type='text' name='inNombre' class='form-control' value='"+nameEmpresa+"'>";
+	var inputNombre = "<input type='text' name='nombre' class='form-control' value='"+nameEmpresa+"'>";
 	editEmpresa.html(inputNombre);
 	
 	var editSiglas = editEmpresa.next();
 	var siglaEmpresa = editSiglas.html();
-	var inputSigla =  "<input type='text' name='inSiglas' class='form-control' value='"+siglaEmpresa+"' maxlength='3'>";
+	var inputSigla =  "<input type='text' name='siglas' class='form-control' value='"+siglaEmpresa+"' maxlength='3'>";
 	editSiglas.html(inputSigla);
-	
-	var editCorreo = editSiglas.next();
-	var correoEmpresa = editCorreo.html();
-	var inputCorreo =  "<input type='text' name='inCorreo' class='form-control' value='"+correoEmpresa+"'>";
-	editCorreo.html(inputCorreo);
 	
 	return false;
 }
@@ -106,44 +103,33 @@ function editarEmpresa(){
 function guardarEmpresa(){
 	var $this = $(this);
 	$this.removeClass("guardar").addClass("editar");
-	var $idEmpresa = $this.closest("tr").find("input[type=hidden]").val();
-	
+
 	var $datos = $this.closest("tr").find("input");
 	var $valido = true;
 	var $datosEnviar = {};
 	
 	$datos.each(function(index, element) {
-		//console.log(element);
-		/*if($(this).val() == ""){
-			$valido = false;
-			alert("Todos los campos son requeridos");
-		}*/
 		var $nombre = $(this).attr("name");
 		var $valor = $(this).val();
 		$datosEnviar[$nombre] = $valor;
 	});
-	
-	$datosEnviar["idEmpresa"] = $idEmpresa;
-	$datosEnviar["actualizar"] = true;
+
 	
 	if($valido){
 		$.ajax({
 			data: $datosEnviar,
-			url: "lib/registrarEmpresa.php",
+			url: "lib/actualizarEmpresa.php",
 			type: "POST",
 			dataType: "json",
 			success: function(respuesta){
-				if(respuesta.actualiza){
+				if(respuesta.success){
 					alert("Datos actualizados");
-					restaurarTabla($this);
+					return restaurarTabla($this);
 				}
-				else {
-					alert(respuesta.mensaje);
-				}
+        return alert(respuesta.mensaje);
 			},
 			error:	function(xhr,err){
-				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-				alert("responseText: "+xhr.responseText);
+        console.log(xhr);
 			}
 		});
 	}

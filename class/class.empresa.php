@@ -75,8 +75,8 @@ class Empresa
   public function isUpdate()
   {
     $this->consulta = "UPDATE catempresas
-							SET Descripcion = :nombre, siglasEmpresa = :siglas, emailEmpresa = :email 
-							WHERE intIdEmpresa = :id";
+							SET nombre = :nombre, siglas = :siglas
+							WHERE id = :id";
 
     $this->valores = ["siglas" => null, "email" => null];
   }

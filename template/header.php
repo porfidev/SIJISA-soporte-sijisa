@@ -1,8 +1,7 @@
 <div id="header" style="margin-top: 50px;" class="row">
-	<?php
- session_start();
- //var_dump($_SESSION);
- if ($_SESSION != null) {
+	<?php //var_dump($_SESSION);
+//var_dump($_SESSION);
+if ($_SESSION != null) {
    $sec = isset($_GET["seccion"]) ? $_GET["seccion"] : null; ?>
     <div class="col-xs-12">
     <nav class="navbar navbar-default" role="navigation">
@@ -39,7 +38,7 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresa<b class="caret"></b></a>
 					<ul class="dropdown-menu">
 						<li><a href="crearEmpresa.php?seccion=empresa">Nueva</a></li>
-						<li><a href="editarEmpresa.php?seccion=empresa">Editar</a></li>
+						<li><a href="editarEmpresa.php?seccion=empresa">Lista de Empresas</a></li>
 					</ul>
 				</li>
 				<li class="dropdown <?php if ($sec == "ticket") {
@@ -106,7 +105,6 @@
 	</div>-->
 	<?php
  }
-
 // FIN SESSION != null
 ?>
 </div>
