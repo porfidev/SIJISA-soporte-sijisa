@@ -46,6 +46,7 @@ function login(){
 // METODO AJAX PARA REGISTRAR EL USUARIO
 /* ####### se llama desde: CrearUsuario.php */
 function registrarUsuario(){
+	console.log('registrando');
 	var nombre = $("#nombre").val();
 	var usuario = $("#inUsuario").val();
 	var password = $("#password").val();
@@ -75,36 +76,15 @@ function registrarUsuario(){
 			$("#formNuevoUsuario :input").attr("disabled", true);
 			},
 		success: function(respuesta){
-			if(respuesta.usuario){
-				$("#campo_usuario").addClass("info");
-				$("#campo_usuario .help-inline").show();
-				$("#formNuevoUsuario :input").attr("disabled", false);
-				$("#inUsuario").focus();
-			}
-			if(respuesta.email){
-				$("#campo_email").addClass("info");
-				$("#campo_email .help-inline").show();
-				$("#formNuevoUsuario :input").attr("disabled", false);
-				$("#inMail").focus();
-			}
-			if(respuesta.empresa){
-				$("#empresa_nueva").addClass("info");
-				$("#empresa_nueva .help-inline").show();
-				$("#formNuevoUsuario :input").attr("disabled", false);
-				$("#inEmpresa").focus();
-			}
-			if(respuesta.registro){
-				$("#crear").removeClass("btn-primary").addClass("btn-success").attr("value","Usuario creado");
-				$("#crear").attr("type","button");
-				$("#resetearUserForm").attr("disabled",false);
-			}
-			if(respuesta.mensaje){
-				console.error(respuesta.mensaje);
+			if(!respuesta.success) {
+				return alert(respuesta.mensaje);
 			}
 		},
-		error: function(xhr,err){
-			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-			alert("responseText: "+xhr.responseText);
+		error: function(xhr, err, errorThrown){
+			return alert('Ocurrio un error: ' + errorThrown);
+		},
+		complete: function(){
+			$("#formNuevoUsuario :input").attr("disabled", false);
 		}
 	});
 	

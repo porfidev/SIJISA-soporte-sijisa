@@ -112,7 +112,7 @@ class Empresa
       $valores = ["id_empresa" => $parametros["id_empresa"]];
     }
 
-    $oConexion = new conectorDB();
+    $oConexion = new ConectorBBDD();
     $resultado = $oConexion->consultarBD($consulta, $valores);
 
     return $resultado;
@@ -143,7 +143,7 @@ class Empresa
   protected function consultar()
   {
     if ($this->consulta != "") {
-      $oConexion = new conectorDB();
+      $oConexion = new ConectorBBDD();
       $resultado = $oConexion->consultarBD($this->consulta, $this->valores);
     } else {
       throw new Exception("No hay consulta a realizar");

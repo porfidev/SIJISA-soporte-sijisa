@@ -1,7 +1,7 @@
 USE soporte_tickets;
 
-INSERT INTO cattipousuario (descripcion)
-VALUES ('admin'), ('user'), ('guest');
+INSERT INTO cattipousuario (descripcion, type)
+VALUES ('Administrador','admin'), ('Usuario','user'), ('Invitado','guest');
 
 SET @admin_id := (SELECT id FROM cattipousuario WHERE descripcion = 'admin');
 INSERT INTO usuarios (nombre, username, password, email, id_tipo_usuario)

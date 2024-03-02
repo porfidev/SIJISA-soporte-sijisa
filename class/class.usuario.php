@@ -8,7 +8,7 @@
  * @author Porfirio Chávez <elporfirio@gmail.com>
  */
 require_once "_folder.php";
-require_once DIR_BASE . "/class/class.conexion.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/class/class.conexion.php";
 
 class Usuario
 {
@@ -75,6 +75,14 @@ class Usuario
     }
   }
 
+  public function getUserIfExist($email, $username)
+  {
+    $this->consulta =
+      "SELECT username, email FROM usuarios WHERE email = :email OR username = :username";
+    $this->valores = ["email" => $email, "username" => $username];
+    return $this->consultaUsuario();
+  }
+
   /**
    * Fija el modo de consulta a actualizar
    * NOTA: se deben declarar los valores "nombre", "usuario", "mail" e "id_usuario"
@@ -123,7 +131,7 @@ class Usuario
   protected function consultar()
   {
     if ($this->consulta != "") {
-      $oConexion = new conectorDB();
+      $oConexion = new ConectorBBDD();
       $resultado = $oConexion->consultarBD($this->consulta, $this->valores);
     } else {
       throw new Exception("No hay consulta a realizar");
@@ -155,8 +163,8 @@ class Usuario
 
   public function isRegister()
   {
-    $this->consulta = "INSERT INTO usuarios
-							VALUES (null, :nombre, :usuario, :contrasena, :email, :empresa, null, :tipousuario);";
+    $this->consulta = "INSERT INTO usuarios (nombre, username, password, email, id_tipo_usuario)
+                        VALUES (:nombre, :usuario, :contrasena, :email, :tipousuario)";
   }
 
   public function addToCatalog()

@@ -4,7 +4,7 @@ require_once "_folder.php";
 //Se requiere el archivo de configuracion
 require $_SERVER["DOCUMENT_ROOT"] . "/cfg/config.php";
 
-class conectorDB extends configuracion //clase principal de conexion y consultas
+class ConectorBBDD extends configuracion //clase principal de conexion y consultas
 {
   private $conexion;
 
@@ -34,15 +34,20 @@ class conectorDB extends configuracion //clase principal de conexion y consultas
           //si no se ejecuta la consulta...
           print_r($statement->errorInfo()); //imprimir errores
         }
+
+        if ($this->conexion->lastInsertId() != "0") {
+          return $this->conexion->lastInsertId();
+        }
+
         $resultado = $statement->fetchAll(PDO::FETCH_ASSOC); //si es una consulta que devuelve valores los guarda en un arreglo.
         $statement->closeCursor();
+        $this->conexion = null; //cerramos la conexión
+        return $resultado;
       } catch (PDOException $e) {
         echo "Error de ejecución: \n";
         print_r($e->getMessage());
       }
     }
-    return $resultado;
-    $this->conexion = null; //cerramos la conexión
   } /// Termina funcion consultarBD
 
   public function ejecutarSP($nombre, $valores = [])

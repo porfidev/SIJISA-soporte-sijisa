@@ -6,22 +6,25 @@
  * Página principal y de inicio de sesión
  *
  */
- 
+
 //DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
-require_once(DIR_BASE."/class/class.empresa.php");
+require_once "_folder.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/class/class.empresa.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/class/TipoUsuario.php";
 
 session_start();
 session_write_close();
 
 //Iniciamos trabajo con sesiones
-if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
-	echo "Debe ser un administrador para agregar usuarios";
-	die;
+if ($_SESSION["tipo_usuario"] !== 1 or !isset($_SESSION)) {
+  echo "Debe ser un administrador para agregar usuarios";
+  die();
 }
 
-$oEmpresa = new Empresa;
+$oEmpresa = new Empresa();
 $empresas = $oEmpresa->consultaEmpresa();
+$userType = new TipoUsuario();
+$userTypeCatalog = $userType->getQueryResult();
 ?>
 <!doctype html>
 <html>
@@ -35,43 +38,33 @@ $empresas = $oEmpresa->consultaEmpresa();
 <script>
 //FUNCION PARA MOSTRAR CAMPO PARA LA NUEVA EMPRESA
 $(function(){
-		$("#inEmpresa").change(function(){
-			//alert($("#empresa").val());
-			
-			if($("#inEmpresa").val() == "nueva"){
-				$("#inNEmpresa").show();
-				$("#inNEmpresa").attr("disabled",false);
-				$("#empresa_nueva").show();
-			}
-			else{
-				$("#inNEmpresa").hide();
-				$("#inNEmpresa").attr("disabled","disabled");
-				$("#empresa_nueva").hide();
-			}
-		});
-	}
-);
+  $("#inEmpresa").on('change', function(event){
+    const currentSelection = event.target.value;
+    console.log('event', typeof event.target.value, event.target.value)
+
+    if(currentSelection === "nueva") {
+      $("#inNEmpresa")
+        .attr("disabled", false)
+        .attr("required", true);
+      return $("#empresa_nueva").show();
+    }
+
+    $("#inNEmpresa")
+      .attr("disabled", true)
+      .attr("required", false);
+    $("#empresa_nueva").hide();
+  });
+});
 </script>
 </head>
 
 <body>
 <div class="container">
-<?php include(DIR_BASE."/template/header.php")?>
+<?php include DIR_BASE . "/template/header.php"; ?>
 <!-- FIN DE HEADER -->
     <div class="row">
         <div class="col-md-12">
         <form id="formNuevoUsuario" name="formNuevoUsuario" method="post" class="form-horizontal" onSubmit="return registrarUsuario();" role="form">
-        <!--
-                            <div class="form-group">
-                        <label for="tipoticket" class="col-md-2 col-md-2 control-label">Tipo de Solicitud</label>
-                        <div class="col-md-4">
-                            <select name="tipoticket" class="form-control" required id="tipoticket">
-                                <option value="">- Seleccione un tipo -</option>
-                                <option value="Incidencia">Incidencia</option>
-                                <option value="Control">Control de Cambios</option>
-                            </select>
-                        </div>
-                    </div>-->
             <fieldset>
             <legend>Crear Usuario</legend>
             <div class="form-group">
@@ -81,19 +74,19 @@ $(function(){
                 </div>
             </div>
             <div class="form-group" id="campo_usuario">
-                <label class="col-md-2 control-label">Login ID</label>
+                <label class="col-md-2 control-label">Usuario</label>
                 <div class="col-md-4">
                     <input type="text" name="inUsuario" id="inUsuario" class="form-control" placeholder="ej: jperez" required>
                     <span class="help-inline" style="display: none">Ya existe el usuario, ingrese un usuario diferente</span> </div>
             </div>
             <div class="form-group">
-                <label class="col-md-2 control-label">secret Key</label>
+                <label class="col-md-2 control-label">Contraseña</label>
                 <div class="col-md-4">
                     <input type="password" name="password" id="password" class="form-control" placeholder="contraseña" required>
                 </div>
             </div>
             <div class="form-group" id="campo_email">
-                <label class="col-md-2 control-label"  for="email">e-mail</label>
+                <label class="col-md-2 control-label"  for="email">Correo electrónico</label>
                 <div class="col-md-4">
                     <input type="email" name="inMail" id="inMail" class="form-control" placeholder="ej: jperez@akumen.com" required>
                     <span class="help-inline" style="display: none">Ya existe el email, ingrese un email diferente</span> </div>
@@ -103,13 +96,15 @@ $(function(){
                 <div class="col-md-4">
                     <select name="inEmpresa" required id="inEmpresa" class="form-control">
                         <option value="">- Elija una opción -</option>
-                        <?php
-                        if (!empty($empresas)){
-                            foreach($empresas as $indice => $empresa){
-                                printf("<option value='%s'>%s</option>", $empresa["intIdEmpresa"], $empresa["Descripcion"]);
-                            }
-                        }
-                        ?>
+                        <?php if (!empty($empresas)) {
+                          foreach ($empresas as $indice => $empresa) {
+                            printf(
+                              "<option value='%s'>%s</option>",
+                              $empresa["id"],
+                              $empresa["nombre"]
+                            );
+                          }
+                        } ?>
                         <option value="nueva">- Crear nueva empresa -</option>
                     </select>
                 </div>
@@ -117,17 +112,24 @@ $(function(){
             <div id="empresa_nueva" class="form-group" style="display: none">
                 <label class="col-md-2 control-label">Nueva empresa</label>
                 <div class="col-md-4">
-                    <input type="text" name="inNEmpresa" id="inNEmpresa" class="form-control" disabled="disabled" required>
-                    <span class="help-inline" style="display: none">Ya existe la empresa, ingrese una nueva o elija la correcta</span> </div>
+                    <input type="text" name="inNEmpresa" id="inNEmpresa" class="form-control" disabled>
+                    <span class="help-inline" style="display: none">Ya existe la empresa, ingrese una nueva o elija la correcta</span>
+                </div>
             </div>
             <div class="form-group">
                 <label class="col-md-2 control-label">Tipo de usuario</label>
                 <div class="col-md-4">
                     <select name="tipo_usuario" required id="tipo_usuario" class="form-control">
                         <option value="" selected>- Elija una opción -</option>
-                        <option value="3">Cliente</option>
-                        <option value="2">Operador</option>
-                        <option value="1">Administrador</option>
+                        <?php if (!empty($userTypeCatalog)) {
+                          foreach ($userTypeCatalog as $element => $userType) {
+                            printf(
+                              "<option value='%s'>%s</option>",
+                              $userType["id"],
+                              $userType["descripcion"]
+                            );
+                          }
+                        } ?>
                     </select>
                 </div>
             </div>
@@ -145,6 +147,6 @@ $(function(){
     </div>
 </div>
 <!-- FOOTER -->
-<?php include(DIR_BASE."/template/footer.php");?>
+<?php include DIR_BASE . "/template/footer.php"; ?>
 </body>
 </html>

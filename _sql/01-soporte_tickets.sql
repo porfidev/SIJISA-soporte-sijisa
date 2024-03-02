@@ -8,7 +8,8 @@ USE `soporte_tickets`;
 DROP TABLE IF EXISTS `cattipousuario`;
 CREATE TABLE `cattipousuario` (
                                   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-                                  `descripcion` TINYTEXT CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL
+                                  `descripcion` TINYTEXT CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL,
+    type TINYTEXT CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL
 ) DEFAULT CHARSET=utf8mb3 COLLATE utf8mb3_spanish_ci;
 
 --
