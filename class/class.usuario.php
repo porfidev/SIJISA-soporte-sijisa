@@ -75,6 +75,14 @@ class Usuario
     }
   }
 
+  public function getUsersByCompany($companyId)
+  {
+    $this->consulta = "SELECT * FROM rel_usuario_empresa
+                        JOIN usuarios ON rel_usuario_empresa.id_usuario = usuarios.id
+                        JOIN cattipousuario ON cattipousuario.id = usuarios.id_tipo_usuario
+                        WHERE rel_usuario_empresa.id_empresa = $companyId";
+  }
+
   public function getUserIfExist($email, $username)
   {
     $this->consulta =

@@ -6,22 +6,20 @@
  * Página para editar usuarios
  *
  */
- 
-//DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
-require_once(DIR_BASE."/class/class.usuario.php");
-require_once(DIR_BASE."/class/class.empresa.php");
 
+//DEFINIMOS LOS DIRECTORIOS
+require_once "_folder.php";
+require_once DIR_BASE . "/class/class.usuario.php";
+require_once DIR_BASE . "/class/class.empresa.php";
 
 session_start();
 session_write_close();
 
 //Iniciamos trabajo con sesiones
-if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
-	echo "Debe ser un administrador para agregar usuarios";
-	die;
+if ($_SESSION["tipo_usuario"] !== 1 or !isset($_SESSION)) {
+  echo "Debe ser un administrador para agregar usuarios";
+  die();
 }
-
 ?>
 <!doctype html>
 <html>
@@ -42,7 +40,7 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
 
 <body>
 <div class="container">
-<?php include(DIR_BASE."/template/header.php")?>
+<?php include DIR_BASE . "/template/header.php"; ?>
 
     <div class="row">
         <div class="col-md-12">
@@ -54,10 +52,14 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
                         <select name="empresauser" required id="empresauser" class="form-control">
                             <option value="">- Seleccione una empresa -</option>
                             <?php
-                            $oDatosEmpresa = new Empresa;
+                            $oDatosEmpresa = new Empresa();
                             $empresas = $oDatosEmpresa->consultaEmpresa();
-                            foreach($empresas as $indice){
-                                echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
+                            foreach ($empresas as $indice) {
+                              echo "<option value=\"" .
+                                $indice["id"] .
+                                "\">" .
+                                $indice["nombre"] .
+                                "</option>";
                             }
                             ?>
                             <option value="0">- Mostrar todos -</option>
@@ -93,13 +95,24 @@ if($_SESSION['tipo_usuario'] !== 1 or !isset($_SESSION)){
     </div>
 
 <!-- FOOTER -->
-<?php include(DIR_BASE."/template/footer.php");?>
+<?php include DIR_BASE . "/template/footer.php"; ?>
 </div>
 <script>
 
 $('table').on('click', '.editar', editarUsuario);
 $('table').on('click', '.guardar', guardarUsuario);
 $('table').on('click', '.eliminar', eliminarUsuario);
+
+$("table").on("click", "button", function(event) {
+  const data = event.target.dataset;
+  if(data.type === "edit"){
+    return editarUsuario(data.userId);
+  }
+
+  if(data.type === "delete"){
+    return eliminarUsuario(data.userId);
+  }
+});
 
 function buscarUsuarioXEmpresa(){
 	var empresa = $("#empresauser").val();
@@ -114,17 +127,28 @@ function buscarUsuarioXEmpresa(){
 		type: "POST",
 		success: function(respuesta){
 			$("#empresaticket").removeAttr("disabled");
-			if(respuesta.usuarios){
-				$('#usuarios tbody').children().remove();
-				$('#usuarios tbody').html(respuesta.datos);
-				/*var oDataTable = $("#example").dataTable();
-				oDataTable.fnClearTable();
-				oDataTable.fnAddData(respuesta.datos);
-				oDataTable.fnDraw();*/
-			}
-			else {
-				$('#usuarios tbody').html("<tr><td colspan='5'>No hay usuarios registrados</td></tr>");
-			}
+      console.log(respuesta);
+      let htmlTable = '';
+      if(respuesta.length > 0){
+        respuesta.forEach(function(user){
+          htmlTable += `
+          <tr>
+            <td>${user.nombre}</td>
+            <td>${user.username}</td>
+            <td>${user.descripcion}</td>
+            <td>${user.email}</td>
+            <td>
+              <button data-userId="${user.id_usuario}" data-type="edit">Editar</button>
+              <button data-userId="${user.id_usuario}" data-type="delete">Eliminar</button>
+            </td>
+          </tr>
+          `
+        })
+      } else {
+        htmlTable = "<tr><td colspan='5'>No hay usuarios registrados</td></tr>";
+      }
+
+      $('#usuarios tbody').html(htmlTable);
 			$("#empresauser").attr("disabled", false);
 		},
 		error:	function(xhr,err){
@@ -244,16 +268,12 @@ function guardarUsuario(){
 	return false;
 }
 
-function eliminarUsuario(){
-	
-	$elthis = $(this);
-	$id = $(this).closest("tr").find("input[type=hidden]").val();
+function eliminarUsuario(userId){
 	
 	confirm("¿Desea eliminar a este usuario?. Esta acción no se puede revertir.", function(result) {
 		if(result){
 			var $envio = {};
-			$envio["id"] = $id;
-			$envio["eliminar"] = true;
+			$envio["id"] = userId;
 			console.log($envio);
 			
 			$.ajax({
