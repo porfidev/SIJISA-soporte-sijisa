@@ -11,6 +11,7 @@
 require_once "_folder.php";
 require_once DIR_BASE . "/class/class.usuario.php";
 require_once DIR_BASE . "/class/class.empresa.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/class/TipoUsuario.php";
 
 session_start();
 session_write_close();
@@ -20,6 +21,9 @@ if ($_SESSION["tipo_usuario"] !== 1 or !isset($_SESSION)) {
   echo "Debe ser un administrador para agregar usuarios";
   die();
 }
+
+$userType = new TipoUsuario();
+$userTypeCatalog = $userType->getQueryResult();
 ?>
 <!doctype html>
 <html>
@@ -73,6 +77,9 @@ if ($_SESSION["tipo_usuario"] !== 1 or !isset($_SESSION)) {
             </div>
        </div>
    </div>
+  <div id="availableUserType">
+    <?php echo json_encode($userTypeCatalog); ?>
+  </div>
    <div class="row top-pad-50">
         <div class="col-md-12">
             <table class="table" id="usuarios">
@@ -106,11 +113,15 @@ $('table').on('click', '.eliminar', eliminarUsuario);
 $("table").on("click", "button", function(event) {
   const data = event.target.dataset;
   if(data.type === "edit"){
-    return editarUsuario(data.userId);
+    return editarUsuario(event.target);
+  }
+
+  if(data.type === "save"){
+    return guardarUsuario(event.target, data.userid);
   }
 
   if(data.type === "delete"){
-    return eliminarUsuario(data.userId);
+    return eliminarUsuario(event.target, data.userid);
   }
 });
 
@@ -127,7 +138,6 @@ function buscarUsuarioXEmpresa(){
 		type: "POST",
 		success: function(respuesta){
 			$("#empresaticket").removeAttr("disabled");
-      console.log(respuesta);
       let htmlTable = '';
       if(respuesta.length > 0){
         respuesta.forEach(function(user){
@@ -138,8 +148,8 @@ function buscarUsuarioXEmpresa(){
             <td>${user.descripcion}</td>
             <td>${user.email}</td>
             <td>
-              <button data-userId="${user.id_usuario}" data-type="edit">Editar</button>
-              <button data-userId="${user.id_usuario}" data-type="delete">Eliminar</button>
+              <button data-userId="${user.id_usuario}" data-type="edit" class="btn btn-default">Editar</button>
+              <button data-userId="${user.id_usuario}" data-type="delete" class="btn btn-danger">Eliminar</button>
             </td>
           </tr>
           `
@@ -160,10 +170,10 @@ function buscarUsuarioXEmpresa(){
 	return false;
 }
 
-function editarUsuario(){
-	$(this).removeClass("editar").addClass("guardar");
+function editarUsuario(HTMLelement){
+  const userTypes = JSON.parse($("#availableUserType").text());
 	
-	nombre_editable = $(this).closest("tr").children().eq(0);
+	nombre_editable = $(HTMLelement).closest("tr").children().eq(0);
 	nombre = nombre_editable.html();	
 	inNombre = "<input type='text' name='inNombre' class='form-control' value='"+nombre+"'>";
 	nombre_editable.html(inNombre);
@@ -176,22 +186,11 @@ function editarUsuario(){
 	tipo_edit = usuario_edit.next();
 	tipo = tipo_edit.html();
 	inTipo = '<select name="inTipo" class="form-control">';
-	var opt = "";
-	if(tipo == 'Cliente') {
-		opt = "selected";
-	}
-	inTipo += '<option value="3"' + opt +'>Cliente</option>';
-	opt = "";
-	if(tipo == 'Operador') {
-		opt = "selected";
-	}
-	inTipo += '<option value="2" '+ opt +'>Operador</option>';
-	opt = "";
-	if(tipo == 'Administrador') {
-		opt = "selected";
-	}			
-	inTipo += '<option value="1" '+ opt +'>Administrador</option>' +
-			'</select>';
+
+  userTypes.forEach(function(userType){
+    inTipo += `<option value='${userType.id}' ${userType.descripcion === tipo ? "selected" : ""}>${userType.descripcion}</option>`;
+  });
+			inTipo += '</select>';
 	tipo_edit.html(inTipo);
 	
 	mail_edit = tipo_edit.next();
@@ -199,104 +198,92 @@ function editarUsuario(){
 	inMail = '<input type="text" name="inMail" class="form-control" value="'+ mail +'">';
 	mail_edit.html(inMail);
 	
-	$(this).html("Guardar").addClass("btn-primary");
-	
+	$(HTMLelement).html("Guardar")
+    .addClass("btn-primary")
+    .attr("data-type", "save");
+
+  $(HTMLelement).siblings().hide();
 	return false;
 }
 
-function guardarUsuario(){
-	$elthis = $(this);
-	$(this).removeClass("guardar").addClass("editar");
-	$id = $(this).closest("tr").find("input[type=hidden]").val();
-	
-	$datos = $(this).closest('tr').find('input');
-	//console.log($datos);
-	var valido = true;
-	
-	var $nivel = $(this).closest("tr").find("select :selected").val();
-	
+function guardarUsuario(HTMLelement, userId){
+  $datos = $(HTMLelement).closest('tr').find('input');
+	var $nivel = $(HTMLelement).closest("tr").find("select :selected").val();
 	var $envio = {};
+
 	$datos.each(function(index, element) {
-		//console.log($(this).val());
-		if($(this).val() ==""){
-			valido = false;
-			alert("Todos los campos son requeridos");
+		if($(element).val() == ""){
+			return alert("Todos los campos son requeridos");
 		}
-		$nombre = $(this).attr("name");
-		$valor = $(this).val();
+		$nombre = $(element).attr("name");
+		$valor = $(element).val();
 		$envio[$nombre] = $valor;
 	});
+  $envio["id"] = userId;
 	$envio["tipo_usuario"] = $nivel;
-	$envio["actualizar"] = true;
-	
-	if(valido){
-		$.ajax({
-			data: $envio,
-			url: "lib/registrarUsuario.php",
-			type: "POST",
-			dataType: "json",
-			success: function(respuesta){
-				if(respuesta.actualiza){
-					alert("Datos actualizados");
-				}
-				else {
-					alert(respuesta.mensaje);
-				}
-			},
-			error:	function(xhr,err){
-				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-				alert("responseText: "+xhr.responseText);
-			}
-		});
-	}
-	
-	var tr = $(this).closest('tr');
-	var tds = $(tr).find('td').not(':last');
-	
-	$.each(tds, function(){
-		if(!$(this).children().is("select")){
-			var value = $(this).children().val();
-		}
-		else {
-			var value = $(this).children().find(":selected").text();
-		}
-		$(this).html(value);
-	});
-	
-	$(this).html("Editar").removeClass("btn-primary");
-	
-	return false;
+
+  $.ajax({
+    data: $envio,
+    url: "lib/actualizarUsuario.php",
+    type: "POST",
+    dataType: "json",
+    success: function(respuesta){
+      if(respuesta.success){
+
+        var tr = $(HTMLelement).closest('tr');
+        var tds = $(tr).find('td').not(':last');
+
+        $.each(tds, function(){
+          if(!$(this).children().is("select")){
+            var value = $(this).children().val();
+          }
+          else {
+            var value = $(this).children().find(":selected").text();
+          }
+          $(this).html(value);
+        });
+
+        $(tr).find('td:last')
+          .find("button[data-type=save]")
+          .html("Editar")
+          .removeClass("btn-primary")
+          .attr("data-type", "edit");
+
+        $(HTMLelement).siblings().show();
+
+        return alert("Datos actualizados");
+      }
+        return alert(respuesta.mensaje);
+    },
+    error:	function(xhr,err){
+      return alert(xhr.responseText);
+    }
+  });
 }
 
-function eliminarUsuario(userId){
+function eliminarUsuario(HTMLelement, userId){
 	
-	confirm("¿Desea eliminar a este usuario?. Esta acción no se puede revertir.", function(result) {
-		if(result){
-			var $envio = {};
-			$envio["id"] = userId;
-			console.log($envio);
-			
-			$.ajax({
-			data: $envio,
-			url: "lib/registrarUsuario.php",
-			type: "POST",
-			dataType: "json",
-			success: function(respuesta){
-				if(respuesta.elimina){
-					alert("Usuario Eliminado");
-					$elthis.closest("tr").hide();
-				}
-				else {
-					alert(respuesta.mensaje);
-				}
-			},
-			error:	function(xhr,err){
-				alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-				alert("responseText: "+xhr.responseText);
-			}
-		});
-		}
-	});
+	const result = confirm("¿Desea eliminar a este usuario?. Esta acción no se puede revertir.");			var $envio = {};
+
+  if(result) {
+    $.ajax({
+      data: { id: userId },
+      url: "lib/eliminarUsuario.php",
+      type: "POST",
+      dataType: "json",
+      success: function(respuesta){
+        if(respuesta.success){
+          alert("Usuario Eliminado");
+          return $(HTMLelement).closest("tr").hide();
+        }
+
+        return alert(respuesta.mensaje);
+      },
+      error:	function(xhr){
+        alert(xhr.responseText);
+      }
+    });
+  }
 } 
 
 </script>

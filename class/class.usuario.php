@@ -97,21 +97,11 @@ class Usuario
    *
    * @return void
    */
-  public function isUpdate($campo = "")
+  public function isUserUpdate($userId)
   {
-    if ($campo != "") {
-      switch ($campo) {
-        case "contrasena":
-          $this->consulta = "UPDATE usuarios
-                                           SET password = :contrasena
-                                           WHERE intIdUsuario = :id_usuario";
-          break;
-      }
-    } else {
-      $this->consulta = "UPDATE usuarios
-							SET  nombre = :nombre, username = :usuario, email = :mail, intIdTipoUsuario = :tipo_usuario
-							WHERE intIdUsuario = :id_usuario";
-    }
+    $this->consulta =
+      "UPDATE usuarios SET nombre = :nombre, username = :usuario, email = :email, id_tipo_usuario = :tipo_usuario
+        WHERE id = " . $userId;
   }
 
   /**
@@ -120,14 +110,9 @@ class Usuario
    *
    * @return void
    */
-  public function isDelete()
+  public function isDelete($userId)
   {
-    $this->consulta = "DELETE FROM usuarios
-							WHERE intIdUsuario = :id_usuario;
-							
-							UPDATE catusuarios
-							SET  estatus = 'eliminado'
-							WHERE id_usuario = :id_usuario";
+    $this->consulta = "DELETE FROM usuarios WHERE id = " . $userId;
   }
 
   /**

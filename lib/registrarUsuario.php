@@ -67,66 +67,7 @@ try {
   echo json_encode($respuesta);
   die();
 } catch (Exception $e) {
-  echo "Ocurrio un error al comprobar los usuarios para conocer si existe duplicidad: ",
-    $e->getMessage();
+  $respuesta = ["success" => false];
+  echo json_encode($e->getMessage());
+  die();
 }
-
-if ($_SESSION["tipo_usuario"] != 1) {
-  $respuesta = [
-    "mensaje" => "No tiene autorización para crear usuarios",
-    "registro" => false,
-  ];
-  echo json_encode($respuesta);
-  exit();
-}
-
-if (isset($_POST["eliminar"])) {
-  try {
-    $oUsuario = new Usuario();
-    $oUsuario->isDelete();
-    $oUsuario->setValores(["id_usuario" => $_POST["id"]]);
-    $elimina = $oUsuario->consultaUsuario();
-  } catch (Exception $e) {
-    echo "excepcion matona: ", $e->getMessage(), "\n";
-  }
-
-  if (empty($elimina)) {
-    $respuesta = ["elimina" => true];
-  } else {
-    $respuesta = [
-      "elimina" => false,
-      "mensaje" => "ocurrio un error al eliminar",
-    ];
-  }
-  echo json_encode($respuesta);
-  exit();
-}
-
-/* Inicia el proceso de "Editar Usuario" */
-if (isset($_POST["actualizar"])) {
-  try {
-    $oUsuario = new Usuario();
-    $oUsuario->isUpdate();
-    $oUsuario->setValores([
-      "nombre" => $_POST["inNombre"],
-      "usuario" => $_POST["inUsuario"],
-      "mail" => $_POST["inMail"],
-      "tipo_usuario" => $_POST["tipo_usuario"],
-      "id_usuario" => $_POST["inId"],
-    ]);
-    $actualiza = $oUsuario->consultaUsuario();
-  } catch (Exception $e) {
-    echo "excepcion matona: ", $e->getMessage(), "\n";
-  }
-
-  if (empty($actualiza)) {
-    $respuesta = ["actualiza" => true];
-  } else {
-    $respuesta = [
-      "actualiza" => false,
-      "mensaje" => "ocurrio un error al actualizar",
-    ];
-  }
-  echo json_encode($respuesta);
-  exit();
-} // Termina el proceso de "Editar Usuario"
