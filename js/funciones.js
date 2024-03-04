@@ -200,14 +200,11 @@ function registrarTicket($form){
 	var ajaxData = new FormData();
 	ajaxData.append("tipo_solicitud", $("#tipoticket").val());
 	ajaxData.append("fecha_control", $("#fecha_alta").val());
-	ajaxData.append("fecha_problema", $("#fecha_problema").val());
 	ajaxData.append("prioridad", $("#prioridad").val());
 	ajaxData.append("empresa", $("#procedencia").val());
-	ajaxData.append("cliente", $("#remitente").val());
 	ajaxData.append("tipo_ticket", $("#destinatario").val());
 	ajaxData.append("problema", $("#problema").val());
 	ajaxData.append("observaciones", $("#observaciones").val());
-	ajaxData.append("crear", true);
 	
 	$.each($("input[type=file]"), function(i, obj) {
         $.each(obj.files,function(j,file){
@@ -226,12 +223,8 @@ function registrarTicket($form){
 		beforeSend: function(bloquear){
             $($form.id + ":input").attr("disabled", true);
             $divInfo.removeClass().addClass("infoResponse");
-            
-			//$("#formRegistrarTicket :input").attr("disabled","disabled");
-		},
-        
-        success: function(respuesta){
-            console.log(respuesta);
+						},
+		success: function(respuesta){
 			if(respuesta.mensaje){
 				$divInfo.html('<p>'+respuesta.mensaje+'</p>');
                 $divInfo.addClass("alert alert-"+respuesta.estado);
@@ -240,18 +233,6 @@ function registrarTicket($form){
             
 			$($form.id + ":input").attr("disabled", false);
 		},
-        /*
-		success: function(respuesta){
-			if(respuesta.registro){
-				$("#crear").removeClass("btn-primary").addClass("btn-success").attr("value","Ticket creado");
-				$("#crear").attr("type","button");
-				$("#crear").removeAttr("disabled");
-				$("#reset").attr("disabled",false);
-			}
-			else{
-				alert(respuesta.mensaje);
-			}
-		},*/
 	    error: function(request, status, error){
             //console.log(request);
             //console.info(status);

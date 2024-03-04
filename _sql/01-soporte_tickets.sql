@@ -58,7 +58,7 @@ CREATE TABLE `rel_usuario_empresa` (
 DROP TABLE IF EXISTS `catestatus`;
 CREATE TABLE `catestatus` (
                               id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-                              `descripcion` TINYTEXT DEFAULT NULL
+                              nombre TINYTEXT DEFAULT NULL
 ) DEFAULT CHARSET=utf8mb3 COLLATE utf8mb3_spanish_ci;
 
 --
@@ -97,19 +97,18 @@ CREATE TABLE `tickets` (
                            id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
                            `Tipo` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL,
                            `fecha_alta` datetime NOT NULL,
-                           `fecha_problema` datetime NOT NULL,
                            `id_empresa` INT NOT NULL,
                            `prioridad` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci NOT NULL,
                            `id_usuario` int(255) NOT NULL,
-                           `destinatario` varchar(255) CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci NOT NULL,
                            `problema` TEXT CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL,
                            `observaciones` TEXT CHARACTER SET utf8mb3 COLLATE utf8mb3_spanish_ci DEFAULT NULL,
-                           `intIdEstatus` int(45) NOT NULL,
+                           `id_status_ticket` int(45) NOT NULL,
                            `fecha_asignacion` datetime DEFAULT NULL,
                            `fecha_cierre` datetime DEFAULT NULL,
                            `fecha_termino` datetime DEFAULT NULL,
                            FOREIGN KEY (id_empresa) REFERENCES catempresas(id),
-                           FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+                           FOREIGN KEY (id_usuario) REFERENCES usuarios(id),
+                           FOREIGN KEY (id_status_ticket) REFERENCES catestatus(id)
 ) DEFAULT CHARSET=utf8mb3 COLLATE utf8mb3_spanish_ci;
 
 --

@@ -8,7 +8,7 @@
  * @author Porfirio Chávez <elporfirio@gmail.com>
  */
 require_once "_folder.php";
-require_once DIR_BASE . "/class/class.conexion.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/class/class.conexion.php";
 
 class Ticket
 {
@@ -175,25 +175,8 @@ class Ticket
    */
   public function isRegister()
   {
-    $this->consulta = "INSERT INTO tickets
-							VALUES (null, 
-									:id_unico,
-									:tipo,
-									:fecha_alta,
-									:fecha_problema,
-									:id_empresa,
-									:prioridad,
-									:id_usuario,
-									:destinatario,
-									:problema,
-									:observaciones,
-									:archivo1,
-									:archivo2,
-									:archivo3,
-									:estatus,
-									:fecha_asignacion,
-									:fecha_termino,
-									:fecha_cierre)";
+    $this->consulta = "INSERT INTO tickets (id_usuario, Tipo, fecha_alta, id_empresa, prioridad, problema, observaciones, id_status_ticket)
+							VALUES (:id_usuario, :type, :creationDate, :id_empresa, :priority, :description, :comments, :id_status_ticket)";
   }
 
   /**
