@@ -67,6 +67,9 @@ $empresas = $oEmpresa->consultaEmpresa();
                             $campo["id"] .
                             "\" name=\"id\">
                                         <a class=\"btn btn-sm btn-default editar\">Editar</a>
+                                        <button class='btn btn-sm btn-danger' data-type='delete' data-company-id=" .
+                            $campo["id"] .
+                            ">Eliminar</button>
                                     </td>
                                   </tr>";
                         } ?>
@@ -82,6 +85,37 @@ $empresas = $oEmpresa->consultaEmpresa();
 $('table').on('click', '.editar', editarEmpresa);
 $('table').on('click', '.guardar', guardarEmpresa);
 
+const tableContainer = $('table');
+
+tableContainer.on('click', 'button[data-type=delete]', deleteCompany);
+
+function deleteCompany (event) {
+  const current = event.target;
+  const companyId = $(current).data("company-id");
+  console.log(companyId);
+  const confirmResult = confirm("¿Seguro que desea eliminar la empresa? (este proceso no se puede revertir)");
+
+  if(confirmResult){
+    $.ajax({
+      data: JSON.stringify({ companyId }),
+      url: "lib/eliminarEmpresa.php",
+      type: "DELETE",
+      contentType: 'application/json',
+      dataType: "json",
+      success: function(response) {
+        if(response.success) {
+          $(current).closest('tr').remove();
+          return alert('Empresa eliminada');
+        }
+
+        return alert(response.mensaje);
+      },
+      error: function() {
+        return alert(response.mensaje);
+      },
+    })
+  }
+}
 
 function editarEmpresa(){
 	$(this).removeClass("editar").addClass("guardar");

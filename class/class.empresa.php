@@ -94,6 +94,11 @@ class Empresa
     }
   }
 
+  public function setToDelete($companyId = "")
+  {
+    $this->consulta = "DELETE FROM catempresas WHERE id = " . $companyId;
+  }
+
   public function obtenerMail()
   {
     $consulta = "SELECT emailEmpresa
