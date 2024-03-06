@@ -268,41 +268,45 @@ function reiniciarCrearTicket(){
 //////////////////////////////////////////////////////////////////
 // se llama desde seguimientoTicket.php 
 function buscarTicketXEmpresa($form){
-	//console.log($form);
-    //var empresa = $("#empresaticket").val();
-	
     $datos = $($form).serializeArray();
-    console.log($datos);
-    
     
     $.ajax({
-		beforeSend: function(bloquear){
-			$("#empresaticket").attr("disabled","disabled");
-			$('#tickets tbody').children().remove();
-			$('#tickets tbody').html("<tr><td colspan='5'>Buscando tickets por favor espere...<br><div class='progress progress-striped active'><div class='bar' style='width: 80%;'></div></div></td></tr>");
-		},
-		dataType: "json",
-		//data: {"empresa": empresa},
-		data: $datos,
-        url: "lib/buscarTickets.php",
-		type: "POST",
-		success: function(respuesta){
-			$("#empresaticket").removeAttr("disabled");
-			if(respuesta.tickets){
+			beforeSend: function(){
+				$("button[type=submit]").attr("disabled", true);
 				$('#tickets tbody').children().remove();
-				var oDataTable = $("#example").dataTable();
-				oDataTable.fnClearTable();
-				oDataTable.fnAddData(respuesta.datos);
-				oDataTable.fnDraw();
+				$('#tickets tbody').html("<tr><td colspan='5'>Buscando tickets por favor espere...<br><div class='progress progress-striped active'><div class='bar' style='width: 80%;'></div></div></td></tr>");
+			},
+			dataType: "json",
+			data: $datos,
+			url: "lib/buscarTickets.php",
+			type: "POST",
+			success: function(respuesta){
+				if(respuesta.success){
+					const tableBody = $('#tickets tbody');
+					if(respuesta.tickets.length > 0) {
+						tableBody.children().remove();
+						const oDataTable = $("#example").dataTable();
+
+						oDataTable.fnClearTable();
+						return respuesta.tickets.forEach(function(ticket){
+							oDataTable.fnAddData([
+								ticket.id,
+								ticket.Tipo,
+								ticket.prioridad,
+								ticket.fecha_alta,
+							]);
+						});
+					}
+
+					$('#tickets tbody').html("<tr><td colspan='5'>No se encontraron tickets</td></tr>");
+				}
+			},
+			error: function(){
+				console.error('Ocurrio un error');
+			},
+			complete: function() {
+				$("button[type=submit]").attr("disabled", false);
 			}
-			else {
-				$('#tickets tbody').html("<tr><td colspan='5'>No se hayaron tickets</td></tr>");
-			}
-		},
-		error:	function(xhr,err){
-			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-			alert("responseText: "+xhr.responseText);
-		}
 	});
 	
 	return false; 

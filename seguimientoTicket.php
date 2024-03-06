@@ -5,15 +5,14 @@ Desarrollado por Akumen.com.mx
 */
 
 //DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
-require_once(DIR_BASE."/class/class.tickets.php");
-require_once(DIR_BASE."/class/class.empresa.php");
+require_once "_folder.php";
+require_once DIR_BASE . "/class/class.tickets.php";
+require_once DIR_BASE . "/class/class.empresa.php";
 
 session_start();
 session_write_close();
 
-if(isset($_SESSION['id_usuario'])){
-?>
+if (isset($_SESSION["id_usuario"])) { ?>
 <!doctype html>
 <html>
 <head>
@@ -148,7 +147,7 @@ if(isset($_SESSION['id_usuario'])){
 
 
 <div class="container">
-	<?php include(DIR_BASE."/template/header.php")?>
+	<?php include DIR_BASE . "/template/header.php"; ?>
 	<!-- FIN DE HEADER -->
     <div class="row">
 	    <div class="col-md-12">
@@ -160,12 +159,16 @@ if(isset($_SESSION['id_usuario'])){
 			        <select name="inEmpresaTicket" autofocus required id="inEmpresaTicket" class="span4 form-control">
 				        <option value="">- Seleccione una empresa -</option>
 				        <?php
-		                $oDatosEmpresa = new Empresa;
-		                $empresas = $oDatosEmpresa->consultaEmpresa();
-                        foreach($empresas as $indice){
-                            echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
-                        }
-		                ?>
+            $oDatosEmpresa = new Empresa();
+            $empresas = $oDatosEmpresa->consultaEmpresa();
+            foreach ($empresas as $indice) {
+              echo "<option value=\"" .
+                $indice["id"] .
+                "\">" .
+                $indice["nombre"] .
+                "</option>";
+            }
+            ?>
 				        <option value="0">- Mostrar todas las empresas -</option>
 			        </select>
                </div>
@@ -283,12 +286,10 @@ if(isset($_SESSION['id_usuario'])){
             <table id="example" width="100%">
                 <thead>
                     <tr>
-                        <th>Empresa</th>
-                        <th width="200px">ID Ticket</th>
-                        <th width="80px">Prioridad</th>
-                        <th width="80px">Estado Actual</th>
+                        <th>ID</th>
+                        <th>Tipo</th>
+                        <th>Prioridad</th>
                         <th>Fecha de Alta</th>
-                        <!--<th>Historial</th>-->
                     </tr>
                 </thead>
                 <tbody>
@@ -300,16 +301,18 @@ if(isset($_SESSION['id_usuario'])){
         </div>
     </div>
 
-<?php include(DIR_BASE."/template/footer.php")?>
+<?php include DIR_BASE . "/template/footer.php"; ?>
 </div>
 <script>
 
 // Codigo para mostrar ticket de seguimiento
-<?php if(isset($_GET["ticketId"]) and $_GET["ticketId"] != ""): ?>
+<?php if (isset($_GET["ticketId"]) and $_GET["ticketId"] != ""): ?>
 $("#Xticket").attr("disabled", true).attr("checked", true);
 $("#Xempresa").attr("disabled", false).attr("checked",false);
 $("#inEmpresaTicket").attr("disabled", true).attr("required", false);
-$("#inIdTicket").attr("disabled", false).attr("required", true).val("<?php echo $_GET["ticketId"]; ?>");
+$("#inIdTicket").attr("disabled", false).attr("required", true).val("<?php echo $_GET[
+  "ticketId"
+]; ?>");
 $("#formElegirEmpresaTicket").submit();
 <?php endif; ?>
 
@@ -505,6 +508,7 @@ function registrarSeguimientoTicket(){
 	return false;
 }
 </script>
-<?php } else { die("debe iniciar sesi&oacute;n"); } ?>
+<?php } else {die("debe iniciar sesi&oacute;n");}
+?>
 </body>
 </html>

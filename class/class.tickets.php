@@ -56,6 +56,11 @@ class Ticket
     }
   }
 
+  public function getByCompany($companyId = "")
+  {
+    $this->consulta = "SELECT * FROM tickets WHERE id_empresa = " . $companyId;
+  }
+
   public function isSearch(
     $idEmpresa = "",
     $prioridad = [],
