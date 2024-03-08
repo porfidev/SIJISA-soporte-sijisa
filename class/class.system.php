@@ -7,11 +7,8 @@
  * @package soporteAkumen
  * @author Porfirio Chávez <elporfirio@gmail.com>
  */
-require_once "_folder.php";
-require_once DIR_BASE . "/class/class.conexion.php";
-require_once DIR_BASE . "/class/class.urlcrypt.php";
-//require_once(DIR_BASE."/class/class.phpmailer.php");
-require_once DIR_BASE . "/class/class.correo.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/class/class.conexion.php";
+require_once $_SERVER["DOCUMENT_ROOT"] . "/class/class.correo.php";
 
 class Sistema
 {
@@ -23,51 +20,45 @@ class Sistema
   {
   }
 
-  public function restablecerCorreo($mail, $nameUser, $idUser)
+  public function restablecerCorreo($mail, $userId, $username)
   {
     $this->consulta = "INSERT INTO sys_restablecer
                            (`id_usuario`, `email`, `fecha_solicitud`, `token_seguridad`, `fecha_expiracion`)
-                           VALUES (:id_usuario, :email, :fecha_solicitud, :token, :fecha_limite)";
+                           VALUES (:id_usuario, :email, :fecha_solicitud, :token_seguridad, :fecha_expiracion)";
 
-    $token = $this->generaToken($mail);
+    $token = uniqid("res_");
 
     $this->valores = [
       "fecha_solicitud" => $this->getDateTime(strtotime("now")),
-      "fecha_limite" => $this->getDateTime(strtotime("now") + 86400),
-      "token" => $token,
+      "fecha_expiracion" => $this->getDateTime(strtotime("now") + 86400),
+      "token_seguridad" => $token,
       "email" => $mail,
-      "id_usuario" => $idUser,
+      "id_usuario" => $userId,
     ];
 
-    $registroToken = $this->consultar();
+    $envioCorreo = $this->enviarMensajeCorreo($mail, $token, $username);
 
-    if (empty($registroToken)) {
-      $envioCorreo = $this->enviarMensajeCorreo($mail, $nameUser, $token);
-
-      if ($envioCorreo) {
-        return true;
-      } else {
-        return false;
-      }
-    } else {
-      return false;
+    if ($envioCorreo) {
+      echo json_encode(["success" => true]);
+      die();
     }
+
+    echo json_encode([
+      "success" => false,
+      "mensaje" => "No se pudo enviar el correo electrónico",
+    ]);
+    die();
   }
 
-  private function enviarMensajeCorreo($correo = "", $nombre = "", $token = "")
-  {
-    $url = "http://sijisa.mx/soporte/reset.php?token=" . $token;
-
-    //$url = "http://200.52.135.105:8001/reset.php?v=".$token;
+  private function enviarMensajeCorreo(
+    $correo = "",
+    $token = "",
+    $username = ""
+  ) {
+    $url = $_SERVER["HTTP_HOST"] . "/reset.php?token=" . $token;
 
     $oCorreo = new Correo();
-    $resultado = $oCorreo->enviarCorreoA($correo, $nombre, $url);
-
-    if (is_string($resultado)) {
-      return $resultado;
-    } else {
-      return true;
-    }
+    return $oCorreo->enviarCorreoA($correo, $username, $url);
   }
 
   public function borrarToken($token)
@@ -103,30 +94,6 @@ class Sistema
     }
   }
 
-  public function obtenerCadena($token = "")
-  {
-    $cadena = $this->decriptaToken($token);
-    return $cadena;
-  }
-
-  private function generaToken($cadena)
-  {
-    Urlcrypt::$key =
-      "54763051cef08bcd417e2ffb2a001cef08bcd417e2ef08bcd417e2ffb2aef08b";
-    $token = Urlcrypt::encrypt($cadena);
-
-    return $token;
-  }
-
-  private function decriptaToken($token)
-  {
-    Urlcrypt::$key =
-      "54763051cef08bcd417e2ffb2a001cef08bcd417e2ef08bcd417e2ffb2aef08b";
-    $cadena = Urlcrypt::decrypt($token);
-
-    return $cadena;
-  }
-
   private function getDateTime($stringToTime)
   {
     date_default_timezone_set("America/Mexico_City");
@@ -147,5 +114,3 @@ class Sistema
     return $resultado;
   }
 }
-
-?>

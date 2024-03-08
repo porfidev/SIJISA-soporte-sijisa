@@ -11,7 +11,13 @@
 abstract class Configuracion
 {
   protected $datahost;
+  protected $config;
   private $archivo = "config.ini";
+
+  public function getConfig()
+  {
+    return $this->config;
+  }
 
   protected function conectar()
   {
@@ -20,6 +26,7 @@ abstract class Configuracion
         "No se puede abrir el archivo " . $this->archivo . "."
       );
     }
+    $this->config = $ajustes;
     $controlador = $ajustes["database"]["driver"]; //controlador (MySQL la mayoría de las veces)
     $servidor = $ajustes["database"]["host"]; //servidor como localhost o 127.0.0.1 usar este ultimo cuando el puerto sea diferente
     $puerto = $ajustes["database"]["port"]; //Puerto de la BD

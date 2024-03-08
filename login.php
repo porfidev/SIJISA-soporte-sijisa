@@ -45,7 +45,7 @@
               <input type="submit" name="btnRestablecer" id="btnRestablecer" value="Enviar"
                      class="btn btn-primary btn-block btn-lg">
               <br>
-              <div class="infoResponse "></div>
+              <div id="restoreResponse"></div>
             </form>
 
           </div>

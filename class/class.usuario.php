@@ -91,6 +91,12 @@ class Usuario
     return $this->consultaUsuario();
   }
 
+  public function getUserByEmail()
+  {
+    $this->consulta =
+      "SELECT id, username, email from usuarios WHERE email = :email";
+  }
+
   /**
    * Fija el modo de consulta a actualizar
    * NOTA: se deben declarar los valores "nombre", "usuario", "mail" e "id_usuario"

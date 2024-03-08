@@ -226,3 +226,4 @@ pip-log.txt
 .mr.developer.cfg
 .idea/
 node_modules/
+cfg/config.ini

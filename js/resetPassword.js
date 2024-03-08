@@ -1,8 +1,7 @@
 function restablecer($form) {
   $($form).children(".infoResponse").html("")
   const $correo = $("#inUserMail").val()
-  const $datos = $($form).serializeArray()
-  const $divInfo = $($form).children(".infoResponse")
+  const $divInfo = $($form).children("#restoreResponse")
 
   // Envio de datos para login -->
   $.ajax({
@@ -12,23 +11,27 @@ function restablecer($form) {
     type: "post",
     beforeSend: function() {
       $($form.id + ":input").attr("disabled", true)
-      $divInfo.removeClass().addClass("infoResponse")
+      $divInfo.removeClass();
     },
     success: function(respuesta) {
-      if (respuesta.mensaje) {
+      if(!respuesta.success){
         $divInfo.html("<p>" + respuesta.mensaje + "</p>")
-        $divInfo.addClass("alert alert-" + respuesta.estado)
+        return $divInfo.addClass("alert alert-danger")
       }
-      $($form.id + ":input").attr("disabled", false)
+
+      $divInfo.html("<p>Se ha enviado un mensaje a su correo.</p>")
+      return $divInfo.addClass("alert alert-success")
     },
     error: function(request, status, error) {
       $error = "<button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>"
       $error += "<p><b>No se pudo procesar la solicitud</b></p><hr>" + status + ": <b>" + error + "</b><br>"
       $error += "Estado: " + request.readyState + "<br>"
       $error += "respuesta: " + request.responseText + "<br>"
-      $($form).children(".infoResponse").addClass("alert alert-warning alert-dismissable").html($error)
-      $($form.id + ":input").attr("disabled", false)
+      $divInfo.addClass("alert alert-warning alert-dismissable").html($error)
     },
+    complete: function(){
+      $($form.id + ":input").attr("disabled", false)
+    }
   })
 
   return false
