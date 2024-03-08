@@ -7,40 +7,6 @@
  * 
  */
 
-///////////////////////////////////////////////////////////////
-// Script de respuesta a Login se llama desde index.php
-function login(){
-	$('#respuesta').html('');
-	const usuario = $("#usuario").val();
-	const password = $("#password").val();
-
-	// Envio de datos para login -->
-	$.ajax({
-		dataType: "json",
-		data:  {"usuario": usuario, "password": password},
-		url: 'lib/iniciarSesion.php',
-		type:  'post',
-		beforeSend: function(){
-			$("#login_form :input").attr("disabled", true);
-		},
-        success: function(respuesta){
-			if(!respuesta.success){
-				return $('#respuesta').html('<p>'+respuesta.mensaje+'</p>');
-			}
-
-			$("#login_form :input").attr("disabled", false);
-			window.location.href = respuesta.url;
-		},
-		error: function(xhr,err){
-			console.log(xhr);
-			$('#respuesta').html('<p>No se pudo procesar la solicitud</p>');
-			$("#login_form :input").attr("disabled", false);
-		}
-	});
-	
-	return false;
-}
-
 
 ///////////////////////////////////////////////////////////////
 // METODO AJAX PARA REGISTRAR EL USUARIO
