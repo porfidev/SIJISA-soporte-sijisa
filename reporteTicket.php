@@ -73,9 +73,33 @@ function solicitarReporte(){
 	$.ajax({
 		data:  {"empresa": empresa, "fecha_inicio": fecha_inicio, "fecha_fin": fecha_fin},
 		url: 'lib/generarReporte.php',
-		type:  'post',
-        success: function(respuesta){
-			$("#tblReporte tbody").html(respuesta);
+		type: 'post',
+    dataType: 'json',
+    success: function(respuesta){
+      let tableResult = '';
+      if(!respuesta.success){
+        tableResult += `<tr>
+          <td colspan="5">Ocurrió un error al buscar los tickets.</td>
+        </tr>`;
+      }
+
+      if(respuesta.tickets.length > 0) {
+        respuesta.tickets.forEach(function(ticket){
+          tableResult += `<tr>
+            <td>${ticket.ticket_id}</td>
+            <td>${ticket.Tipo}</td>
+            <td>${ticket.fecha_alta}</td>
+            <td>${ticket.prioridad}</td>
+            <td>${ticket.ticket_status}</td>
+          </tr>`
+        });
+      } else {
+        tableResult += `<tr>
+          <td colspan="5">No hay tickets creados en el periodo.</td>
+        </tr>`;
+      }
+
+			$("#tblReporte tbody").html(tableResult);
 			$('#tabla_tickets tr:even').addClass('par');
 		},
 		error: function(xhr,err){
@@ -89,36 +113,9 @@ function solicitarReporteExcel(){
 	var empresa = $("#empresa").val();
 	var fecha_inicio = $("#fechaInicio").val();
 	var fecha_fin = $("#fechaFin").val();
-	var $url = 'pruebaexcel.php';
-	document.location = "pruebaexcel.php?empresa="+empresa+"&fecha_inicio="+fecha_inicio+"&fecha_fin="+fecha_fin;
-	/*
-	var empresa = $("#empresa").val();
-	var fecha_inicio = $("#fechaInicio").val();
-	var fecha_fin = $("#fechaFin").val();
-	var $url = 'pruebaexcel.php';
-	
-	$.ajax({
-		data:  {"empresa": empresa, "fecha_inicio": fecha_inicio, "fecha_fin": fecha_fin},
-		url: $url,
-		type:  'post',
-        success: function(response, status, request) {
-			var disp = request.getResponseHeader('Content-Disposition');
-			if (disp && disp.search('attachment') != -1) {
-				var form = $('<form method="POST" action="' + url + '">');
-				$.each(params, function(k, v) {
-					form.append($('<input type="hidden" name="' + k + '" value="' + v +'">'));
-				});
-				$('body').append(form);
-				form.submit();
-			}
-		},
-		error: function(xhr,err){
-			alert("readyState: "+xhr.readyState+"\nstatus: "+xhr.status);
-			alert("responseText: "+xhr.responseText);
-		}
-        });
-		*/
+  window.open("pruebaexcel.php?empresa="+empresa+"&fecha_inicio="+fecha_inicio+"&fecha_fin="+fecha_fin, '_blank');
 }
+
 </script>
 <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 <link href="css/cupertino/jquery-ui-1.10.2.custom.min.css" rel="stylesheet" type="text/css">
@@ -183,15 +180,10 @@ function solicitarReporteExcel(){
                 <thead>
                     <tr>
                         <th>ID Ticket</th>
-                        <th>Problema</th>
-                        <th>Estatus Actual</th>
-                        <th>Fecha Recepción</th>
-                        <th>Fecha Asignación</th>
-                        <th>Fecha Inicio Atención</th>
-                        <th>Fercha Término</th>
-                        <th>Tiempo de Atención</th>
-                        <th>Tiempo de respuesta</th>
-                        <th>Tiempo Total</th>
+                        <th>Tipo Ticket</th>
+                        <th>Fecha de creación</th>
+                        <th>Prioridad</th>
+                        <th>Estado</th>
                     </tr>
                 </thead>
                 <tbody>

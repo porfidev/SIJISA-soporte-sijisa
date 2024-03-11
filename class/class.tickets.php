@@ -236,7 +236,7 @@ class Ticket
 
   public function isReport()
   {
-    $this->consulta = "SELECT * FROM tickets
+    $this->consulta = "SELECT *, tickets.id AS ticket_id, catestatus.nombre AS ticket_status FROM tickets
 						JOIN catestatus ON catestatus.id = tickets.id_status_ticket
 						WHERE id_empresa = :empresa
 						AND fecha_alta BETWEEN :fechainicio AND :fechafin";
