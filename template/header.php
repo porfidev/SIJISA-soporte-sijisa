@@ -1,7 +1,10 @@
 <div id="header" style="margin-top: 50px;" class="row">
 	<?php //var_dump($_SESSION);
 //var_dump($_SESSION);
-if ($_SESSION != null) {
+//var_dump($_SESSION);
+ //var_dump($_SESSION);
+ //var_dump($_SESSION);
+ if ($_SESSION != null) {
    $sec = isset($_GET["seccion"]) ? $_GET["seccion"] : null; ?>
     <div class="col-xs-12">
     <nav class="navbar navbar-default" role="navigation">
@@ -53,9 +56,9 @@ if ($_SESSION != null) {
 					</ul>
 				</li>
             </ul>
-            <ul class="nav pull-right">
-				<li><a href="cerrarSesion.php">Cerrar sesión</a></li>
-			</ul>
+          <ul class="nav navbar-nav pull-right">
+            <li><a href="cerrarSesion.php">Cerrar sesión</a></li>
+          </ul>
         </div>
     </nav>
     </div>

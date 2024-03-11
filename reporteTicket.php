@@ -5,14 +5,13 @@ Desarrollado por Akumen.com.mx
 */
 
 //DEFINIMOS LOS DIRECTORIOS
-require_once("_folder.php");
-require_once(DIR_BASE."/class/class.empresa.php");
-require_once(DIR_BASE."/class/class.tickets.php");
+require_once "_folder.php";
+require_once DIR_BASE . "/class/class.empresa.php";
+require_once DIR_BASE . "/class/class.tickets.php";
 
 session_start();
 session_write_close();
-if(isset($_SESSION['id_usuario'])){
-?>
+if (isset($_SESSION["id_usuario"])) { ?>
 <!doctype html>
 <html>
 <head>
@@ -129,7 +128,7 @@ function solicitarReporteExcel(){
     <div class="row">
         <div class="col-md-12">
         
-        <?php include(DIR_BASE."/template/header.php")?>
+        <?php include DIR_BASE . "/template/header.php"; ?>
         <!-- FIN DE HEADER -->
         <form name="formElegirEmpresaTicket" id="formElegirEmpresaTicket" method="POST" role="form">
             <legend>Reportes de Ticket</legend>
@@ -137,11 +136,15 @@ function solicitarReporteExcel(){
                 <select name="empresa" autofocus required id="empresa" class="form-control">
                     <option value="">- Seleccione una empresa -</option>
                     <?php
-                    $oEmpresa = new Empresa;
+                    $oEmpresa = new Empresa();
                     $empresas = $oEmpresa->consultaEmpresa();
-                            
-                    foreach($empresas as $indice){
-                        echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
+
+                    foreach ($empresas as $indice) {
+                      echo "<option value=\"" .
+                        $indice["id"] .
+                        "\">" .
+                        $indice["nombre"] .
+                        "</option>";
                     }
                     ?>
                     <option value="0">- Mostrar todos -</option>
@@ -158,14 +161,14 @@ function solicitarReporteExcel(){
                 <select name="empresa" autofocus required id="empresa" class="form-control">
                     <option value="">- Seleccione una empresa -</option>
                     <?php
-                    /*
+  /*
                     $oEmpresa = new Empresa;
                     $empresas = $oEmpresa->consultaEmpresa();
                             
                     foreach($empresas as $indice){
                         echo "<option value=\"".$indice['intIdEmpresa']."\">".$indice['Descripcion']."</option>";
                     }*/
-                    ?>
+  ?>
                     <option value="0">- Mostrar todos -</option>
                 </select>
                 -->
@@ -201,6 +204,7 @@ function solicitarReporteExcel(){
         </div>
     </div>
 </div>
-<?php } else { die("debe iniciar sesi&oacute;n"); } ?>
+<?php } else {die("debe iniciar sesi&oacute;n");}
+?>
 </body>
 </html>

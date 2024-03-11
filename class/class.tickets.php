@@ -234,24 +234,12 @@ class Ticket
     }
   }
 
-  public function isReport($tipo = null)
+  public function isReport()
   {
-    $this->consulta = "SELECT intIdUnico,
-							intIdEmpresa,
-							problema,
-							fecha_alta,
-							fecha_problema,
-							fecha_asignacion,
-							fecha_termino,
-							catestatus.Descripcion AS estado_actual
-							FROM tickets
-							JOIN catestatus ON catestatus.intIdEstatus = tickets.intIdEstatus";
-    if ($tipo != null and $tipo != "0") {
-      $this->consulta .= " WHERE intIdEmpresa = :empresa
-                                AND fecha_alta BETWEEN :fechainicio AND :fechafin";
-    } else {
-      $this->consulta .= " WHERE fecha_alta BETWEEN :fechainicio AND :fechafin";
-    }
+    $this->consulta = "SELECT * FROM tickets
+						JOIN catestatus ON catestatus.id = tickets.id_status_ticket
+						WHERE id_empresa = :empresa
+						AND fecha_alta BETWEEN :fechainicio AND :fechafin";
   }
 
   public function timeZone()
